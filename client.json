@@ -1,0 +1,24 @@
+{
+  "latest": {
+    "version": "1.1.16",
+    "releaseDate": "2026-08-02",
+    "mandatory": false,
+    "minSupportedVersion": "1.0.0",
+    "notes": [
+      "Modo torneo para 3 Bandas y Libres con 2 jugadores: cronometro de tacada, faltas y control desde el celular del arbitro. Se activa en Configuracion > General y viene desactivado",
+      "Modo torneo: al encenderlo aparece un codigo QR; el celular lo escanea y desde ahi se configuran jugadores, banderas, meta, SETS, limite de entradas y segundos por tacada. Todo lo que se toca en el celular se ve al instante en la mesa",
+      "Modo torneo: barra de tiempo de colores por tacada. Con pantalla extendida ocupa todo el ancho abajo; con una sola pantalla va sobre el video del panel central",
+      "Modo torneo: la mesa muestra el cartel del encuentro con los jugadores y las reglas acordadas, y al terminar el resultado con el promedio general de toda la partida",
+      "Modo torneo: al cerrar la partida el arbitro recoge las firmas de los jugadores y la suya en el celular, y se genera un informe en PDF con el acta; los jugadores lo descargan con un codigo QR desde la pantalla de la mesa",
+      "Correccion: si la direccion del servidor se escribia sin http:// la mesa nunca conectaba, aunque el boton Probar conexion dijera que si. Ahora se completa sola y la prueba comprueba de verdad que responda el servidor del ERP",
+      "Correccion: al escribir el nombre de un jugador la aplicacion podia quedar en un estado inconsistente por un aviso interno mal ubicado",
+      "Se retiran los textos de ayuda que aparecian al dejar el puntero sobre los botones de la pantalla de juego: la aplicacion se usa en pantallas tactiles, donde no se ven"
+    ],
+    "windows": {
+      "fileName": "billar-play-setup-1.1.16.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.16/billar-play-setup-1.1.16.exe",
+      "sizeBytes": 187381089,
+      "sha256": "287ed4041ff0803da2186ad197424ce2a6a698c1abff45d10547baa4bb9720a5"
+    }
+  }
+}
