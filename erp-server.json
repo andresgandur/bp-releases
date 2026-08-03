@@ -1,11 +1,13 @@
 {
   "latest": {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "releaseDate": "2026-08-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Version de acompanamiento: el servidor no cambia respecto a la 1.1.5, pero se publica a la par de la terminal para que ambos lleven siempre el mismo numero",
+      "La solicitud de cierre de cuenta de una mesa ya se reparte a las terminales del ERP; antes solo llegaba a los paneles del protocolo anterior y el aviso se perdia",
+      "Se recuerda que mesas estan esperando cobro y se le informa a cada terminal al conectarse, para que recargar el ERP no haga desaparecer el aviso",
+      "Una mesa que pidio la cuenta se puede reabrir desde el ERP si el cliente decide seguir jugando",
       "Importacion masiva de productos desde una plantilla de Excel, informando de cada fila que no se pudo cargar y del motivo",
       "Usuarios: se puede cambiar el nombre de usuario, y la lista devuelve el rol real de cada uno (antes la terminal mostraba admin en todas las filas)",
       "La contrasena asignada por un administrador obliga a personalizarla en el primer ingreso; el cambio queda en la auditoria",
@@ -13,10 +15,10 @@
       "El servidor y la terminal pasan a llevar la misma version, para que no queden desparejados"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.6.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.6/servidor-setup-1.1.6.exe",
-      "sizeBytes": 144219955,
-      "sha256": "60d934ec7c9de470d7604821a93281f67de698acd7a4a58bc4caba7a8371ade7"
+      "fileName": "servidor-setup-1.1.7.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.7/servidor-setup-1.1.7.exe",
+      "sizeBytes": 144221591,
+      "sha256": "26037d9787ca256d9f4df0b64af18d965d38bd87ea38cab43a90d0e698d839f3"
     }
   }
 }
