@@ -1,7 +1,7 @@
 {
   "latest": {
     "version": "1.1.16",
-    "releaseDate": "2026-08-02",
+    "releaseDate": "2026-08-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
@@ -15,8 +15,8 @@
       "Se retiran los textos de ayuda que aparecian al dejar el puntero sobre los botones de la pantalla de juego: la aplicacion se usa en pantallas tactiles, donde no se ven"
     ],
     "windows": {
-      "fileName": "billar-play-setup-1.1.16.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.16/billar-play-setup-1.1.16.exe",
+      "fileName": "marcador-setup-1.1.16.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.16/marcador-setup-1.1.16.exe",
       "sizeBytes": 187381089,
       "sha256": "287ed4041ff0803da2186ad197424ce2a6a698c1abff45d10547baa4bb9720a5"
     }
