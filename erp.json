@@ -1,10 +1,11 @@
 {
   "latest": {
-    "version": "1.1.5",
+    "version": "1.1.6",
     "releaseDate": "2026-08-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "Correccion: el boton de buscar actualizaciones fallaba siempre con 'Failed to fetch' y no llegaba a consultar nada",
       "La terminal se actualiza sola: en Configuracion > Acerca de hay un boton para buscar versiones nuevas, que muestra los cambios y la instala",
       "Importacion de productos desde una plantilla de Excel: se descarga la plantilla, se llena y se sube. Si alguna fila no entra, se dice cual y por que",
       "Se puede elegir la impresora del ticket en cada equipo: al cobrar, el ticket sale directo por ella sin abrir el cuadro de impresion de Windows. Admite ticketeras termicas con corte de papel y cajon monedero",
@@ -16,10 +17,10 @@
       "La terminal y el servidor pasan a llevar la misma version, para que no queden desparejados"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.5.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.5/terminal-setup-1.1.5.exe",
-      "sizeBytes": 2254671,
-      "sha256": "1cc4b5aa248aa6b16b673ffe4e073dea1e5f27d5586c6024e9266d08fc7c1945"
+      "fileName": "terminal-setup-1.1.6.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.6/terminal-setup-1.1.6.exe",
+      "sizeBytes": 2247782,
+      "sha256": "282cd0bfbe0cbbcb7a39f69ec269a6b1193d200d3977980741775446ac376b1d"
     }
   }
 }
