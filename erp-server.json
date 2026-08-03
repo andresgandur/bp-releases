@@ -1,0 +1,21 @@
+{
+  "latest": {
+    "version": "1.1.5",
+    "releaseDate": "2026-08-03",
+    "mandatory": false,
+    "minSupportedVersion": "1.0.0",
+    "notes": [
+      "Importacion masiva de productos desde una plantilla de Excel, informando de cada fila que no se pudo cargar y del motivo",
+      "Usuarios: se puede cambiar el nombre de usuario, y la lista devuelve el rol real de cada uno (antes la terminal mostraba admin en todas las filas)",
+      "La contrasena asignada por un administrador obliga a personalizarla en el primer ingreso; el cambio queda en la auditoria",
+      "Las peticiones rechazadas quedan registradas en el log, para poder diagnosticarlas",
+      "El servidor y la terminal pasan a llevar la misma version, para que no queden desparejados"
+    ],
+    "windows": {
+      "fileName": "servidor-setup-1.1.5.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.5/servidor-setup-1.1.5.exe",
+      "sizeBytes": 144219692,
+      "sha256": "bec11f687a9c8cf24903a6190d2a8f3a2b8a29c18c25eb516318dcb48f9dddf3"
+    }
+  }
+}
