@@ -1,11 +1,13 @@
 {
   "latest": {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "releaseDate": "2026-08-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Correccion: el boton de buscar actualizaciones fallaba siempre con 'Failed to fetch' y no llegaba a consultar nada",
+      "Cuando una mesa pide la cuenta, ahora si llega el aviso al ERP: antes el marcador decia que la solicitud se habia enviado y aqui no aparecia nada",
+      "El aviso trae dos botones: COBRAR, que abre la cuenta de esa mesa en el POS, y REABRIR, para cuando el cliente decide seguir jugando",
+      "El aviso no se pierde al recargar la aplicacion: las mesas que estan esperando se vuelven a mostrar al entrar",
       "La terminal se actualiza sola: en Configuracion > Acerca de hay un boton para buscar versiones nuevas, que muestra los cambios y la instala",
       "Importacion de productos desde una plantilla de Excel: se descarga la plantilla, se llena y se sube. Si alguna fila no entra, se dice cual y por que",
       "Se puede elegir la impresora del ticket en cada equipo: al cobrar, el ticket sale directo por ella sin abrir el cuadro de impresion de Windows. Admite ticketeras termicas con corte de papel y cajon monedero",
@@ -17,10 +19,10 @@
       "La terminal y el servidor pasan a llevar la misma version, para que no queden desparejados"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.6.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.6/terminal-setup-1.1.6.exe",
-      "sizeBytes": 2247782,
-      "sha256": "282cd0bfbe0cbbcb7a39f69ec269a6b1193d200d3977980741775446ac376b1d"
+      "fileName": "terminal-setup-1.1.7.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.7/terminal-setup-1.1.7.exe",
+      "sizeBytes": 2250093,
+      "sha256": "68eed90f7ad049f155f06b9d5a1882266d31b2e24d2171adbfe415e247d0216c"
     }
   }
 }
