@@ -1,0 +1,25 @@
+{
+  "latest": {
+    "version": "1.1.5",
+    "releaseDate": "2026-08-03",
+    "mandatory": false,
+    "minSupportedVersion": "1.0.0",
+    "notes": [
+      "La terminal se actualiza sola: en Configuracion > Acerca de hay un boton para buscar versiones nuevas, que muestra los cambios y la instala",
+      "Importacion de productos desde una plantilla de Excel: se descarga la plantilla, se llena y se sube. Si alguna fila no entra, se dice cual y por que",
+      "Se puede elegir la impresora del ticket en cada equipo: al cobrar, el ticket sale directo por ella sin abrir el cuadro de impresion de Windows. Admite ticketeras termicas con corte de papel y cajon monedero",
+      "Los reportes se siguen mostrando en pantalla para leerlos o guardarlos en PDF",
+      "Usuarios: boton para editar, los inactivos quedan ocultos salvo que se pidan, y cada fila muestra el rol real (antes aparecia siempre admin)",
+      "La contrasena que asigna un administrador hay que cambiarla la primera vez que se entra",
+      "Al entrar al POS el panel lateral se recoge, para dejar mas espacio a la venta",
+      "Si una pantalla falla ya no se queda la ventana en blanco: se explica el motivo y el menu sigue disponible",
+      "La terminal y el servidor pasan a llevar la misma version, para que no queden desparejados"
+    ],
+    "windows": {
+      "fileName": "terminal-setup-1.1.5.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.5/terminal-setup-1.1.5.exe",
+      "sizeBytes": 2254671,
+      "sha256": "1cc4b5aa248aa6b16b673ffe4e073dea1e5f27d5586c6024e9266d08fc7c1945"
+    }
+  }
+}
