@@ -1,14 +1,6 @@
-# Billar Play — descargas
+# Distribución
 
-Instaladores de Billar Play. El código está en un repositorio privado; aquí
-solo se publican los programas ya compilados.
+Publicación de versiones para instalaciones ya existentes.
 
-| Aplicación | Manifiesto |
-|---|---|
-| Marcador de mesas | [`client.json`](client.json) |
-| Terminal del ERP | [`erp.json`](erp.json) |
-| Servidor del ERP | [`erp-server.json`](erp-server.json) |
-
-Cada versión se publica como release, con el instalador adjunto y el
-changelog. Las aplicaciones instaladas consultan su manifiesto y se
-actualizan solas.
+Cada versión se publica como release con su instalador adjunto. Los
+programas instalados consultan su archivo de versión y se actualizan solos.
