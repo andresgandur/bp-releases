@@ -1,28 +1,29 @@
 {
   "latest": {
-    "version": "1.1.7",
-    "releaseDate": "2026-08-03",
+    "version": "1.1.9",
+    "releaseDate": "2026-08-05",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Cuando una mesa pide la cuenta, ahora si llega el aviso al ERP: antes el marcador decia que la solicitud se habia enviado y aqui no aparecia nada",
-      "El aviso trae dos botones: COBRAR, que abre la cuenta de esa mesa en el POS, y REABRIR, para cuando el cliente decide seguir jugando",
-      "El aviso no se pierde al recargar la aplicacion: las mesas que estan esperando se vuelven a mostrar al entrar",
-      "La terminal se actualiza sola: en Configuracion > Acerca de hay un boton para buscar versiones nuevas, que muestra los cambios y la instala",
-      "Importacion de productos desde una plantilla de Excel: se descarga la plantilla, se llena y se sube. Si alguna fila no entra, se dice cual y por que",
-      "Se puede elegir la impresora del ticket en cada equipo: al cobrar, el ticket sale directo por ella sin abrir el cuadro de impresion de Windows. Admite ticketeras termicas con corte de papel y cajon monedero",
-      "Los reportes se siguen mostrando en pantalla para leerlos o guardarlos en PDF",
-      "Usuarios: boton para editar, los inactivos quedan ocultos salvo que se pidan, y cada fila muestra el rol real (antes aparecia siempre admin)",
-      "La contrasena que asigna un administrador hay que cambiarla la primera vez que se entra",
-      "Al entrar al POS el panel lateral se recoge, para dejar mas espacio a la venta",
-      "Si una pantalla falla ya no se queda la ventana en blanco: se explica el motivo y el menu sigue disponible",
-      "La terminal y el servidor pasan a llevar la misma version, para que no queden desparejados"
+      "Modo oscuro en todas las pantallas: se cambia con el sol o la luna del encabezado y se recuerda",
+      "Nueva pantalla POS 2: los productos, la lista de mesas y el cobro juntos, sin cambiar de pagina",
+      "La cuenta de una mesa muestra el tiempo jugado y su importe mientras sigue abierta, redondeando el minuto empezado, y ese monto ya entra en el total a cobrar",
+      "Cobro en efectivo: se escribe cuanto entrega el cliente y la aplicacion dice el cambio a devolver",
+      "Se puede elegir el cliente en la cuenta, para cobrar a credito",
+      "En el POS 2 cada mesa se puede iniciar, reservar, liberar, cerrar o transferir desde su propia fila, y las camaras de la mesa se ven en vivo desde la tarjeta de cobro",
+      "Solo se carga consumo a una mesa abierta; una mesa apagada dice Inactiva en vez de Libre, y una ya cerrada dice Por cobrar",
+      "Nueva pagina Mesas y tipos: nombre, tipo y activacion de cada mesa con un solo boton de guardar, y alta de tipos de mesa propios",
+      "Las tarifas se definen por tipo de mesa (Pool, 3 Bandas, Libres) y el tipo aparece en la factura del cliente",
+      "El servidor tambien se actualiza desde aqui: en Configuracion > Acerca de un boton consulta si hay version nueva, muestra los cambios y la instala; no deja hacerlo con mesas en juego, la caja abierta o cuentas sin cobrar",
+      "Borrado de los datos de ejemplo desde Configuracion: pide un PIN aparte, dice antes que se va a borrar y deja el sistema listo para los datos reales",
+      "Al cerrar la aplicacion se pide confirmacion, y el PDF de reportes y tickets se abre a pantalla completa para no confundirlo con la ventana del programa",
+      "La cuenta de administrador solo puede editarla ella misma, y el POS vuelve el cursor al buscador despues de agregar cada producto"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.7.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.7/terminal-setup-1.1.7.exe",
-      "sizeBytes": 2250093,
-      "sha256": "68eed90f7ad049f155f06b9d5a1882266d31b2e24d2171adbfe415e247d0216c"
+      "fileName": "terminal-setup-1.1.9.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.9/terminal-setup-1.1.9.exe",
+      "sizeBytes": 2259790,
+      "sha256": "37b57b6627ace114d5a467ae19593231558e4e49a612976f3b218b098f208b07"
     }
   }
 }
