@@ -1,24 +1,23 @@
 {
   "latest": {
-    "version": "1.1.7",
-    "releaseDate": "2026-08-03",
+    "version": "1.1.9",
+    "releaseDate": "2026-08-05",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "La solicitud de cierre de cuenta de una mesa ya se reparte a las terminales del ERP; antes solo llegaba a los paneles del protocolo anterior y el aviso se perdia",
-      "Se recuerda que mesas estan esperando cobro y se le informa a cada terminal al conectarse, para que recargar el ERP no haga desaparecer el aviso",
-      "Una mesa que pidio la cuenta se puede reabrir desde el ERP si el cliente decide seguir jugando",
-      "Importacion masiva de productos desde una plantilla de Excel, informando de cada fila que no se pudo cargar y del motivo",
-      "Usuarios: se puede cambiar el nombre de usuario, y la lista devuelve el rol real de cada uno (antes la terminal mostraba admin en todas las filas)",
-      "La contrasena asignada por un administrador obliga a personalizarla en el primer ingreso; el cambio queda en la auditoria",
-      "Las peticiones rechazadas quedan registradas en el log, para poder diagnosticarlas",
-      "El servidor y la terminal pasan a llevar la misma version, para que no queden desparejados"
+      "El servidor se actualiza solo cuando se le pide desde una terminal: descarga la version, comprueba que sea la publicada y se reinicia",
+      "Antes de empezar guarda una copia de la base de datos; si esa copia falla, la actualizacion no empieza",
+      "No se actualiza con mesas en juego, la caja abierta o cuentas sin cobrar: reiniciar en ese momento cortaria el servicio a todo el salon",
+      "Las tarifas se aplican por tipo de mesa, y los tipos de mesa se pueden crear y borrar (los de fabrica no se borran, ni ningun tipo que este en uso)",
+      "El consumo solo se carga a mesas abiertas, para que no queden ventas colgando de una mesa cerrada",
+      "El cambio del efectivo lo calcula y guarda el servidor con el ticket, no la pantalla que cobra",
+      "Borrado de los datos de ejemplo con PIN: respalda la base antes de tocar nada y conserva el usuario administrador, los roles, la licencia, la moneda y las mesas licenciadas"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.7.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.7/servidor-setup-1.1.7.exe",
-      "sizeBytes": 144221591,
-      "sha256": "26037d9787ca256d9f4df0b64af18d965d38bd87ea38cab43a90d0e698d839f3"
+      "fileName": "servidor-setup-1.1.9.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.9/servidor-setup-1.1.9.exe",
+      "sizeBytes": 164379345,
+      "sha256": "641688bcec849a89ad16786bc3574b4f24ba25934f81573d0ac4f9cb2e1404a6"
     }
   }
 }
