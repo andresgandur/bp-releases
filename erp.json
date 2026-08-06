@@ -1,29 +1,33 @@
 {
   "latest": {
-    "version": "1.1.9",
-    "releaseDate": "2026-08-05",
+    "version": "1.1.11",
+    "releaseDate": "2026-08-06",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Modo oscuro en todas las pantallas: se cambia con el sol o la luna del encabezado y se recuerda",
-      "Nueva pantalla POS 2: los productos, la lista de mesas y el cobro juntos, sin cambiar de pagina",
-      "La cuenta de una mesa muestra el tiempo jugado y su importe mientras sigue abierta, redondeando el minuto empezado, y ese monto ya entra en el total a cobrar",
-      "Cobro en efectivo: se escribe cuanto entrega el cliente y la aplicacion dice el cambio a devolver",
-      "Se puede elegir el cliente en la cuenta, para cobrar a credito",
-      "En el POS 2 cada mesa se puede iniciar, reservar, liberar, cerrar o transferir desde su propia fila, y las camaras de la mesa se ven en vivo desde la tarjeta de cobro",
-      "Solo se carga consumo a una mesa abierta; una mesa apagada dice Inactiva en vez de Libre, y una ya cerrada dice Por cobrar",
-      "Nueva pagina Mesas y tipos: nombre, tipo y activacion de cada mesa con un solo boton de guardar, y alta de tipos de mesa propios",
-      "Las tarifas se definen por tipo de mesa (Pool, 3 Bandas, Libres) y el tipo aparece en la factura del cliente",
-      "El servidor tambien se actualiza desde aqui: en Configuracion > Acerca de un boton consulta si hay version nueva, muestra los cambios y la instala; no deja hacerlo con mesas en juego, la caja abierta o cuentas sin cobrar",
-      "Borrado de los datos de ejemplo desde Configuracion: pide un PIN aparte, dice antes que se va a borrar y deja el sistema listo para los datos reales",
-      "Al cerrar la aplicacion se pide confirmacion, y el PDF de reportes y tickets se abre a pantalla completa para no confundirlo con la ventana del programa",
-      "La cuenta de administrador solo puede editarla ella misma, y el POS vuelve el cursor al buscador despues de agregar cada producto"
+      "Una sola pantalla de venta: el POS antiguo desaparece y queda el que junta mesas, catalogo y cobro en la misma pantalla. Los roles que tenian el POS viejo pasan al nuevo solos",
+      "Propina en la cuenta: se calcula en porcentaje (10% de fabrica), se cambia o se deja en cero desde la misma linea, y no paga impuesto. Sale en el ticket con su porcentaje",
+      "Nuevo reporte de Propinas, con filtro por fechas y por mesero, el reparto de lo que le toca a cada uno, y exportacion a CSV",
+      "El cobro se hace eligiendo la forma de pago (efectivo, tarjeta, mixto o credito): ya no hay un boton que cobre en efectivo de un toque, para que ninguna venta con tarjeta quede anotada como efectivo",
+      "Al cobrar se puede desmarcar la impresion del ticket, para cuando el cliente no lo quiere; la siguiente venta vuelve a imprimir",
+      "Vuelven al POS la bitacora de la cuenta (que se agrego y a que hora) y dividir cuenta (pasar parte del consumo a una cuenta nueva que se cobra aparte)",
+      "En la tarjeta de cobro se elige tambien el mesero, junto al cliente, y el cliente se busca escribiendo: nombre, documento o telefono",
+      "El tiempo de mesa se cobra de la hora de inicio a la de cierre, sin descuentos de ningun tipo",
+      "El tiempo de mesa puede ir exento de impuesto: en Configuracion > Impuestos se elige si tributa y con cual, que puede ser distinto del del consumo. Viene sin impuesto, asi que si antes se lo cobraba hay que marcarlo",
+      "El aviso de una mesa que pide la cuenta lleva al POS con esa cuenta abierta, se cierra al pulsar Cobrar y desaparece al cobrarla. En la tarjeta de la mesa estan los botones Cobrar y Reabrir",
+      "Campana de servicio: se apaga sola al abrir la mesa. Con la mesa en juego, la X solo quita el aviso de en medio -la mesa sigue pidiendo, con su campana parpadeando en la tarjeta- hasta que la atiendan y la apaguen desde la pantalla de la mesa",
+      "Los avisos ya no se ponen encima de los botones de cobro, y como mucho se apilan tres: el resto se resume, para que varias mesas a la vez no tapen la pantalla",
+      "Las solicitudes de servicio ya no se pierden al recargar la terminal",
+      "Corregido: la terminal podia quedarse sin recibir ningun aviso, sin que nada lo dijera, porque la conexion de tiempo real se quedaba con el token de sesion vencido. Diagnostico ahora avisa si esa conexion esta caida",
+      "Corregido el video de camaras: se veia una vez y al volver a abrirlo quedaba en negro. Ademas el visor reintenta solo y explica por que no hay imagen en vez de dejar la pantalla oscura",
+      "En Caja, los botones de ingreso, egreso y gasto llevan color propio: en modo oscuro el elegido y los demas eran del mismo color y no se distinguian",
+      "En la lista de mesas cada una muestra su consumo y su tiempo con iconos, y eliminar una tarifa pide confirmacion"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.9.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.9/terminal-setup-1.1.9.exe",
-      "sizeBytes": 2259790,
-      "sha256": "37b57b6627ace114d5a467ae19593231558e4e49a612976f3b218b098f208b07"
+      "fileName": "terminal-setup-1.1.11.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.11/terminal-setup-1.1.11.exe",
+      "sizeBytes": 2261637,
+      "sha256": "19c4cd2b160ced2c2130edb6dd1dd4245612cb364f7a2b87a855027962bb0ec2"
     }
   }
 }
