@@ -1,25 +1,17 @@
 {
   "latest": {
-    "version": "1.1.17",
-    "releaseDate": "2026-08-03",
+    "version": "1.1.18",
+    "releaseDate": "2026-08-06",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Las actualizaciones pasan a descargarse de un sitio nuevo, mas rapido y sin depender del servidor propio. Se sigue comprobando la huella del instalador antes de aplicarlo",
-      "Modo torneo para 3 Bandas y Libres con 2 jugadores: cronometro de tacada, faltas y control desde el celular del arbitro. Se activa en Configuracion > General y viene desactivado",
-      "Modo torneo: al encenderlo aparece un codigo QR; el celular lo escanea y desde ahi se configuran jugadores, banderas, meta, SETS, limite de entradas y segundos por tacada. Todo lo que se toca en el celular se ve al instante en la mesa",
-      "Modo torneo: barra de tiempo de colores por tacada. Con pantalla extendida ocupa todo el ancho abajo; con una sola pantalla va sobre el video del panel central",
-      "Modo torneo: la mesa muestra el cartel del encuentro con los jugadores y las reglas acordadas, y al terminar el resultado con el promedio general de toda la partida",
-      "Modo torneo: al cerrar la partida el arbitro recoge las firmas de los jugadores y la suya en el celular, y se genera un informe en PDF con el acta; los jugadores lo descargan con un codigo QR desde la pantalla de la mesa",
-      "Correccion: si la direccion del servidor se escribia sin http:// la mesa nunca conectaba, aunque el boton Probar conexion dijera que si. Ahora se completa sola y la prueba comprueba de verdad que responda el servidor del ERP",
-      "Correccion: al escribir el nombre de un jugador la aplicacion podia quedar en un estado inconsistente por un aviso interno mal ubicado",
-      "Se retiran los textos de ayuda que aparecian al dejar el puntero sobre los botones de la pantalla de juego: la aplicacion se usa en pantallas tactiles, donde no se ven"
+      "Sin novedades en el marcador respecto a la 1.1.17. Esta version acompana a la del ERP para que los numeros de las dos aplicaciones no se queden desparejados"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.17.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.17/marcador-setup-1.1.17.exe",
-      "sizeBytes": 187381455,
-      "sha256": "05a5716847798bb87e18574e154c8a76cf4d267ecd3c8dc17d7ef831f546a552"
+      "fileName": "marcador-setup-1.1.18.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.18/marcador-setup-1.1.18.exe",
+      "sizeBytes": 187381635,
+      "sha256": "c3431302822074ab3bd7f276c8de35190a21367f5c0f0d4d660d270f067e30d7"
     }
   }
 }
