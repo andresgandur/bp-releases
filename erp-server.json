@@ -1,23 +1,26 @@
 {
   "latest": {
-    "version": "1.1.9",
-    "releaseDate": "2026-08-05",
+    "version": "1.1.11",
+    "releaseDate": "2026-08-06",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El servidor se actualiza solo cuando se le pide desde una terminal: descarga la version, comprueba que sea la publicada y se reinicia",
-      "Antes de empezar guarda una copia de la base de datos; si esa copia falla, la actualizacion no empieza",
-      "No se actualiza con mesas en juego, la caja abierta o cuentas sin cobrar: reiniciar en ese momento cortaria el servicio a todo el salon",
-      "Las tarifas se aplican por tipo de mesa, y los tipos de mesa se pueden crear y borrar (los de fabrica no se borran, ni ningun tipo que este en uso)",
-      "El consumo solo se carga a mesas abiertas, para que no queden ventas colgando de una mesa cerrada",
-      "El cambio del efectivo lo calcula y guarda el servidor con el ticket, no la pantalla que cobra",
-      "Borrado de los datos de ejemplo con PIN: respalda la base antes de tocar nada y conserva el usuario administrador, los roles, la licencia, la moneda y las mesas licenciadas"
+      "Propina por cuenta: se guarda el porcentaje y su importe, no paga impuesto y viaja en el cobro y en el ticket. Reporte propio por rango de fechas, agrupado por mesero",
+      "El tiempo de mesa se cobra de inicio a cierre: se elimino el mecanismo de pausas, que restaba tiempo y nadie usaba",
+      "Cada linea de la cuenta lleva el impuesto que le toca: el tiempo de mesa puede ir exento (como viene de fabrica) o con un impuesto distinto del consumo. Las cuentas de mesa pasan a cobrar menos que antes salvo que se active esa opcion",
+      "El descuento de una cuenta se reparte entre sus lineas antes de calcular el impuesto de cada una, para que el resultado no dependa del orden en que se miren",
+      "Al cobrar una mesa se retira su solicitud de cobro; antes solo se retiraba si se reabria la mesa y el aviso quedaba pendiente en el servidor",
+      "El servidor recuerda que mesas estan pidiendo servicio, para que una terminal que entra o se recarga las vea, y distingue entre quitar el aviso (mesa en juego) y descartarlo (mesa libre)",
+      "El motor de video ya no se queda bloqueado por una instancia anterior que sobrevivio al cierre del servidor: se detecta y se cierra al arrancar. Era la causa de quedarse sin camaras hasta reiniciar el equipo",
+      "Las camaras se preparan cuando el motor esta listo de verdad, y se vuelven a preparar al pedir ver una: si el motor se habia caido, el video ya no queda muerto hasta reiniciar el servidor",
+      "Si dos pantallas se registran para la misma mesa, a la anterior se le cierra la conexion en vez de dejarla creyendose conectada sin recibir nada",
+      "El borrado de los datos de ejemplo repunta el impuesto del tiempo al que sobreviva, y el impuesto elegido para el tiempo no se puede eliminar mientras este en uso"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.9.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.9/servidor-setup-1.1.9.exe",
-      "sizeBytes": 164379345,
-      "sha256": "641688bcec849a89ad16786bc3574b4f24ba25934f81573d0ac4f9cb2e1404a6"
+      "fileName": "servidor-setup-1.1.11.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.11/servidor-setup-1.1.11.exe",
+      "sizeBytes": 175244868,
+      "sha256": "4b76e69cdfe11839844b4325d082992e367ce56c417285d1662d323715b5f630"
     }
   }
 }
