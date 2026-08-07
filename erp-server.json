@@ -1,26 +1,20 @@
 {
   "latest": {
-    "version": "1.1.11",
-    "releaseDate": "2026-08-06",
+    "version": "1.1.12",
+    "releaseDate": "2026-08-07",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Propina por cuenta: se guarda el porcentaje y su importe, no paga impuesto y viaja en el cobro y en el ticket. Reporte propio por rango de fechas, agrupado por mesero",
-      "El tiempo de mesa se cobra de inicio a cierre: se elimino el mecanismo de pausas, que restaba tiempo y nadie usaba",
-      "Cada linea de la cuenta lleva el impuesto que le toca: el tiempo de mesa puede ir exento (como viene de fabrica) o con un impuesto distinto del consumo. Las cuentas de mesa pasan a cobrar menos que antes salvo que se active esa opcion",
-      "El descuento de una cuenta se reparte entre sus lineas antes de calcular el impuesto de cada una, para que el resultado no dependa del orden en que se miren",
-      "Al cobrar una mesa se retira su solicitud de cobro; antes solo se retiraba si se reabria la mesa y el aviso quedaba pendiente en el servidor",
-      "El servidor recuerda que mesas estan pidiendo servicio, para que una terminal que entra o se recarga las vea, y distingue entre quitar el aviso (mesa en juego) y descartarlo (mesa libre)",
-      "El motor de video ya no se queda bloqueado por una instancia anterior que sobrevivio al cierre del servidor: se detecta y se cierra al arrancar. Era la causa de quedarse sin camaras hasta reiniciar el equipo",
-      "Las camaras se preparan cuando el motor esta listo de verdad, y se vuelven a preparar al pedir ver una: si el motor se habia caido, el video ya no queda muerto hasta reiniciar el servidor",
-      "Si dos pantallas se registran para la misma mesa, a la anterior se le cierra la conexion en vez de dejarla creyendose conectada sin recibir nada",
-      "El borrado de los datos de ejemplo repunta el impuesto del tiempo al que sobreviva, y el impuesto elegido para el tiempo no se puede eliminar mientras este en uso"
+      "El ticket incluye la hora de inicio y la de fin de la sesion de la mesa",
+      "Cuando una mesa pulsa FINALIZAR, el servidor le manda a su pantalla lo que se le cobraria -con descuento, impuestos y propina- calculado con el mismo codigo que cobra, para que las dos cifras no puedan separarse. No toca la cuenta: no la cierra ni consolida el tiempo",
+      "Los respaldos se pueden listar y restaurar desde la terminal. Restaurar exige el PIN y el negocio quieto, y guarda antes una copia del estado actual",
+      "La pagina de Mesas se retira de los roles que la tuvieran"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.11.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.11/servidor-setup-1.1.11.exe",
-      "sizeBytes": 175244868,
-      "sha256": "4b76e69cdfe11839844b4325d082992e367ce56c417285d1662d323715b5f630"
+      "fileName": "servidor-setup-1.1.12.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.12/servidor-setup-1.1.12.exe",
+      "sizeBytes": 175241148,
+      "sha256": "9d77f752b2e4f7d270229a57af8d17c8c0e6c158f449ab407895f6665a29bf63"
     }
   }
 }
