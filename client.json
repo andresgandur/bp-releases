@@ -1,17 +1,26 @@
 {
   "latest": {
-    "version": "1.1.18",
-    "releaseDate": "2026-08-06",
+    "version": "1.1.19",
+    "releaseDate": "2026-08-07",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Sin novedades en el marcador respecto a la 1.1.17. Esta version acompana a la del ERP para que los numeros de las dos aplicaciones no se queden desparejados"
+      "Buchacara: para devolver una bola mala hay un boton rojo en la cajonera, que solo aparece si hay alguna. Antes habia que tocar el titulo de las malas, que no parecia un boton",
+      "El mando del arbitro no pasa el turno en cada punto: se anota mientras el jugador siga en la mesa y el turno cambia al tocar la tarjeta del otro. Un toque en la tarjeta dormida solo la despierta, para no anotarle un punto al jugador equivocado",
+      "Corregido: el +1 del mando sumaba de a cinco. Cada vez que la pantalla de juego se volvia a montar quedaba un oyente de mas y la orden se aplicaba varias veces",
+      "Corregido: reconectar el mando devolvia el marcador a cero",
+      "El mando se puede instalar en el movil (anadir a la pantalla de inicio) y su pantalla de control cabe entera, ajustandose al tamano del dispositivo. En Android tiene ademas boton de pantalla completa",
+      "El mando estrena la barra de tiempo por segmentos de la mesa, el boton de iniciar/pausar mas grande, los puntos al doble y las tarjetas con el color de cada jugador; la del jugador que no esta en la mesa se apaga",
+      "Pulsar TORNEO con un torneo en marcha ya no lo apaga de golpe: pregunta si se quiere reconectar el mando -sale el mismo codigo, con el marcador intacto- o cancelarlo",
+      "El valor del tiempo redondea el minuto empezado, igual que el POS, y la caja que suma tiempo y consumo se llama SUBTOTAL: lo que se paga lleva ademas descuento, impuestos y propina",
+      "Al pulsar FINALIZAR, la pantalla muestra el desglose completo que va a cobrar el ERP",
+      "Si otro equipo se conecta con el mismo numero de mesa, esta pantalla lo dice y deja de reconectar en vez de pelearse con el otro"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.18.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.18/marcador-setup-1.1.18.exe",
-      "sizeBytes": 187381635,
-      "sha256": "c3431302822074ab3bd7f276c8de35190a21367f5c0f0d4d660d270f067e30d7"
+      "fileName": "marcador-setup-1.1.19.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.19/marcador-setup-1.1.19.exe",
+      "sizeBytes": 187387269,
+      "sha256": "c3ac38db5d4466aae0f9b41998c94fe8cad237d223eda4e97986259e3a534a78"
     }
   }
 }
