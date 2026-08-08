@@ -1,20 +1,19 @@
 {
   "latest": {
-    "version": "1.1.12",
-    "releaseDate": "2026-08-07",
+    "version": "1.1.13",
+    "releaseDate": "2026-08-08",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El ticket incluye la hora de inicio y la de fin de la sesion de la mesa",
-      "Cuando una mesa pulsa FINALIZAR, el servidor le manda a su pantalla lo que se le cobraria -con descuento, impuestos y propina- calculado con el mismo codigo que cobra, para que las dos cifras no puedan separarse. No toca la cuenta: no la cierra ni consolida el tiempo",
-      "Los respaldos se pueden listar y restaurar desde la terminal. Restaurar exige el PIN y el negocio quieto, y guarda antes una copia del estado actual",
-      "La pagina de Mesas se retira de los roles que la tuvieran"
+      "El motor de video sirve las camaras por una segunda via ademas de la actual. Es lo que permite ver las camaras H.265, que la via de siempre no admite. No se transcodifica nada",
+      "El servidor averigua solo en que formato transmite cada camara y le indica a la terminal por donde verla. Lo averigua una vez y lo recuerda; si la camara no contesta, no se queda insistiendo",
+      "El instalador abre en el firewall los puertos del video. Hasta ahora solo abria el del servidor, asi que ver una camara desde otra PC daba pantalla negra aunque todo lo demas funcionara. Si ya tenia el ERP instalado, vuelva a ejecutar el instalador para que los abra"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.12.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.12/servidor-setup-1.1.12.exe",
-      "sizeBytes": 175241148,
-      "sha256": "9d77f752b2e4f7d270229a57af8d17c8c0e6c158f449ab407895f6665a29bf63"
+      "fileName": "servidor-setup-1.1.13.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.13/servidor-setup-1.1.13.exe",
+      "sizeBytes": 175250777,
+      "sha256": "ca6ca62c1de04723be955904a7f770b3a441b3c41a878e688af1d2060d9fa50f"
     }
   }
 }
