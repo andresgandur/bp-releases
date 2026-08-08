@@ -1,22 +1,20 @@
 {
   "latest": {
-    "version": "1.1.12",
-    "releaseDate": "2026-08-07",
+    "version": "1.1.13",
+    "releaseDate": "2026-08-08",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El ticket muestra la hora de inicio y la de fin de la mesa: el importe del tiempo es la mitad de la cuenta y hasta ahora solo se veian los minutos",
-      "Cuando el jugador pulsa FINALIZAR en su mesa, la pantalla le muestra lo mismo que va a cobrar el POS: tiempo, consumo, descuento, impuestos, propina y total",
-      "La pagina de Mesas desaparece: abrir, cerrar, reservar y transferir se hace desde el POS, y el nombre y el tipo desde Mesas y tipos. Los roles que la tuvieran se ajustan solos",
-      "Respaldos de la base en Configuracion: se ven los ultimos cinco con su fecha y se puede volver a uno. Restaurar pide el PIN, exige el negocio quieto y guarda antes una copia de lo que hay",
-      "La primera vez, el campo Servidor propone la IP de este equipo en vez de 127.0.0.1, y se escribe sin http:// (por ejemplo 192.168.0.10:3000). Si no se puede averiguar la IP, queda en blanco para escribirla",
-      "La propina tambien sale en el ticket impreso desde el navegador o en PDF, no solo en el de ticketera"
+      "Las camaras y grabadores que transmiten en H.265 ya se ven en Camaras. Antes quedaban en negro: el camino por el que viajaba el video no admite ese formato. No se convierte nada, se cambia el camino, asi que la imagen llega tal cual sale de la camara",
+      "Cada camara va por donde le corresponde sin configurar nada, y se pueden ver una H.264 y una H.265 desde la misma terminal",
+      "Si el equipo desde el que se mira no puede con H.265, el visor lo dice y explica que hacer, en vez de quedarse en negro reintentando sin parar",
+      "El mensaje de camara sin imagen ya no pide que transmita en H.264, porque dejo de ser cierto"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.12.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.12/terminal-setup-1.1.12.exe",
-      "sizeBytes": 2267589,
-      "sha256": "c9780444c5118ed6162d22e4e1632b6e19cfe6976bf3d1dc5bc9db10963d7cc0"
+      "fileName": "terminal-setup-1.1.13.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.13/terminal-setup-1.1.13.exe",
+      "sizeBytes": 2411609,
+      "sha256": "205f0d718d24b03420db36fbdc56249bbbfe43589d1db3ad7257498ee94c7aac"
     }
   }
 }
