@@ -1,19 +1,22 @@
 {
   "latest": {
-    "version": "1.1.13",
-    "releaseDate": "2026-08-08",
+    "version": "1.1.15",
+    "releaseDate": "2026-08-10",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El motor de video sirve las camaras por una segunda via ademas de la actual. Es lo que permite ver las camaras H.265, que la via de siempre no admite. No se transcodifica nada",
-      "El servidor averigua solo en que formato transmite cada camara y le indica a la terminal por donde verla. Lo averigua una vez y lo recuerda; si la camara no contesta, no se queda insistiendo",
-      "El instalador abre en el firewall los puertos del video. Hasta ahora solo abria el del servidor, asi que ver una camara desde otra PC daba pantalla negra aunque todo lo demas funcionara. Si ya tenia el ERP instalado, vuelva a ejecutar el instalador para que los abra"
+      "El servidor lleva ffmpeg y convierte una camara H.265 a H.264 cuando el equipo desde el que se mira no puede decodificarla. Es el ultimo recurso: si el equipo puede, no se convierte nada. La conversion usa la tarjeta grafica si la hay y se apaga sola en cuanto nadie mira esa camara",
+      "El instalador crece unos 90 MB por llevar ffmpeg",
+      "Atiende el buscador del Dashboard sobre productos, ventas y clientes. La base gana indices preparados para buscar por un trozo de texto en cualquier posicion, que es como se busca de verdad: sin ellos cada tecla recorreria las tablas enteras",
+      "Los indicadores del Dashboard aceptan un rango de fechas. Lo que no depende del tiempo -mesas activas, stock bajo, turno de caja- sigue siendo el estado de ahora, porque aplicarle un periodo no significaria nada",
+      "Las ventas guardan un nombre para las directas ('Sr de la butaca 4') y se pueden listar las que quedaron sin cobrar y las ultimas cobradas, para reimprimir su ticket",
+      "Al actualizar se agrega una columna a las ventas y los indices nuevos. No se pierde nada de lo que ya hay"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.13.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.13/servidor-setup-1.1.13.exe",
-      "sizeBytes": 175250777,
-      "sha256": "ca6ca62c1de04723be955904a7f770b3a441b3c41a878e688af1d2060d9fa50f"
+      "fileName": "servidor-setup-1.1.15.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.15/servidor-setup-1.1.15.exe",
+      "sizeBytes": 206329423,
+      "sha256": "3c339fea00b16100f43c6eda0a3e6d4a6913275477606de01b3423f3f8048019"
     }
   }
 }
