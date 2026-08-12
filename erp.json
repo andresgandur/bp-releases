@@ -1,25 +1,21 @@
 {
   "latest": {
-    "version": "1.1.15",
-    "releaseDate": "2026-08-10",
+    "version": "1.1.20",
+    "releaseDate": "2026-08-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Las camaras H.265 se ven tambien en equipos sin decodificador para ese formato: el servidor las convierte y la terminal las recibe como cualquier otra. Donde el equipo si puede con H.265 no se convierte nada y la imagen llega tal cual sale de la camara",
-      "Buscador en el Dashboard: encuentra productos, ventas y clientes a la vez, o solo lo que se elija. Al pulsar un resultado lleva a su modulo con la ficha ya senalada, sin tener que buscarla otra vez",
-      "Una venta se busca por su numero, por el nombre que se le puso o por el cliente. Si sigue abierta, el resultado la retoma en el POS; si ya se cobro, abre el reporte del dia en que se cobro",
-      "El Dashboard tiene filtro de fecha: Hoy, Ayer, ultimos 7, 30, 60 o 90 dias, o un rango a mano. Todas las cifras y los productos mas vendidos siguen al periodo elegido",
-      "Ventas directas: la venta de mostrador ahora se llama asi y se le puede poner un nombre, como 'Sr de la butaca 4', para reconocerla",
-      "Boton Ventas pendientes en el POS, con el numero de las que estan sin cobrar. Muestra el nombre, cuanto lleva abierta, cuantos productos lleva y el total, y con Reanudar se vuelve a ella para seguir agregando o para cobrarla",
-      "Menu de tres puntos en el POS, junto a la camara, con Reimprimir el ultimo ticket -para cuando la impresora falla- y Ventas recientes, que lista las ultimas veinte y permite reimprimir cualquiera",
-      "Calculadora en la barra superior, al lado de la campana. Funciona tambien con el teclado y copia el resultado",
-      "Corregido: en el Dashboard, las compras sumaban todo el historial mientras las ventas eran solo del dia, asi que comparar las dos cifras enganaba"
+      "Mesas adicionales: se pueden anadir mesas que no cubre la licencia -cartas, tejo, rana- desde Mesas. No consumen cupo",
+      "Categorias de mesa: Billar viene creada y agrupa las mesas de la licencia; se pueden anadir otras, ordenarlas y renombrarlas. Billar va siempre primera y no se puede repetir, borrar ni usar para mesas adicionales",
+      "El POS agrupa las mesas en pestanas por categoria, debajo del boton de Ventas pendientes. Se quito el titulo 'Mesas', que ya no hacia falta",
+      "El texto de las pestanas se encoge solo lo justo para que todas quepan en una sola fila, sea cual sea el ancho que tenga la columna",
+      "Las mesas en juego se distinguen de un vistazo: borde ambar y fondo suave, frente al gris de las libres"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.15.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.15/terminal-setup-1.1.15.exe",
-      "sizeBytes": 2416181,
-      "sha256": "5d157ac72817e0ac0128a978919f1197e7096504d977ca87d5074d58aec1c75e"
+      "fileName": "terminal-setup-1.1.20.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.20/terminal-setup-1.1.20.exe",
+      "sizeBytes": 2419230,
+      "sha256": "0d8ac7a569afdee1d7b28e39e147942e5929135b52094138625c450f28225bdc"
     }
   }
 }
