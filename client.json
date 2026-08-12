@@ -1,22 +1,19 @@
 {
   "latest": {
-    "version": "1.1.20",
-    "releaseDate": "2026-08-08",
+    "version": "1.1.21",
+    "releaseDate": "2026-08-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Las camaras y grabadores que transmiten en H.265 ya se ven. Antes quedaban en negro, porque el camino por el que viajaba el video en vivo no admite ese formato. No se convierte nada: se cambia el camino, asi que la imagen llega tal cual sale de la camara y el equipo no trabaja de mas",
-      "El tiempo de retardo y la repeticion tambien funcionan con camaras H.265",
-      "No hay nada que configurar: la aplicacion reconoce sola el formato de cada camara. Se puede tener una en H.264 y otra en H.265 al mismo tiempo, cada una por el camino que le corresponde",
-      "El vivo de una camara H.265 llega con algo menos de un segundo de retraso. El de una H.264 sigue siendo igual de inmediato que siempre",
-      "Si la camara solo entrega H.265 y el equipo no puede con ese formato, se usa el substream de la camara si esta configurado y, como ultimo recurso, se convierte con la tarjeta grafica",
-      "Corregido: al pasar del vivo al retardo, o al reves, el motor de video se reconfiguraba dos veces seguidas en vez de una"
+      "El video EN VIVO ya nunca lleva sonido, ni en directo ni con el tiempo de retardo. Se ve en la misma sala donde esta la camara, asi que sacar su audio solo producia eco",
+      "El audio se oye al ver la REPETICION, si la camara tiene microfono, y viaja en el clip que el jugador descarga por QR. El ajuste pasa a llamarse \"Audio en la repeticion\", que es lo que hace de verdad",
+      "Corregido: una direccion de camara escrita con RTSP:// en mayusculas dejaba la camara sin imagen. El motor de video solo acepta el esquema en minusculas; ahora se corrige solo"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.20.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.20/marcador-setup-1.1.20.exe",
-      "sizeBytes": 187391295,
-      "sha256": "1917f129b631e7eb4fb28edac53f6a3ce3799e06cd3bd8236262dc7f91624498"
+      "fileName": "marcador-setup-1.1.21.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.21/marcador-setup-1.1.21.exe",
+      "sizeBytes": 187391861,
+      "sha256": "fdc3808732a07b4c8693254ffe0032259873ec536b880b904a5acf63cb3d9e44"
     }
   }
 }
