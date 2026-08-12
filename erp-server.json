@@ -1,22 +1,21 @@
 {
   "latest": {
-    "version": "1.1.15",
-    "releaseDate": "2026-08-10",
+    "version": "1.1.20",
+    "releaseDate": "2026-08-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El servidor lleva ffmpeg y convierte una camara H.265 a H.264 cuando el equipo desde el que se mira no puede decodificarla. Es el ultimo recurso: si el equipo puede, no se convierte nada. La conversion usa la tarjeta grafica si la hay y se apaga sola en cuanto nadie mira esa camara",
-      "El instalador crece unos 90 MB por llevar ffmpeg",
-      "Atiende el buscador del Dashboard sobre productos, ventas y clientes. La base gana indices preparados para buscar por un trozo de texto en cualquier posicion, que es como se busca de verdad: sin ellos cada tecla recorreria las tablas enteras",
-      "Los indicadores del Dashboard aceptan un rango de fechas. Lo que no depende del tiempo -mesas activas, stock bajo, turno de caja- sigue siendo el estado de ahora, porque aplicarle un periodo no significaria nada",
-      "Las ventas guardan un nombre para las directas ('Sr de la butaca 4') y se pueden listar las que quedaron sin cobrar y las ultimas cobradas, para reimprimir su ticket",
-      "Al actualizar se agrega una columna a las ventas y los indices nuevos. No se pierde nada de lo que ya hay"
+      "Guarda las categorias de mesa y las mesas adicionales que no cubre la licencia",
+      "Las mesas adicionales viven en su propio rango, de modo que la validacion mensual de la licencia ya no puede apagarlas: esa comprobacion desactiva lo que excede el cupo contratado",
+      "No deja crear dos categorias con el mismo nombre, ni otra llamada Billar, ni mesas adicionales dentro de Billar: esas son las de la licencia",
+      "Una categoria con mesas no se borra, y una mesa adicional con ventas tampoco: es historial del negocio",
+      "Al actualizar, las mesas que ya existen quedan en la categoria Billar. No hay que tocar nada"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.15.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.15/servidor-setup-1.1.15.exe",
-      "sizeBytes": 206329423,
-      "sha256": "3c339fea00b16100f43c6eda0a3e6d4a6913275477606de01b3423f3f8048019"
+      "fileName": "servidor-setup-1.1.20.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.20/servidor-setup-1.1.20.exe",
+      "sizeBytes": 216922390,
+      "sha256": "92c6fbb69359ac0195527ff9d1c57201018c89dfdec677f8ea334aaab04823b4"
     }
   }
 }
