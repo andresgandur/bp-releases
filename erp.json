@@ -1,21 +1,24 @@
 {
   "latest": {
-    "version": "1.1.20",
-    "releaseDate": "2026-08-12",
+    "version": "1.1.21",
+    "releaseDate": "2026-08-13",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Mesas adicionales: se pueden anadir mesas que no cubre la licencia -cartas, tejo, rana- desde Mesas. No consumen cupo",
-      "Categorias de mesa: Billar viene creada y agrupa las mesas de la licencia; se pueden anadir otras, ordenarlas y renombrarlas. Billar va siempre primera y no se puede repetir, borrar ni usar para mesas adicionales",
-      "El POS agrupa las mesas en pestanas por categoria, debajo del boton de Ventas pendientes. Se quito el titulo 'Mesas', que ya no hacia falta",
-      "El texto de las pestanas se encoge solo lo justo para que todas quepan en una sola fila, sea cual sea el ancho que tenga la columna",
-      "Las mesas en juego se distinguen de un vistazo: borde ambar y fondo suave, frente al gris de las libres"
+      "Las mesas Por cobrar tienen ahora un boton para REABRIRLAS, al lado de Cobrar. Se usa cuando se cerro por error o el cliente sigue jugando: la cuenta se conserva y el tiempo sigue contando desde que empezo",
+      "Al pulsar un producto sobre una mesa que no admite consumo, el POS ya no deja que salte el error del servidor: si esta cerrada para cobro ofrece reabrirla y sigue con el producto, y si esta libre o reservada lo dice antes de intentarlo",
+      "En Mesas y tipos, cada categoria y cada tipo de mesa tienen ahora un check de Cobra tiempo. Apagado, a sus mesas solo se les cobra el consumo: la mesa se presta y se paga lo que se toma",
+      "Los dos interruptores se suman: basta con que uno diga que no para que no se cobre el tiempo",
+      "Apagar cualquiera de los dos pide confirmacion y dice a cuantas mesas afecta: deja de facturarse un concepto entero",
+      "Billar y los tipos del sistema tambien lo admiten, aunque Billar siga sin poder renombrarse ni borrarse: como cobra su salon es del negocio",
+      "En el POS, una mesa que no cobra el tiempo ya no muestra el reloj ni suma tiempo al total: para esa mesa ese concepto no existe",
+      "Las categorias y los tipos nuevos cobran el tiempo salvo que se indique lo contrario al crearlos"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.20.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.20/terminal-setup-1.1.20.exe",
-      "sizeBytes": 2419230,
-      "sha256": "0d8ac7a569afdee1d7b28e39e147942e5929135b52094138625c450f28225bdc"
+      "fileName": "terminal-setup-1.1.21.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.21/terminal-setup-1.1.21.exe",
+      "sizeBytes": 2423604,
+      "sha256": "ac50eb815bade5fb5124d17f173f1fcee24a866e785249b5b73e39da7b882702"
     }
   }
 }
