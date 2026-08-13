@@ -1,21 +1,27 @@
 {
   "latest": {
-    "version": "1.1.20",
-    "releaseDate": "2026-08-12",
+    "version": "1.1.21",
+    "releaseDate": "2026-08-13",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Guarda las categorias de mesa y las mesas adicionales que no cubre la licencia",
-      "Las mesas adicionales viven en su propio rango, de modo que la validacion mensual de la licencia ya no puede apagarlas: esa comprobacion desactiva lo que excede el cupo contratado",
-      "No deja crear dos categorias con el mismo nombre, ni otra llamada Billar, ni mesas adicionales dentro de Billar: esas son las de la licencia",
-      "Una categoria con mesas no se borra, y una mesa adicional con ventas tampoco: es historial del negocio",
-      "Al actualizar, las mesas que ya existen quedan en la categoria Billar. No hay que tocar nada"
+      "Una mesa cerrada para cobro se puede REABRIR: vuelve a estar en juego con su cuenta. Antes no habia salida, y para cargarle algo mas tocaba cobrarla y volver a abrirla, con lo que el tiempo empezaba de cero y la cuenta se partia en dos",
+      "Reabrir reanuda la misma sesion, asi que conserva la hora de inicio: el tiempo se sigue contando desde que llego el cliente y al cerrarla otra vez sale completo, sin duplicar ni perder minutos",
+      "Al rechazar un producto, el aviso ahora distingue si la mesa esta cerrada para cobro o si esta libre: son problemas distintos con salidas distintas",
+      "El cobro del tiempo de juego se puede apagar por CATEGORIA de mesa y por TIPO de mesa: a esas mesas solo se les cobra el consumo. Es lo habitual en cartas, domino o rana, donde la mesa se presta",
+      "Basta con que uno de los dos lo apague para que no se cobre. Lo que falta si cobra: una mesa sin categoria o sin tipo factura el tiempo, como siempre",
+      "Al actualizar no cambia nada: todas las categorias y tipos que ya existen siguen cobrando el tiempo. Apagarlo es una decision del negocio y se hace a mano",
+      "Con el tiempo apagado no se carga en ningun punto: ni al cerrar la mesa para cobro, ni al pagar, ni en el resumen que ve el jugador al pulsar FINALIZAR, ni como valor por minuto en la pantalla de la mesa",
+      "Si se apaga con la mesa ya cerrada para cobro, la linea de tiempo que quedo puesta se retira antes de cobrarla",
+      "Los minutos jugados se siguen guardando aunque no se facturen: la mesa estuvo ocupada y eso es lo que dice cuanto se usa",
+      "Manda a la pantalla de cada mesa el desglose de su consumo: que producto, cuantos, a que precio y a que hora se pidio. Se actualiza sola cada vez que el POS le carga o le quita algo",
+      "Cada mesa recibe unicamente su propia cuenta, y el tiempo de juego no entra en ese desglose: en esa pantalla ya tiene su propio recuadro"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.20.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.20/servidor-setup-1.1.20.exe",
-      "sizeBytes": 216922390,
-      "sha256": "92c6fbb69359ac0195527ff9d1c57201018c89dfdec677f8ea334aaab04823b4"
+      "fileName": "servidor-setup-1.1.21.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.21/servidor-setup-1.1.21.exe",
+      "sizeBytes": 232795475,
+      "sha256": "d28b0a0b9c85357556e70a55d405757d4c0a48a403038642f3cc45000c674b22"
     }
   }
 }
