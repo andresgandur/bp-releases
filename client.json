@@ -1,19 +1,21 @@
 {
   "latest": {
-    "version": "1.1.21",
-    "releaseDate": "2026-08-12",
+    "version": "1.1.22",
+    "releaseDate": "2026-08-13",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El video EN VIVO ya nunca lleva sonido, ni en directo ni con el tiempo de retardo. Se ve en la misma sala donde esta la camara, asi que sacar su audio solo producia eco",
-      "El audio se oye al ver la REPETICION, si la camara tiene microfono, y viaja en el clip que el jugador descarga por QR. El ajuste pasa a llamarse \"Audio en la repeticion\", que es lo que hace de verdad",
-      "Corregido: una direccion de camara escrita con RTSP:// en mayusculas dejaba la camara sin imagen. El motor de video solo acepta el esquema en minusculas; ahora se corrige solo"
+      "Al pulsar la cifra de CONSUMO se abre el detalle: que se ha pedido, cuantos, a que precio, a que hora y cuanto suma. Antes solo se veia el total y no habia como comprobar de donde salia",
+      "La lista se actualiza sola mientras la mesa juega, segun el POS va cargando",
+      "Es de solo lectura: desde la mesa se mira, no se corrige. Quitar o cambiar lineas sigue siendo del POS, donde queda registrado quien lo hizo",
+      "Se avisa de que esa cifra no es la cuenta final: no incluye el tiempo de mesa ni los impuestos",
+      "Solo aparece con el ERP, que es quien manda el detalle. Con otro servidor la cifra se muestra igual, pero no se puede pulsar"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.21.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.21/marcador-setup-1.1.21.exe",
-      "sizeBytes": 187391861,
-      "sha256": "fdc3808732a07b4c8693254ffe0032259873ec536b880b904a5acf63cb3d9e44"
+      "fileName": "marcador-setup-1.1.22.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.22/marcador-setup-1.1.22.exe",
+      "sizeBytes": 187392965,
+      "sha256": "a72d90bca7bdd07406af04cf2f37ce007a1e592738fd5dc3c845a1326fb2d875"
     }
   }
 }
