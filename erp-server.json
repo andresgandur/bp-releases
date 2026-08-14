@@ -1,27 +1,20 @@
 {
   "latest": {
-    "version": "1.1.21",
-    "releaseDate": "2026-08-13",
+    "version": "1.1.22",
+    "releaseDate": "2026-08-14",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Una mesa cerrada para cobro se puede REABRIR: vuelve a estar en juego con su cuenta. Antes no habia salida, y para cargarle algo mas tocaba cobrarla y volver a abrirla, con lo que el tiempo empezaba de cero y la cuenta se partia en dos",
-      "Reabrir reanuda la misma sesion, asi que conserva la hora de inicio: el tiempo se sigue contando desde que llego el cliente y al cerrarla otra vez sale completo, sin duplicar ni perder minutos",
-      "Al rechazar un producto, el aviso ahora distingue si la mesa esta cerrada para cobro o si esta libre: son problemas distintos con salidas distintas",
-      "El cobro del tiempo de juego se puede apagar por CATEGORIA de mesa y por TIPO de mesa: a esas mesas solo se les cobra el consumo. Es lo habitual en cartas, domino o rana, donde la mesa se presta",
-      "Basta con que uno de los dos lo apague para que no se cobre. Lo que falta si cobra: una mesa sin categoria o sin tipo factura el tiempo, como siempre",
-      "Al actualizar no cambia nada: todas las categorias y tipos que ya existen siguen cobrando el tiempo. Apagarlo es una decision del negocio y se hace a mano",
-      "Con el tiempo apagado no se carga en ningun punto: ni al cerrar la mesa para cobro, ni al pagar, ni en el resumen que ve el jugador al pulsar FINALIZAR, ni como valor por minuto en la pantalla de la mesa",
-      "Si se apaga con la mesa ya cerrada para cobro, la linea de tiempo que quedo puesta se retira antes de cobrarla",
-      "Los minutos jugados se siguen guardando aunque no se facturen: la mesa estuvo ocupada y eso es lo que dice cuanto se usa",
-      "Manda a la pantalla de cada mesa el desglose de su consumo: que producto, cuantos, a que precio y a que hora se pidio. Se actualiza sola cada vez que el POS le carga o le quita algo",
-      "Cada mesa recibe unicamente su propia cuenta, y el tiempo de juego no entra en ese desglose: en esa pantalla ya tiene su propio recuadro"
+      "Nuevo reporte de cierre de turno de caja, con las ventas por forma de pago, los movimientos y el consolidado de lo vendido",
+      "El efectivo esperado del reporte es el mismo que exige el arqueo: sale del mismo calculo, no de una suma aparte",
+      "Lo vendido se asocia al turno por el COBRO y no por la fecha de la cuenta: una cuenta abierta en un turno y cobrada en el siguiente pertenece al turno en que se cobro",
+      "El ticket incluye el cliente de la venta -nombre y documento- para que una venta a credito quede respaldada en el papel"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.21.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.21/servidor-setup-1.1.21.exe",
-      "sizeBytes": 232795475,
-      "sha256": "d28b0a0b9c85357556e70a55d405757d4c0a48a403038642f3cc45000c674b22"
+      "fileName": "servidor-setup-1.1.22.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.22/servidor-setup-1.1.22.exe",
+      "sizeBytes": 232793350,
+      "sha256": "ce6d508ef3c1daa648b08080898ef45e8024fbb856bca1041b1a6627f7b84755"
     }
   }
 }
