@@ -1,24 +1,31 @@
 {
   "latest": {
-    "version": "1.1.21",
-    "releaseDate": "2026-08-13",
+    "version": "1.1.22",
+    "releaseDate": "2026-08-14",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Las mesas Por cobrar tienen ahora un boton para REABRIRLAS, al lado de Cobrar. Se usa cuando se cerro por error o el cliente sigue jugando: la cuenta se conserva y el tiempo sigue contando desde que empezo",
-      "Al pulsar un producto sobre una mesa que no admite consumo, el POS ya no deja que salte el error del servidor: si esta cerrada para cobro ofrece reabrirla y sigue con el producto, y si esta libre o reservada lo dice antes de intentarlo",
-      "En Mesas y tipos, cada categoria y cada tipo de mesa tienen ahora un check de Cobra tiempo. Apagado, a sus mesas solo se les cobra el consumo: la mesa se presta y se paga lo que se toma",
-      "Los dos interruptores se suman: basta con que uno diga que no para que no se cobre el tiempo",
-      "Apagar cualquiera de los dos pide confirmacion y dice a cuantas mesas afecta: deja de facturarse un concepto entero",
-      "Billar y los tipos del sistema tambien lo admiten, aunque Billar siga sin poder renombrarse ni borrarse: como cobra su salon es del negocio",
-      "En el POS, una mesa que no cobra el tiempo ya no muestra el reloj ni suma tiempo al total: para esa mesa ese concepto no existe",
-      "Las categorias y los tipos nuevos cobran el tiempo salvo que se indique lo contrario al crearlos"
+      "Al cerrar la caja se imprime el reporte del turno. La casilla viene marcada: sale por la impresora. Si se quita, se abre para verlo en pantalla o guardarlo en PDF",
+      "El reporte trae el numero de turno, el cajero, la apertura y el cierre, el fondo inicial, las ventas por forma de pago -efectivo, tarjeta, credito-, los ingresos, egresos y gastos, y el arqueo con su cuenta a la vista y la diferencia",
+      "Debajo va el detalle: cada movimiento con su hora, tipo, motivo e importe, y el consolidado de productos vendidos con cantidad y total. El tiempo de mesa va en su propia linea, que no se cuenta por unidades",
+      "Si la caja se cierra pero el reporte no se puede imprimir, se avisa con el numero de turno para reimprimirlo: el cierre ya quedo guardado",
+      "El detalle del ticket sale en cuatro columnas con encabezado -Producto, Cant., Vr Unit, Vr Total- y cada producto ocupa un solo renglon: el nombre se recorta a lo que cabe. Antes cada producto usaba dos lineas y una cuenta de diez articulos salia en treinta renglones",
+      "Los anchos se miden sobre los importes de cada ticket, asi que las cifras nunca se parten ni quedan huecos enormes. En rollo de 58 mm con importes muy grandes se retira el precio unitario -el unico dato deducible- antes que dejar que la impresora corte la fila",
+      "Las formas de pago salen con su nombre de verdad: Efectivo, Tarjeta, Mixto y Credito. El ticket imprimia el codigo en crudo, y una venta a credito aparecia como cuenta",
+      "Pagando en efectivo justo, el ticket ya no repite el importe del total: basta con decir que se pago en efectivo. El cambio aparece solo cuando lo hay, con lo recibido al lado para saber de donde sale",
+      "Con pago dividido si se imprime cuanto se pago con cada forma, que es lo que cuadra con el total",
+      "Si la venta tiene cliente, su nombre y documento salen debajo del numero de ticket. En una venta a credito el ticket es el documento de la deuda",
+      "El telefono y el NIT salen etiquetados: Tel: y NIT:. No se duplica la etiqueta si ya viene escrita en Configuracion",
+      "Las horas del ticket van en formato de 12 horas con AM y PM",
+      "El ticket ya no repite la fecha junto al numero: aparece una sola vez, como Fin del juego en las mesas y como Fecha en las ventas directas",
+      "Arriba va el nombre del negocio, y Billar Play si no se ha configurado ninguno. Al pie se firma con www.billarplay.com",
+      "El ticket en PDF y el que sale por la impresora son AHORA EL MISMO. Estaban maquetados por separado y habian derivado: el PDF no listaba los pagos ni el cambio, mostraba descuento e impuestos aunque fueran cero y no traia el precio unitario"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.21.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.21/terminal-setup-1.1.21.exe",
-      "sizeBytes": 2423604,
-      "sha256": "ac50eb815bade5fb5124d17f173f1fcee24a866e785249b5b73e39da7b882702"
+      "fileName": "terminal-setup-1.1.22.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.22/terminal-setup-1.1.22.exe",
+      "sizeBytes": 2422300,
+      "sha256": "a2995d1ba4aebeb25ee44c62c7cb23a933ff40f386add290807751ab755bc52d"
     }
   }
 }
