@@ -1,31 +1,27 @@
 {
   "latest": {
-    "version": "1.1.22",
-    "releaseDate": "2026-08-14",
+    "version": "1.1.23",
+    "releaseDate": "2026-08-15",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Al cerrar la caja se imprime el reporte del turno. La casilla viene marcada: sale por la impresora. Si se quita, se abre para verlo en pantalla o guardarlo en PDF",
-      "El reporte trae el numero de turno, el cajero, la apertura y el cierre, el fondo inicial, las ventas por forma de pago -efectivo, tarjeta, credito-, los ingresos, egresos y gastos, y el arqueo con su cuenta a la vista y la diferencia",
-      "Debajo va el detalle: cada movimiento con su hora, tipo, motivo e importe, y el consolidado de productos vendidos con cantidad y total. El tiempo de mesa va en su propia linea, que no se cuenta por unidades",
-      "Si la caja se cierra pero el reporte no se puede imprimir, se avisa con el numero de turno para reimprimirlo: el cierre ya quedo guardado",
-      "El detalle del ticket sale en cuatro columnas con encabezado -Producto, Cant., Vr Unit, Vr Total- y cada producto ocupa un solo renglon: el nombre se recorta a lo que cabe. Antes cada producto usaba dos lineas y una cuenta de diez articulos salia en treinta renglones",
-      "Los anchos se miden sobre los importes de cada ticket, asi que las cifras nunca se parten ni quedan huecos enormes. En rollo de 58 mm con importes muy grandes se retira el precio unitario -el unico dato deducible- antes que dejar que la impresora corte la fila",
-      "Las formas de pago salen con su nombre de verdad: Efectivo, Tarjeta, Mixto y Credito. El ticket imprimia el codigo en crudo, y una venta a credito aparecia como cuenta",
-      "Pagando en efectivo justo, el ticket ya no repite el importe del total: basta con decir que se pago en efectivo. El cambio aparece solo cuando lo hay, con lo recibido al lado para saber de donde sale",
-      "Con pago dividido si se imprime cuanto se pago con cada forma, que es lo que cuadra con el total",
-      "Si la venta tiene cliente, su nombre y documento salen debajo del numero de ticket. En una venta a credito el ticket es el documento de la deuda",
-      "El telefono y el NIT salen etiquetados: Tel: y NIT:. No se duplica la etiqueta si ya viene escrita en Configuracion",
-      "Las horas del ticket van en formato de 12 horas con AM y PM",
-      "El ticket ya no repite la fecha junto al numero: aparece una sola vez, como Fin del juego en las mesas y como Fecha en las ventas directas",
-      "Arriba va el nombre del negocio, y Billar Play si no se ha configurado ninguno. Al pie se firma con www.billarplay.com",
-      "El ticket en PDF y el que sale por la impresora son AHORA EL MISMO. Estaban maquetados por separado y habian derivado: el PDF no listaba los pagos ni el cambio, mostraba descuento e impuestos aunque fueran cero y no traia el precio unitario"
+      "Cobro por CHICOS: en Configuracion se activa y se le pone valor. Al abrir una mesa de pool el POS pregunta si se juega por tiempo o por chicos; por chicos no se cobra el tiempo, sino cada juego perdido",
+      "El chico que se esta jugando aparece en la cuenta desde que empieza, como 'Chico 2 (Sin definir)', y pasa a 'Chico 2 (Ana)' cuando se dice quien perdio. Tocar esa linea permite decirlo desde la caja, sin depender del marcador",
+      "Al cobrar una mesa por chicos se elige a que jugador se le cobra: paga sus chicos y lo que consumio, y la mesa sigue abierta con lo de los demas hasta que pague el ultimo",
+      "Un chico sin valor no cobra el juego: solo reparte el consumo entre quienes fueron perdiendo",
+      "Configuracion trae el campo de PROPINA sugerida: es la que propone cada cuenta nueva y se puede dejar en 0. Sin configurar ya no se propone ninguna, asi que un salon que no cobra propina no tiene que quitarla venta por venta",
+      "Las ventas recientes del POS suman un boton PDF junto al de imprimir: en una caja con impresora, ver un ticket sin sacarlo en papel no era posible",
+      "En Reportes -> Ventas se puede tocar una venta para ver su detalle -lineas, totales y como se pago- con botones para imprimir el ticket o verlo en PDF",
+      "El buscador del dashboard abre ese mismo detalle sin salir de la busqueda: antes llevaba al reporte del dia y habia que ubicar la venta otra vez en el listado",
+      "El porcentaje de propina del POS se escribe encima: al tocarlo queda seleccionado y ya no hay que borrar el que estaba",
+      "El reporte de cierre de caja trae un consolidado POR MESA: cuanto tiempo estuvo abierta cada una, que se cobro por ese tiempo y cuanto consumio",
+      "Una mesa cuya categoria o tipo no cobra el tiempo muestra igual el rato que estuvo ocupada y su consumo, sin la linea del valor del tiempo"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.22.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.22/terminal-setup-1.1.22.exe",
-      "sizeBytes": 2422300,
-      "sha256": "a2995d1ba4aebeb25ee44c62c7cb23a933ff40f386add290807751ab755bc52d"
+      "fileName": "terminal-setup-1.1.23.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.23/terminal-setup-1.1.23.exe",
+      "sizeBytes": 2422444,
+      "sha256": "d6b8749e50a720e336556528842aebf8c5bba9d1943ac5e37d16c93d41777c49"
     }
   }
 }
