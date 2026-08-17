@@ -1,30 +1,18 @@
 {
   "latest": {
-    "version": "1.1.24",
+    "version": "1.1.25",
     "releaseDate": "2026-08-17",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Apagado de los equipos de las mesas: primero se le pide al PROPIO marcador que se cierre y apague, y solo si sigue conectado se recurre al puerto 9876 -que ahora atiende el mismo marcador, sin servicios aparte que instalar-",
-      "Las IP no se configuran: son las de los marcadores conectados, asi que una direccion nueva del router no deja equipos encendidos",
-      "No apaga si hay mesas en juego o cuentas sin cobrar, y se vuelve a comprobar al aceptar: entre el aviso y el si, alguien pudo abrir una mesa",
-      "Un equipo que no contesta se reporta como fallido y no como apagado: darlo por bueno dejaria al salon creyendo que cerro",
-      "Se puede importar un respaldo traido de fuera (USB o nube). Se comprueba que sea un volcado de verdad ANTES de aceptarlo: descubrirlo al restaurar seria con la base ya vacia",
-      "Respaldo diario a la hora que configure el negocio, en vez de a las 3 de la manana fijas. Lo hace el mismo servicio que la copia a pedido: antes escribia .sql sueltos en otra carpeta que no se veia en pantalla",
-      "Los volcados salen comprimidos (.sql.gz) y se restauran igual; los .sql de versiones anteriores se siguen aceptando",
-      "Si pg_dump falla a mitad, el archivo se borra en vez de quedar como un respaldo con media base dentro",
-      "Subida opcional del respaldo a un almacenamiento en la nube. El destino se valida antes: el bucket publico de las repeticiones se rechaza",
-      "La clave del almacenamiento no sale en la lectura de configuracion, que no exige permiso: se guarda, se usa y no se devuelve",
-      "Las copias diarias de mas de 30 dias se retiran solas. Las pedidas a mano y las de seguridad se quedan",
-      "Restaurar solo se bloquea por cuentas abiertas que tengan algo. Una cuenta de mesa vacia no puede perder dinero, y bloqueaba la restauracion con un mensaje que no decia cuales eran",
-      "Las ventas a credito nunca bloquearon: se cobran igual y lo que el cliente debe vive en su saldo, no en una cuenta abierta",
-      "La limpieza diaria retira las cuentas de mesa vacias que quedan al abrir una mesa en el POS y cerrarla sin pedir nada"
+      "El reporte de cierre de caja puede traer el inventario del turno. No hay foto guardada al abrir: se reconstruye desde el stock de hoy deshaciendo el kardex, asi que tambien sale para turnos cerrados hace dias",
+      "Entran los productos activos, ordenados por nombre, con existencia inicial, final y diferencia"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.24.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.24/servidor-setup-1.1.24.exe",
-      "sizeBytes": 238112874,
-      "sha256": "3ebb0dcd572f547a7f3c8dced664057d69196023afe10b41213cbde7eea0f825"
+      "fileName": "servidor-setup-1.1.25.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.25/servidor-setup-1.1.25.exe",
+      "sizeBytes": 238109544,
+      "sha256": "53493b6e822bf9a4cebacdda6aa1f3d809c7d004e892852c2ea736b1a91ef171"
     }
   }
 }
