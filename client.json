@@ -1,25 +1,23 @@
 {
   "latest": {
-    "version": "1.1.23",
-    "releaseDate": "2026-08-15",
+    "version": "1.1.24",
+    "releaseDate": "2026-08-17",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Mesas por CHICOS (solo con ERP y por ahora en Buchacara): no se cobra el tiempo, sino cada juego perdido. Al cerrarse un SET la mesa pregunta quien perdio y le carga el chico junto con lo consumido en ese juego; con dos jugadores no pregunta nada, porque el que no gano perdio",
-      "Un SET empatado no le cobra el chico a nadie: lo consumido pasa al siguiente juego",
-      "FINALIZAR en una mesa por chicos pide primero que se diga que pasa con el ultimo chico. Si no se jugo se descarta, y si dejo consumo pedido hay que decir a quien se le carga: la mesa no se cierra debiendolo",
-      "FINALIZAR pide confirmacion antes de cerrar la mesa. Ese boton congela el tiempo, avisa a la caja y deja la pantalla bloqueada hasta que cobren o reabran: pulsado por error dejaba a los jugadores parados pidiendo que se la reabrieran",
-      "Buchacara: los SETS ya se ven con cualquier cantidad de jugadores, junto a MALAS y en la misma fila. Con mas de dos jugadores no aparecian por ningun lado y no habia forma de saber como iba la serie",
-      "Buchacara: nuevo boton NUEVO SET en el panel central, al lado de FINALIZAR. Cierra el SET en curso y se elige a quien se le apunta, para cuando el ganador ya esta decidido y meter las bolas que faltan solo hace perder tiempo",
-      "El SET dado a mano cuenta igual que el que se cierra al meterse la ultima bola: se archiva en el historial con su ganador y, si con el se alcanza la meta de SETS, se anuncia el ganador de la serie",
-      "Buchacara: la cajonera de bolas buenas ya no suma bolas al tocarla. Se agregan tocando el numero grande de puntos; el cajon queda solo para ver las bolas metidas y devolver la ultima",
-      "El boton de la camara auxiliar del panel central ya no lleva emoji"
+      "El ERP puede apagar el equipo de la mesa al cerrar el salon. El marcador cierra primero lo suyo -motor de video, grabacion y mando de torneo- y despues apaga Windows, en vez de irse a la brava con la grabacion a medias",
+      "El marcador escucha ordenes de apagado en el puerto 9876 (mismo protocolo del servicio que se instalaba aparte), como respaldo si el aviso por el servidor no llega. El instalador abre ese puerto en el firewall; solo se atiende a equipos de la red local",
+      "El video EN VIVO ya no suena nunca. El ajuste 'audio en la repeticion' llegaba tambien al vivo y lo dejaba sonando: se ve en la misma sala que la camara, asi que solo producia eco -y con varias mesas, eco multiplicado-",
+      "Repeticion: los botones de zoom y velocidad bajan a la esquina inferior izquierda. Estaban arriba, encima del video y justo donde se mira la jugada",
+      "Repeticion: dos botones nuevos en la esquina inferior derecha mueven el video por partes, adelante y atras, para revisar que paso en una jugada. Cada toque pausa y salta lo configurado",
+      "En Configuracion -> Video se define ese salto en milisegundos: 200 ms por defecto y 1000 ms como maximo",
+      "El constructor baja el alto y el texto de TODOS los botones del panel central -acciones, MALAS/DISPONIBLES/META, cambiar color y los iconos de la cabecera- y con ellos la separacion entre bloques, para dejarle mas sitio al video"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.23.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.23/marcador-setup-1.1.23.exe",
-      "sizeBytes": 187394126,
-      "sha256": "b593165441e6461f0b7015b52ceab1738467e939f27c7e0a8577b1726abc3718"
+      "fileName": "marcador-setup-1.1.24.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.24/marcador-setup-1.1.24.exe",
+      "sizeBytes": 187397845,
+      "sha256": "f2359eeb7699d2c7514ed70a3c86aa0859f42eb8d498bbd628a6b2c5477a8ac7"
     }
   }
 }
