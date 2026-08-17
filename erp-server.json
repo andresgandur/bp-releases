@@ -1,23 +1,30 @@
 {
   "latest": {
-    "version": "1.1.23",
-    "releaseDate": "2026-08-15",
+    "version": "1.1.24",
+    "releaseDate": "2026-08-17",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Cobro por CHICOS: la mesa abierta por chicos no factura el tiempo. El chico entra a la cuenta en cuanto empieza el juego -'Chico 1', 'Chico 2'...- y al terminar recibe el nombre del que perdio, junto con lo que se haya consumido mientras se jugaba",
-      "Cada jugador paga lo suyo y se va: la mesa sigue abierta con lo de los demas y la libera el ultimo en pagar. El total que se anuncia por jugador ya lleva impuesto y propina, que es el que se cobra",
-      "El marcador cierra y descarta chicos desde la mesa, y recibe cuanto consumo lleva el chico en curso sin dueño para no dejar cerrar la mesa debiendolo",
-      "La propina que propone una cuenta nueva se configura en Configuracion -> Propina, y de fabrica es 0: antes venia un 10% fijo que se cobraba en salones que no cobran propina. Lo ya cobrado no cambia",
-      "El reporte de cierre de turno incluye el consolidado por mesa: tiempo abierta, valor de ese tiempo y consumo, sumando todas las veces que la mesa se abrio en el turno",
-      "Los minutos salen de la sesion de la mesa y no de la linea de cobro, asi que una mesa que no factura el tiempo tambien muestra cuanto estuvo ocupada",
-      "Borrar los datos de prueba ya no expira a mitad: ese borrado va en una sola transaccion y el limite de 5 segundos por defecto se quedaba corto en bases con historial. Si fallaba, no se borraba nada y el aviso no explicaba por que"
+      "Apagado de los equipos de las mesas: primero se le pide al PROPIO marcador que se cierre y apague, y solo si sigue conectado se recurre al puerto 9876 -que ahora atiende el mismo marcador, sin servicios aparte que instalar-",
+      "Las IP no se configuran: son las de los marcadores conectados, asi que una direccion nueva del router no deja equipos encendidos",
+      "No apaga si hay mesas en juego o cuentas sin cobrar, y se vuelve a comprobar al aceptar: entre el aviso y el si, alguien pudo abrir una mesa",
+      "Un equipo que no contesta se reporta como fallido y no como apagado: darlo por bueno dejaria al salon creyendo que cerro",
+      "Se puede importar un respaldo traido de fuera (USB o nube). Se comprueba que sea un volcado de verdad ANTES de aceptarlo: descubrirlo al restaurar seria con la base ya vacia",
+      "Respaldo diario a la hora que configure el negocio, en vez de a las 3 de la manana fijas. Lo hace el mismo servicio que la copia a pedido: antes escribia .sql sueltos en otra carpeta que no se veia en pantalla",
+      "Los volcados salen comprimidos (.sql.gz) y se restauran igual; los .sql de versiones anteriores se siguen aceptando",
+      "Si pg_dump falla a mitad, el archivo se borra en vez de quedar como un respaldo con media base dentro",
+      "Subida opcional del respaldo a un almacenamiento en la nube. El destino se valida antes: el bucket publico de las repeticiones se rechaza",
+      "La clave del almacenamiento no sale en la lectura de configuracion, que no exige permiso: se guarda, se usa y no se devuelve",
+      "Las copias diarias de mas de 30 dias se retiran solas. Las pedidas a mano y las de seguridad se quedan",
+      "Restaurar solo se bloquea por cuentas abiertas que tengan algo. Una cuenta de mesa vacia no puede perder dinero, y bloqueaba la restauracion con un mensaje que no decia cuales eran",
+      "Las ventas a credito nunca bloquearon: se cobran igual y lo que el cliente debe vive en su saldo, no en una cuenta abierta",
+      "La limpieza diaria retira las cuentas de mesa vacias que quedan al abrir una mesa en el POS y cerrarla sin pedir nada"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.23.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.23/servidor-setup-1.1.23.exe",
-      "sizeBytes": 232794057,
-      "sha256": "48147c7282e36acfd32f0a431ac3522937a152ef075631060222ffbaddcb660f"
+      "fileName": "servidor-setup-1.1.24.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.24/servidor-setup-1.1.24.exe",
+      "sizeBytes": 238112874,
+      "sha256": "3ebb0dcd572f547a7f3c8dced664057d69196023afe10b41213cbde7eea0f825"
     }
   }
 }
