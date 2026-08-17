@@ -1,27 +1,28 @@
 {
   "latest": {
-    "version": "1.1.23",
-    "releaseDate": "2026-08-15",
+    "version": "1.1.24",
+    "releaseDate": "2026-08-17",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Cobro por CHICOS: en Configuracion se activa y se le pone valor. Al abrir una mesa de pool el POS pregunta si se juega por tiempo o por chicos; por chicos no se cobra el tiempo, sino cada juego perdido",
-      "El chico que se esta jugando aparece en la cuenta desde que empieza, como 'Chico 2 (Sin definir)', y pasa a 'Chico 2 (Ana)' cuando se dice quien perdio. Tocar esa linea permite decirlo desde la caja, sin depender del marcador",
-      "Al cobrar una mesa por chicos se elige a que jugador se le cobra: paga sus chicos y lo que consumio, y la mesa sigue abierta con lo de los demas hasta que pague el ultimo",
-      "Un chico sin valor no cobra el juego: solo reparte el consumo entre quienes fueron perdiendo",
-      "Configuracion trae el campo de PROPINA sugerida: es la que propone cada cuenta nueva y se puede dejar en 0. Sin configurar ya no se propone ninguna, asi que un salon que no cobra propina no tiene que quitarla venta por venta",
-      "Las ventas recientes del POS suman un boton PDF junto al de imprimir: en una caja con impresora, ver un ticket sin sacarlo en papel no era posible",
-      "En Reportes -> Ventas se puede tocar una venta para ver su detalle -lineas, totales y como se pago- con botones para imprimir el ticket o verlo en PDF",
-      "El buscador del dashboard abre ese mismo detalle sin salir de la busqueda: antes llevaba al reporte del dia y habia que ubicar la venta otra vez en el listado",
-      "El porcentaje de propina del POS se escribe encima: al tocarlo queda seleccionado y ya no hay que borrar el que estaba",
-      "El reporte de cierre de caja trae un consolidado POR MESA: cuanto tiempo estuvo abierta cada una, que se cobro por ese tiempo y cuanto consumio",
-      "Una mesa cuya categoria o tipo no cobra el tiempo muestra igual el rato que estuvo ocupada y su consumo, sin la linea del valor del tiempo"
+      "En el POS, cambiar de pestana de mesas vuelve a VENTA DIRECTA. La mesa elegida seguia en la cuenta de la derecha aunque ya no se viera en la lista, y lo siguiente que se tocara del catalogo se le cargaba a una mesa de otra categoria",
+      "Modo claro mas descansado: nada es blanco puro. El ERP se usa en salones cerrados y con poca luz, donde una pantalla en 255 blanco cansa la vista en un turno entero. Las tarjetas son un gris azulado muy claro, el fondo dos pasos mas abajo y los bordes algo mas marcados",
+      "Nuevo boton de APAGAR en la barra superior, junto al de claro/oscuro: apaga los computadores de las MESAS al cerrar el salon. Pregunta antes, avisa si hay mesas en juego o cuentas sin cobrar, y dice cuales equipos no respondieron",
+      "El ERP y su servidor NO se apagan con ese boton: el arqueo y los reportes se siguen haciendo despues de cerrar",
+      "Importar respaldo: se puede subir al servidor una copia guardada en una USB o bajada de la nube y restaurarla como cualquier otra. Es lo que hacia falta despues de reinstalar",
+      "Respaldo automatico: en Configuracion se activa y se elige la hora. La copia diaria aparece en la lista de respaldos, se puede descargar y se puede restaurar como cualquier otra",
+      "Los respaldos se pueden subir a la nube (Supabase) al hacerse, a un bucket y una carpeta propios. Un respaldo que solo vive en el servidor se pierde con el servidor",
+      "El bucket de las repeticiones queda prohibido para los respaldos: es publico, y ahi un volcado publicaria ventas, clientes y las claves de los usuarios",
+      "La clave del almacenamiento se guarda en el servidor y no se muestra nunca; para cambiar la hora no hace falta volver a escribirla",
+      "Los respaldos ahora van comprimidos: pesan una fraccion de lo que pesaban, que es lo que importa al subirlos y guardarlos fuera",
+      "Restaurar ya no se bloquea por cuentas vacias: el POS abre la cuenta de una mesa en cuanto alguien la mira, y esas cuentas de cero -de mesas ya libres, invisibles en pantalla- impedian restaurar sin que hubiera nada que cobrar",
+      "Y si algo si estorba, el aviso dice cual es: '#123 Mesa 4' en vez de un numero de cuentas que no se podian encontrar"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.23.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.23/terminal-setup-1.1.23.exe",
-      "sizeBytes": 2422444,
-      "sha256": "d6b8749e50a720e336556528842aebf8c5bba9d1943ac5e37d16c93d41777c49"
+      "fileName": "terminal-setup-1.1.24.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.24/terminal-setup-1.1.24.exe",
+      "sizeBytes": 2426373,
+      "sha256": "ee64cc5f9413bf2017e31d4ebf445ae016d7c08813a6dab9f4ed2ece4da75ac6"
     }
   }
 }
