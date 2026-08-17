@@ -1,28 +1,18 @@
 {
   "latest": {
-    "version": "1.1.24",
+    "version": "1.1.25",
     "releaseDate": "2026-08-17",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "En el POS, cambiar de pestana de mesas vuelve a VENTA DIRECTA. La mesa elegida seguia en la cuenta de la derecha aunque ya no se viera en la lista, y lo siguiente que se tocara del catalogo se le cargaba a una mesa de otra categoria",
-      "Modo claro mas descansado: nada es blanco puro. El ERP se usa en salones cerrados y con poca luz, donde una pantalla en 255 blanco cansa la vista en un turno entero. Las tarjetas son un gris azulado muy claro, el fondo dos pasos mas abajo y los bordes algo mas marcados",
-      "Nuevo boton de APAGAR en la barra superior, junto al de claro/oscuro: apaga los computadores de las MESAS al cerrar el salon. Pregunta antes, avisa si hay mesas en juego o cuentas sin cobrar, y dice cuales equipos no respondieron",
-      "El ERP y su servidor NO se apagan con ese boton: el arqueo y los reportes se siguen haciendo despues de cerrar",
-      "Importar respaldo: se puede subir al servidor una copia guardada en una USB o bajada de la nube y restaurarla como cualquier otra. Es lo que hacia falta despues de reinstalar",
-      "Respaldo automatico: en Configuracion se activa y se elige la hora. La copia diaria aparece en la lista de respaldos, se puede descargar y se puede restaurar como cualquier otra",
-      "Los respaldos se pueden subir a la nube (Supabase) al hacerse, a un bucket y una carpeta propios. Un respaldo que solo vive en el servidor se pierde con el servidor",
-      "El bucket de las repeticiones queda prohibido para los respaldos: es publico, y ahi un volcado publicaria ventas, clientes y las claves de los usuarios",
-      "La clave del almacenamiento se guarda en el servidor y no se muestra nunca; para cambiar la hora no hace falta volver a escribirla",
-      "Los respaldos ahora van comprimidos: pesan una fraccion de lo que pesaban, que es lo que importa al subirlos y guardarlos fuera",
-      "Restaurar ya no se bloquea por cuentas vacias: el POS abre la cuenta de una mesa en cuanto alguien la mira, y esas cuentas de cero -de mesas ya libres, invisibles en pantalla- impedian restaurar sin que hubiera nada que cobrar",
-      "Y si algo si estorba, el aviso dice cual es: '#123 Mesa 4' en vez de un numero de cuentas que no se podian encontrar"
+      "Al cerrar la caja se puede marcar 'Incluir inventario': el reporte agrega las existencias con las que abrio el turno, con las que cerro y la diferencia de cada producto. Nace apagado, porque alarga bastante el papel",
+      "El encabezado de una tabla del ticket ya no puede empujar la fila fuera del papel: la columna se dimensiona por lo mas ancho entre su titulo y sus datos"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.24.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.24/terminal-setup-1.1.24.exe",
-      "sizeBytes": 2426373,
-      "sha256": "ee64cc5f9413bf2017e31d4ebf445ae016d7c08813a6dab9f4ed2ece4da75ac6"
+      "fileName": "terminal-setup-1.1.25.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.25/terminal-setup-1.1.25.exe",
+      "sizeBytes": 2426694,
+      "sha256": "cca2c589bb664d918cd5a4e2998957aeae6d6d0b8500ed632186304caf91ad93"
     }
   }
 }
