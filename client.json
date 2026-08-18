@@ -1,23 +1,19 @@
 {
   "latest": {
-    "version": "1.1.24",
-    "releaseDate": "2026-08-17",
+    "version": "1.1.25",
+    "releaseDate": "2026-08-18",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El ERP puede apagar el equipo de la mesa al cerrar el salon. El marcador cierra primero lo suyo -motor de video, grabacion y mando de torneo- y despues apaga Windows, en vez de irse a la brava con la grabacion a medias",
-      "El marcador escucha ordenes de apagado en el puerto 9876 (mismo protocolo del servicio que se instalaba aparte), como respaldo si el aviso por el servidor no llega. El instalador abre ese puerto en el firewall; solo se atiende a equipos de la red local",
-      "El video EN VIVO ya no suena nunca. El ajuste 'audio en la repeticion' llegaba tambien al vivo y lo dejaba sonando: se ve en la misma sala que la camara, asi que solo producia eco -y con varias mesas, eco multiplicado-",
-      "Repeticion: los botones de zoom y velocidad bajan a la esquina inferior izquierda. Estaban arriba, encima del video y justo donde se mira la jugada",
-      "Repeticion: dos botones nuevos en la esquina inferior derecha mueven el video por partes, adelante y atras, para revisar que paso en una jugada. Cada toque pausa y salta lo configurado",
-      "En Configuracion -> Video se define ese salto en milisegundos: 200 ms por defecto y 1000 ms como maximo",
-      "El constructor baja el alto y el texto de TODOS los botones del panel central -acciones, MALAS/DISPONIBLES/META, cambiar color y los iconos de la cabecera- y con ellos la separacion entre bloques, para dejarle mas sitio al video"
+      "Repeticion sin botones en las esquinas: las pantallas tactiles de las mesas se gastan por los bordes y ahi el toque no responde. Zoom, velocidades, transporte y avance por partes van en UNA fila centrada; descargar, debajo de los fotogramas; CERRAR, a la derecha encima de la barra de tiempo",
+      "Los grupos de los lados quedan separados del PLAY unos 2 cm, para no tocar el que no era",
+      "El apagado remoto no funciona con la aplicacion en modo desarrollo: en el equipo de quien programa conviven marcador, servidor y pruebas, y ahi un apagado nunca es lo que se queria"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.24.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.24/marcador-setup-1.1.24.exe",
-      "sizeBytes": 187397845,
-      "sha256": "f2359eeb7699d2c7514ed70a3c86aa0859f42eb8d498bbd628a6b2c5477a8ac7"
+      "fileName": "marcador-setup-1.1.25.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.25/marcador-setup-1.1.25.exe",
+      "sizeBytes": 187398340,
+      "sha256": "0fe8198c28f885cca147d977def55a04a8e341f7b91a9a473ca175cb640719a9"
     }
   }
 }
