@@ -1,19 +1,23 @@
 {
   "latest": {
-    "version": "1.1.25",
-    "releaseDate": "2026-08-18",
+    "version": "1.1.28",
+    "releaseDate": "2026-08-20",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Repeticion sin botones en las esquinas: las pantallas tactiles de las mesas se gastan por los bordes y ahi el toque no responde. Zoom, velocidades, transporte y avance por partes van en UNA fila centrada; descargar, debajo de los fotogramas; CERRAR, a la derecha encima de la barra de tiempo",
-      "Los grupos de los lados quedan separados del PLAY unos 2 cm, para no tocar el que no era",
-      "El apagado remoto no funciona con la aplicacion en modo desarrollo: en el equipo de quien programa conviven marcador, servidor y pruebas, y ahi un apagado nunca es lo que se queria"
+      "Boton de TIZA en el panel central, junto a la campana: la mesa la pide y el aviso llega al ERP. Se apaga desde cualquiera de los dos lados, porque quien lleva la tiza puede estar en la mesa o en la caja",
+      "La marquesina se ve tambien SOBRE el video de la pantalla extendida. Antes solo salia con la pantalla de bienvenida, es decir, justo cuando nadie la estaba mirando",
+      "La pantalla ya no se rinde al perder el servidor: reintenta siempre. Antes dejaba de intentarlo a los 31 segundos y la unica salida era cerrar y abrir la aplicacion",
+      "Aviso en pantalla cuando lleva mas de 10 segundos sin servidor: el marcador sigue funcionando, pero la campana, la tiza y FINALIZAR no llegan a la caja y ahora se sabe",
+      "FINALIZAR pulsado sin conexion ya no se pierde: se manda solo en cuanto vuelve el servidor",
+      "El aviso de 'mesa en proceso de cierre' tiene salida: boton SEGUIR JUGANDO, que retira la solicitud tambien en el ERP. Antes solo lo quitaba el servidor, y si este se reiniciaba la pantalla se quedaba tapada",
+      "Cabecera simetrica: servicio y tiza a la izquierda del reloj, reiniciar e historial a la derecha"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.25.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.25/marcador-setup-1.1.25.exe",
-      "sizeBytes": 187398340,
-      "sha256": "0fe8198c28f885cca147d977def55a04a8e341f7b91a9a473ca175cb640719a9"
+      "fileName": "marcador-setup-1.1.28.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.28/marcador-setup-1.1.28.exe",
+      "sizeBytes": 187580521,
+      "sha256": "c11c7685c860a2df4342dd92ab3fe64a7143ef0cafe334b00215c697a5d9b68e"
     }
   }
 }
