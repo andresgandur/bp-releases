@@ -1,18 +1,23 @@
 {
   "latest": {
-    "version": "1.1.25",
-    "releaseDate": "2026-08-17",
+    "version": "1.1.28",
+    "releaseDate": "2026-08-20",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Al cerrar la caja se puede marcar 'Incluir inventario': el reporte agrega las existencias con las que abrio el turno, con las que cerro y la diferencia de cada producto. Nace apagado, porque alarga bastante el papel",
-      "El encabezado de una tabla del ticket ya no puede empujar la fila fuera del papel: la columna se dimensiona por lo mas ancho entre su titulo y sus datos"
+      "Consulta de cierres de caja anteriores: se busca un turno por su numero -o por fechas- y se vuelve a imprimir o se guarda en PDF. La reimpresion sale marcada como COPIA, para no confundirla con el original firmado",
+      "El tiempo se cobra con la tarifa del TIPO de mesa. Antes se cobraba con la primera tarifa configurada aunque la mesa fuera de otro tipo: pool y tres bandas salian al mismo precio",
+      "Traslado de mesa: se elige la mesa destino de una lista con sus nombres y con pestanas por categoria -de billar a cartas-, en vez de escribir el numero. El tiempo jugado se liquida en la cuenta con la tarifa de la mesa de origen y en la nueva el reloj empieza de cero",
+      "Una mesa abierta por error se puede cerrar sin cobrar: con pocos minutos y la cuenta vacia, el POS ofrece cerrarla como cortesia y no deja cuenta pendiente. Los minutos se configuran (0 lo apaga)",
+      "Aviso cuando una mesa pide TIZA, y marca en su tarjeta cuando lleva 45 segundos sin senal de su pantalla",
+      "Caja pagina el historico: cierres y movimientos del turno se ven de a una pagina, con su total a la vista",
+      "La actualizacion del servidor se ve mientras ocurre -respaldando, descargando, instalando- hasta confirmar en pantalla la version instalada"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.25.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.25/terminal-setup-1.1.25.exe",
-      "sizeBytes": 2426694,
-      "sha256": "cca2c589bb664d918cd5a4e2998957aeae6d6d0b8500ed632186304caf91ad93"
+      "fileName": "terminal-setup-1.1.28.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.28/terminal-setup-1.1.28.exe",
+      "sizeBytes": 2430417,
+      "sha256": "cb3a08590127a799c920d92de591eae7400a15ad55a73936f7fc0aeb1ac9c934"
     }
   }
 }
