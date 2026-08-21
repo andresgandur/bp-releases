@@ -1,23 +1,21 @@
 {
   "latest": {
-    "version": "1.1.28",
-    "releaseDate": "2026-08-20",
+    "version": "1.1.30",
+    "releaseDate": "2026-08-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El tiempo se cobra con la tarifa del TIPO de mesa. El reparto por tramos no miraba el tipo y usaba la primera tarifa activa: en un salon con pool y tres bandas a precios distintos, cada partida salia mal cobrada",
-      "Traslado de mesa que liquida el tiempo del origen en la cuenta y abre sesion nueva en el destino. Una cuenta puede llevar ahora el tiempo de varias mesas, y el reporte de cierre anota los minutos de cada una en la suya",
-      "Una mesa que deja de estar ocupada ya no puede quedarse 'en proceso de cierre': la solicitud se retira sola. Solo se retiraba al cobrar o al reabrir, asi que cerrarla por cualquier otro camino dejaba la pantalla de la mesa bloqueada",
-      "Peticion de TIZA en el protocolo de las mesas, y estado de los marcadores para que el POS marque la mesa que se quedo sin pantalla",
-      "Cierre por cortesia: una mesa con pocos minutos y sin consumo se puede cerrar sin cobrar y sin dejar cuenta. Se propone, no se aplica solo, y queda anotado en Auditoria",
-      "Consulta de turnos de caja por numero o por rango de fechas, paginada, para reimprimir un cierre anterior",
-      "Actualizar el servidor ya no se hace dentro de la peticion HTTP: se arranca y se responde al instante, con el avance consultable aparte"
+      "Se exige la caja abierta para abrir mesas y para cobrar. Un cobro sin turno se guardaba con la caja en NULL: la venta existia, el dinero entraba y el reporte de cierre no la veia nunca. Se puede apagar desde Configuracion",
+      "Script para reiniciar la contrasena de un usuario desde el servidor (scripts/reiniciar-clave.ts), para cuando nadie puede entrar. Cierra las sesiones de ese usuario y lo anota en Auditoria",
+      "Prueba de la subida a la nube a pedido, por el mismo camino que un respaldo real, con el motivo del rechazo tal como lo devuelve el almacenamiento",
+      "Destino de la copia en la nube configurado de fabrica; la carpeta pasa a ser obligatoria para activar la subida",
+      "La subida ya no pide reemplazar el archivo: los nombres llevan la marca de tiempo hasta los milisegundos, y pedirlo obligaba a dar permiso de LECTURA sobre los respaldos"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.28.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.28/servidor-setup-1.1.28.exe",
-      "sizeBytes": 238132143,
-      "sha256": "956e5f87dd8ec98d83269cccfd58c4c206127a653989a2b34a74087f05e76271"
+      "fileName": "servidor-setup-1.1.30.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.30/servidor-setup-1.1.30.exe",
+      "sizeBytes": 238120752,
+      "sha256": "b6594896592cbd2d0a2ffbd3a895fbd635e3654222ef289217023e705d55cc45"
     }
   }
 }
