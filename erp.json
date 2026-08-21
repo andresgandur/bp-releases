@@ -1,23 +1,24 @@
 {
   "latest": {
-    "version": "1.1.28",
-    "releaseDate": "2026-08-20",
+    "version": "1.1.30",
+    "releaseDate": "2026-08-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Consulta de cierres de caja anteriores: se busca un turno por su numero -o por fechas- y se vuelve a imprimir o se guarda en PDF. La reimpresion sale marcada como COPIA, para no confundirla con el original firmado",
-      "El tiempo se cobra con la tarifa del TIPO de mesa. Antes se cobraba con la primera tarifa configurada aunque la mesa fuera de otro tipo: pool y tres bandas salian al mismo precio",
-      "Traslado de mesa: se elige la mesa destino de una lista con sus nombres y con pestanas por categoria -de billar a cartas-, en vez de escribir el numero. El tiempo jugado se liquida en la cuenta con la tarifa de la mesa de origen y en la nueva el reloj empieza de cero",
-      "Una mesa abierta por error se puede cerrar sin cobrar: con pocos minutos y la cuenta vacia, el POS ofrece cerrarla como cortesia y no deja cuenta pendiente. Los minutos se configuran (0 lo apaga)",
-      "Aviso cuando una mesa pide TIZA, y marca en su tarjeta cuando lleva 45 segundos sin senal de su pantalla",
-      "Caja pagina el historico: cierres y movimientos del turno se ven de a una pagina, con su total a la vista",
-      "La actualizacion del servidor se ve mientras ocurre -respaldando, descargando, instalando- hasta confirmar en pantalla la version instalada"
+      "Se exige la caja abierta para abrir mesas y para cobrar: lo que se vende fuera de turno no aparece en ningun cierre. Se puede apagar en Configuracion -> Caja obligatoria",
+      "Cerrar la aplicacion con la X ahora cierra la sesion, igual que el boton Salir: al volver a abrir pide identificarse. Y los dos avisan si la caja quedo abierta",
+      "Al abrir una mesa por chicos, la X del cuadro ya no abre la mesa por tiempo: cierra sin abrir nada. El cuadro ahora tiene tres salidas y muestra el valor del chico",
+      "La terminal abre maximizada y no se puede abrir dos veces en el mismo equipo: la segunda le pasa el foco a la que ya estaba",
+      "El login guarda la IP del servidor detras de un icono de configuracion -a la vista solo la primera vez, y cuando falla la conexion- y estrena fondo",
+      "Emojis por categorias en la marquesina: se elige la categoria, se abre su lista y el emoji entra donde este el cursor del mensaje",
+      "Boton 'Probar la subida' en el respaldo programado: sube un archivo de prueba con la configuracion guardada y dice si el almacenamiento lo acepto",
+      "El destino de la copia en la nube viene configurado de fabrica: solo hay que indicar la carpeta, que ahora es obligatoria y debe ser el nombre del negocio"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.28.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.28/terminal-setup-1.1.28.exe",
-      "sizeBytes": 2430417,
-      "sha256": "cb3a08590127a799c920d92de591eae7400a15ad55a73936f7fc0aeb1ac9c934"
+      "fileName": "terminal-setup-1.1.30.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.30/terminal-setup-1.1.30.exe",
+      "sizeBytes": 2458475,
+      "sha256": "42a4f7d3da31c441ad39ca9a8cf4d388b9395347c63ba258421497805bc74c11"
     }
   }
 }
