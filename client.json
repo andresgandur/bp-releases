@@ -1,23 +1,20 @@
 {
   "latest": {
-    "version": "1.1.28",
-    "releaseDate": "2026-08-20",
+    "version": "1.1.31",
+    "releaseDate": "2026-08-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Boton de TIZA en el panel central, junto a la campana: la mesa la pide y el aviso llega al ERP. Se apaga desde cualquiera de los dos lados, porque quien lleva la tiza puede estar en la mesa o en la caja",
-      "La marquesina se ve tambien SOBRE el video de la pantalla extendida. Antes solo salia con la pantalla de bienvenida, es decir, justo cuando nadie la estaba mirando",
-      "La pantalla ya no se rinde al perder el servidor: reintenta siempre. Antes dejaba de intentarlo a los 31 segundos y la unica salida era cerrar y abrir la aplicacion",
-      "Aviso en pantalla cuando lleva mas de 10 segundos sin servidor: el marcador sigue funcionando, pero la campana, la tiza y FINALIZAR no llegan a la caja y ahora se sabe",
-      "FINALIZAR pulsado sin conexion ya no se pierde: se manda solo en cuanto vuelve el servidor",
-      "El aviso de 'mesa en proceso de cierre' tiene salida: boton SEGUIR JUGANDO, que retira la solicitud tambien en el ERP. Antes solo lo quitaba el servidor, y si este se reiniciaba la pantalla se quedaba tapada",
-      "Cabecera simetrica: servicio y tiza a la izquierda del reloj, reiniciar e historial a la derecha"
+      "Corregido: un mensaje de marquesina desde el ERP dejaba la pantalla extendida con el logo y apagaba el video en vivo, y en algunas mesas borraba la configuracion de las camaras. La aplicacion guardaba la configuracion partiendo de la que tenia al conectarse, no de la vigente",
+      "Corregido: la marquesina no se veia en la pantalla extendida. Al separarla a su propio archivo de estilos se rompio una regla y el navegador la descarta en silencio, asi que la franja se pintaba como un bloque normal, justo debajo del borde inferior de la pantalla",
+      "La marquesina se ve SOLO en la pantalla extendida -sobre el video o sobre el logo, con la mesa abierta o cerrada-; las mesas de un solo monitor no muestran nada",
+      "El log deja rastro del recorrido del mensaje de marquesina hasta la pantalla extendida: cuando un salon dice que no se ve, el log dice en que punto se pierde"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.28.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.28/marcador-setup-1.1.28.exe",
-      "sizeBytes": 187580521,
-      "sha256": "c11c7685c860a2df4342dd92ab3fe64a7143ef0cafe334b00215c697a5d9b68e"
+      "fileName": "marcador-setup-1.1.31.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.31/marcador-setup-1.1.31.exe",
+      "sizeBytes": 187580612,
+      "sha256": "7ad3125cad7e361b9bc3b1f1cdc5587e42b435cbd5eb6b7463f73119c7b5b91f"
     }
   }
 }
