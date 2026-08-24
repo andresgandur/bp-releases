@@ -1,21 +1,23 @@
 {
   "latest": {
-    "version": "1.1.30",
-    "releaseDate": "2026-08-21",
+    "version": "1.1.31",
+    "releaseDate": "2026-08-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Se exige la caja abierta para abrir mesas y para cobrar. Un cobro sin turno se guardaba con la caja en NULL: la venta existia, el dinero entraba y el reporte de cierre no la veia nunca. Se puede apagar desde Configuracion",
-      "Script para reiniciar la contrasena de un usuario desde el servidor (scripts/reiniciar-clave.ts), para cuando nadie puede entrar. Cierra las sesiones de ese usuario y lo anota en Auditoria",
-      "Prueba de la subida a la nube a pedido, por el mismo camino que un respaldo real, con el motivo del rechazo tal como lo devuelve el almacenamiento",
-      "Destino de la copia en la nube configurado de fabrica; la carpeta pasa a ser obligatoria para activar la subida",
-      "La subida ya no pide reemplazar el archivo: los nombres llevan la marca de tiempo hasta los milisegundos, y pedirlo obligaba a dar permiso de LECTURA sobre los respaldos"
+      "El tiempo se puede cobrar por chico: se liquida al terminar cada juego y se le carga al jugador que lo perdio, junto con su consumo. Es opcional y viene apagado, que es como se juega por chicos",
+      "Cada SET se liquida en el momento, sin esperar al cierre de la mesa, y la cuenta guarda a que chico y a que jugador pertenece cada linea",
+      "La cuenta reparte por jugador el tiempo, el consumo, los impuestos y la propina, que es lo que necesitan la bitacora y el ticket de cada uno",
+      "Corregido: una mesa por chicos cobraba ademas el tiempo corrido de la sesion, de modo que el rato jugado se pagaba dos veces",
+      "Corregido: al cobrar al segundo jugador la venta perdia la mesa y se guardaba como mostrador",
+      "Corregido: una mesa cerrada para cobro podia quedarse ocupada sin una sola linea que cobrar -por ejemplo al descartar el ultimo chico-, y no habia forma de soltarla. Ahora, sin nada que cobrar, la mesa se libera",
+      "Nueva migracion de la base de datos; el instalador la aplica al actualizar"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.30.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.30/servidor-setup-1.1.30.exe",
-      "sizeBytes": 238120752,
-      "sha256": "b6594896592cbd2d0a2ffbd3a895fbd635e3654222ef289217023e705d55cc45"
+      "fileName": "servidor-setup-1.1.31.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.31/servidor-setup-1.1.31.exe",
+      "sizeBytes": 238128753,
+      "sha256": "0b49376356504b506d3ef055f3daf04bed99e88b4c128aea0023a04025fcfe04"
     }
   }
 }
