@@ -1,24 +1,25 @@
 {
   "latest": {
-    "version": "1.1.30",
-    "releaseDate": "2026-08-21",
+    "version": "1.1.31",
+    "releaseDate": "2026-08-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Se exige la caja abierta para abrir mesas y para cobrar: lo que se vende fuera de turno no aparece en ningun cierre. Se puede apagar en Configuracion -> Caja obligatoria",
-      "Cerrar la aplicacion con la X ahora cierra la sesion, igual que el boton Salir: al volver a abrir pide identificarse. Y los dos avisan si la caja quedo abierta",
-      "Al abrir una mesa por chicos, la X del cuadro ya no abre la mesa por tiempo: cierra sin abrir nada. El cuadro ahora tiene tres salidas y muestra el valor del chico",
-      "La terminal abre maximizada y no se puede abrir dos veces en el mismo equipo: la segunda le pasa el foco a la que ya estaba",
-      "El login guarda la IP del servidor detras de un icono de configuracion -a la vista solo la primera vez, y cuando falla la conexion- y estrena fondo",
-      "Emojis por categorias en la marquesina: se elige la categoria, se abre su lista y el emoji entra donde este el cursor del mensaje",
-      "Boton 'Probar la subida' en el respaldo programado: sube un archivo de prueba con la configuracion guardada y dice si el almacenamiento lo acepto",
-      "El destino de la copia en la nube viene configurado de fabrica: solo hay que indicar la carpeta, que ahora es obligatoria y debe ser el nombre del negocio"
+      "Configuracion -> Chicos: nueva casilla para decidir si se cobra el tiempo. Viene desactivada, que es como se juega por chicos: aunque la mesa tenga tarifa, solo se cobra el consumo. Si se activa, el tiempo se liquida por cada juego perdido y se le carga al que perdio",
+      "Cada SET que termina se liquida solo, sin esperar a que se cierre la mesa: lo que lleva pagado cada jugador esta al dia en todo momento",
+      "La bitacora muestra cada chico con su consumo y quien lo perdio, y lo que debe pagar cada jugador desglosado en tiempo, consumo, impuestos y propina",
+      "Nuevo boton en la bitacora para imprimirla en la ticketera, con el ancho configurado en la terminal. El boton PDF/IMPRIMIR sigue funcionando igual",
+      "El ticket del cobro por jugador lleva el nombre del jugador -'Jugador 1' si nadie lo cambio en el marcador-, para saber de quien es el papel",
+      "Corregido: cobrar al segundo jugador de una mesa por chicos dejaba esa venta como mostrador, fuera de la mesa y de sus reportes",
+      "Corregido: CERRAR la mesa desde la caja quitaba el cobro por jugador y la opcion de decidir si el ultimo chico se jugo. Ahora se conservan las dos",
+      "Corregido: si al cerrar se descartaba el ultimo chico y no quedaba nada mas, la mesa se quedaba ocupada y por cobrar sin nada que cobrar; para soltarla habia que agregar un producto y facturarlo. Ahora se libera sola",
+      "Todas las fechas de las pantallas del ERP se muestran igual: dia/mes/año y la hora en formato de 12 horas"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.30.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.30/terminal-setup-1.1.30.exe",
-      "sizeBytes": 2458475,
-      "sha256": "42a4f7d3da31c441ad39ca9a8cf4d388b9395347c63ba258421497805bc74c11"
+      "fileName": "terminal-setup-1.1.31.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.31/terminal-setup-1.1.31.exe",
+      "sizeBytes": 2462020,
+      "sha256": "850f9beefeeba7402430311e73d3520729fbb1f78bd28727d6dc25a8dfc24bca"
     }
   }
 }
