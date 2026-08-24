@@ -1,20 +1,26 @@
 {
   "latest": {
-    "version": "1.1.31",
-    "releaseDate": "2026-08-21",
+    "version": "1.1.32",
+    "releaseDate": "2026-08-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Corregido: un mensaje de marquesina desde el ERP dejaba la pantalla extendida con el logo y apagaba el video en vivo, y en algunas mesas borraba la configuracion de las camaras. La aplicacion guardaba la configuracion partiendo de la que tenia al conectarse, no de la vigente",
-      "Corregido: la marquesina no se veia en la pantalla extendida. Al separarla a su propio archivo de estilos se rompio una regla y el navegador la descarta en silencio, asi que la franja se pintaba como un bloque normal, justo debajo del borde inferior de la pantalla",
-      "La marquesina se ve SOLO en la pantalla extendida -sobre el video o sobre el logo, con la mesa abierta o cerrada-; las mesas de un solo monitor no muestran nada",
-      "El log deja rastro del recorrido del mensaje de marquesina hasta la pantalla extendida: cuando un salon dice que no se ve, el log dice en que punto se pierde"
+      "El juego por chicos ya funciona en todas las modalidades, no solo en Buchacara: a dos jugadores pierde el que no gana el SET, y con mas de dos se le carga al que menos puntos hizo",
+      "Con mas de dos jugadores, si hay empate en el ultimo puesto la mesa pregunta a quien se le carga, y ofrece SOLO a los empatados; si el empate es arriba, primero hay que desempatar para saber quien gano",
+      "La pantalla del ganador muestra tambien quien perdio el chico, que es el dato por el que se pregunta en la mesa",
+      "Buchacara a dos jugadores: al llegar a 61 puntos se declara ganador automaticamente y el chico queda a nombre del otro",
+      "Jugando por chicos la META pasa a ser obligatoria para poder marcar puntos: sin ella el marcador no declara ganador y ningun chico llegaria a tener dueño",
+      "La META solo se puede fijar por encima del puntaje mas alto de la mesa, con o sin chicos: una META por debajo dejaba partidas ya ganadas sin cerrar",
+      "El detalle del consumo abre mas ancho y con la HORA en la primera columna, suma los chicos jugados y muestra cuanto debe cada jugador, propina incluida",
+      "FINALIZAR muestra solo el resumen de lo que paga cada jugador, sin la lista de productos, y ya no genera un chico de mas al elegir al perdedor",
+      "El panel central deja de mostrar el valor del tiempo cuando el ERP tiene configurado no cobrarlo, y los recuadros de valores ocupan menos alto",
+      "Corregido: al fijar una META por debajo de lo permitido, el aviso quedaba detras del teclado numerico y la pantalla parecia trabada"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.31.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.31/marcador-setup-1.1.31.exe",
-      "sizeBytes": 187580612,
-      "sha256": "7ad3125cad7e361b9bc3b1f1cdc5587e42b435cbd5eb6b7463f73119c7b5b91f"
+      "fileName": "marcador-setup-1.1.32.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.32/marcador-setup-1.1.32.exe",
+      "sizeBytes": 187583679,
+      "sha256": "36fa99398d76ebc7e804024149f636d861e1278a6dd011925174ea88afa4f729"
     }
   }
 }
