@@ -1,10 +1,13 @@
 {
   "latest": {
-    "version": "1.1.31",
-    "releaseDate": "2026-08-24",
+    "version": "1.1.32",
+    "releaseDate": "2026-08-25",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "Que mesas se juegan por chicos se marca ahora en Mesas -> Tipos de mesa, con una casilla por tipo. El POS abre esas mesas en ese modo sin preguntar: se acabo el cuadro de '¿por chicos o por tiempo?' en cada apertura, que en un salon se contestaba siempre igual",
+      "Los chicos dejan de estar limitados al tipo 'pool' del sistema: si su tipo se llama 'Pool americano' o 'Bola 8', tambien los puede usar",
+      "Con el cobro por chicos desactivado no se dejan marcar tipos de mesa, y desactivarlo desmarca los que estuvieran marcados. Las mesas ya abiertas no cambian: la partida que empezo por chicos se termina de cobrar por chicos",
       "Configuracion -> Chicos: nueva casilla para decidir si se cobra el tiempo. Viene desactivada, que es como se juega por chicos: aunque la mesa tenga tarifa, solo se cobra el consumo. Si se activa, el tiempo se liquida por cada juego perdido y se le carga al que perdio",
       "Cada SET que termina se liquida solo, sin esperar a que se cierre la mesa: lo que lleva pagado cada jugador esta al dia en todo momento",
       "La bitacora muestra cada chico con su consumo y quien lo perdio, y lo que debe pagar cada jugador desglosado en tiempo, consumo, impuestos y propina",
@@ -16,10 +19,10 @@
       "Todas las fechas de las pantallas del ERP se muestran igual: dia/mes/año y la hora en formato de 12 horas"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.31.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.31/terminal-setup-1.1.31.exe",
-      "sizeBytes": 2462020,
-      "sha256": "850f9beefeeba7402430311e73d3520729fbb1f78bd28727d6dc25a8dfc24bca"
+      "fileName": "terminal-setup-1.1.32.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.32/terminal-setup-1.1.32.exe",
+      "sizeBytes": 2458233,
+      "sha256": "fd706716885dbbf22d5758e9a4573fc9bf48455ca737fe7b00ac62e3460a98a5"
     }
   }
 }
