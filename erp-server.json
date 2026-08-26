@@ -1,26 +1,21 @@
 {
   "latest": {
-    "version": "1.1.32",
-    "releaseDate": "2026-08-25",
+    "version": "1.1.33",
+    "releaseDate": "2026-08-26",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El modo de cobro de una mesa lo decide su TIPO -se marca en Mesas -> Tipos de mesa- y lo resuelve el servidor al abrirla, no la terminal: una terminal desactualizada ya no puede abrir una mesa en el modo equivocado",
-      "El cobro por chicos deja de estar atado al tipo 'pool': cualquier tipo, incluidos los que anada el negocio, puede jugarse por chicos",
-      "Con el cobro por chicos desactivado, marcar un tipo de mesa se rechaza, y al desactivarlo se desmarcan los tipos que lo tenian, dejando sus nombres en Auditoria",
-      "El tiempo se puede cobrar por chico: se liquida al terminar cada juego y se le carga al jugador que lo perdio, junto con su consumo. Es opcional y viene apagado, que es como se juega por chicos",
-      "Cada SET se liquida en el momento, sin esperar al cierre de la mesa, y la cuenta guarda a que chico y a que jugador pertenece cada linea",
-      "La cuenta reparte por jugador el tiempo, el consumo, los impuestos y la propina, que es lo que necesitan la bitacora y el ticket de cada uno",
-      "Corregido: una mesa por chicos cobraba ademas el tiempo corrido de la sesion, de modo que el rato jugado se pagaba dos veces",
-      "Corregido: al cobrar al segundo jugador la venta perdia la mesa y se guardaba como mostrador",
-      "Corregido: una mesa cerrada para cobro podia quedarse ocupada sin una sola linea que cobrar -por ejemplo al descartar el ultimo chico-, y no habia forma de soltarla. Ahora, sin nada que cobrar, la mesa se libera",
-      "Dos migraciones nuevas de la base de datos; el instalador las aplica al actualizar"
+      "Cada tipo de mesa guarda el valor de su chico, en vez de haber uno solo para todo el salon. La migracion copia el valor que ya estuviera configurado a todos los tipos, asi que ninguna mesa cambia de precio al actualizar",
+      "El precio se fija cuando EMPIEZA el juego: corregir la tarifa a mitad de la noche no reescribe lo que alguien ya debe ni el juego en curso; los siguientes salen con el valor nuevo",
+      "El reporte de cierre consolida los chicos en un solo renglon y, por mesa, los separa del consumo",
+      "El reporte de ventas devuelve el consolidado por concepto -tiempo de mesa, chicos y consumo- de las lineas cobradas en el rango",
+      "Una migracion nueva de la base de datos; el instalador la aplica al actualizar"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.32.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.32/servidor-setup-1.1.32.exe",
-      "sizeBytes": 238132898,
-      "sha256": "48f29afc01a6be09048336159107b558e2be688d1e8cba724b21c7c596239b14"
+      "fileName": "servidor-setup-1.1.33.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.33/servidor-setup-1.1.33.exe",
+      "sizeBytes": 243420275,
+      "sha256": "2b07c6bfea78f67a0ada163559fd3faffa85ff6dd0a5a5a674ca4f434890b5fc"
     }
   }
 }
