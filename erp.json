@@ -1,28 +1,21 @@
 {
   "latest": {
-    "version": "1.1.32",
-    "releaseDate": "2026-08-25",
+    "version": "1.1.33",
+    "releaseDate": "2026-08-26",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Que mesas se juegan por chicos se marca ahora en Mesas -> Tipos de mesa, con una casilla por tipo. El POS abre esas mesas en ese modo sin preguntar: se acabo el cuadro de '¿por chicos o por tiempo?' en cada apertura, que en un salon se contestaba siempre igual",
-      "Los chicos dejan de estar limitados al tipo 'pool' del sistema: si su tipo se llama 'Pool americano' o 'Bola 8', tambien los puede usar",
-      "Con el cobro por chicos desactivado no se dejan marcar tipos de mesa, y desactivarlo desmarca los que estuvieran marcados. Las mesas ya abiertas no cambian: la partida que empezo por chicos se termina de cobrar por chicos",
-      "Configuracion -> Chicos: nueva casilla para decidir si se cobra el tiempo. Viene desactivada, que es como se juega por chicos: aunque la mesa tenga tarifa, solo se cobra el consumo. Si se activa, el tiempo se liquida por cada juego perdido y se le carga al que perdio",
-      "Cada SET que termina se liquida solo, sin esperar a que se cierre la mesa: lo que lleva pagado cada jugador esta al dia en todo momento",
-      "La bitacora muestra cada chico con su consumo y quien lo perdio, y lo que debe pagar cada jugador desglosado en tiempo, consumo, impuestos y propina",
-      "Nuevo boton en la bitacora para imprimirla en la ticketera, con el ancho configurado en la terminal. El boton PDF/IMPRIMIR sigue funcionando igual",
-      "El ticket del cobro por jugador lleva el nombre del jugador -'Jugador 1' si nadie lo cambio en el marcador-, para saber de quien es el papel",
-      "Corregido: cobrar al segundo jugador de una mesa por chicos dejaba esa venta como mostrador, fuera de la mesa y de sus reportes",
-      "Corregido: CERRAR la mesa desde la caja quitaba el cobro por jugador y la opcion de decidir si el ultimo chico se jugo. Ahora se conservan las dos",
-      "Corregido: si al cerrar se descartaba el ultimo chico y no quedaba nada mas, la mesa se quedaba ocupada y por cobrar sin nada que cobrar; para soltarla habia que agregar un producto y facturarlo. Ahora se libera sola",
-      "Todas las fechas de las pantallas del ERP se muestran igual: dia/mes/año y la hora en formato de 12 horas"
+      "El valor del chico ahora se pone en Mesas -> Tipos de mesa, uno por cada tipo que se juegue por chicos: un chico de pool no cuesta lo mismo que uno de tres bandas. Sale de Configuracion -> Chicos, donde queda solo el interruptor del salon. El valor que tuviera configurado se copia solo a todos los tipos",
+      "En 0 el juego no se cobra y al perder solo se reparte el consumo, como hasta ahora",
+      "El cierre de caja muestra los chicos como un solo renglon en PRODUCTOS VENDIDOS, con los juegos y su total: antes salia uno por cada chico -'Chico 1', 'Chico 2'...- y una noche movida llenaba el papel",
+      "En el CONSOLIDADO POR MESA del cierre, los chicos ya no se cuentan como consumo: cada mesa lleva su linea propia. Sumados a la bebida, una mesa por chicos parecia consumir una fortuna",
+      "El reporte de ventas estrena 'En que se vendio': tiempo de mesa, chicos y consumo por separado, en pantalla y en el PDF. Es suma de lineas, asi que no incluye impuestos ni propina, y el reporte lo dice"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.32.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.32/terminal-setup-1.1.32.exe",
-      "sizeBytes": 2458233,
-      "sha256": "fd706716885dbbf22d5758e9a4573fc9bf48455ca737fe7b00ac62e3460a98a5"
+      "fileName": "terminal-setup-1.1.33.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.33/terminal-setup-1.1.33.exe",
+      "sizeBytes": 2462302,
+      "sha256": "8899aaebb4cdc4131d3a8b08c47133bba92e612684c7f60b90d81f859531d200"
     }
   }
 }
