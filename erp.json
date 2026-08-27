@@ -1,21 +1,26 @@
 {
   "latest": {
-    "version": "1.1.33",
-    "releaseDate": "2026-08-26",
+    "version": "1.1.34",
+    "releaseDate": "2026-08-27",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El valor del chico ahora se pone en Mesas -> Tipos de mesa, uno por cada tipo que se juegue por chicos: un chico de pool no cuesta lo mismo que uno de tres bandas. Sale de Configuracion -> Chicos, donde queda solo el interruptor del salon. El valor que tuviera configurado se copia solo a todos los tipos",
-      "En 0 el juego no se cobra y al perder solo se reparte el consumo, como hasta ahora",
-      "El cierre de caja muestra los chicos como un solo renglon en PRODUCTOS VENDIDOS, con los juegos y su total: antes salia uno por cada chico -'Chico 1', 'Chico 2'...- y una noche movida llenaba el papel",
-      "En el CONSOLIDADO POR MESA del cierre, los chicos ya no se cuentan como consumo: cada mesa lleva su linea propia. Sumados a la bebida, una mesa por chicos parecia consumir una fortuna",
-      "El reporte de ventas estrena 'En que se vendio': tiempo de mesa, chicos y consumo por separado, en pantalla y en el PDF. Es suma de lineas, asi que no incluye impuestos ni propina, y el reporte lo dice"
+      "Nuevo: APARTAR LA CUENTA. Con la mesa en cobro, el boton del reloj de arena libera la mesa y deja la cuenta esperando en Ventas pendientes, con su mesa a la vista y cuanto lleva esperando. Sirve para el grupo que termino de jugar y se queda repasando lo consumido: la mesa se puede alquilar mientras discuten",
+      "La cuenta apartada se cobra despues como cualquier otra -incluido el cobro por jugador de las mesas por chicos- y cobrarla no toca la mesa ni la partida de quien este jugando en ella",
+      "Al cerrar el turno se avisa si quedaron cuentas apartadas sin cobrar",
+      "Corregido: al trasladar una partida a otra mesa, la mesa nueva se abria con el modo de la vieja. Pasar una mesa por chicos a una que cobra tiempo dejaba la nueva sin cobrar el reloj. Ahora cada mesa se cobra como diga su tipo, y el aviso del traslado lo dice",
+      "Corregido: el chico que estaba en juego se borraba al trasladar a una mesa que no juega por chicos. Ahora se liquida y viaja con la cuenta; si no llego a jugarse, la linea trae una X para quitarla con confirmacion",
+      "Corregido: una mesa podia quedar con DOS cuentas abiertas al trasladarle una partida, y un traslado de ida y vuelta acababa dejando los productos huerfanos en una mesa que se veia libre. Donde ya paso, la mesa muestra ahora la cuenta que tiene algo que cobrar",
+      "Corregido: tras trasladar, el panel de cobro seguia mostrando la cuenta que acababa de mudarse -sobre una mesa ya libre- y permitia cobrarla desde ahi",
+      "El ticket del cierre de caja baja 'Tiempo de mesa' y 'Chicos' al final de los productos vendidos -son el servicio de la mesa, no productos- y muestra el tiempo en horas con un decimal",
+      "En Caja, los egresos pasan a llamarse INSUMOS, en pantalla y en el ticket del cierre",
+      "El reporte de ventas muestra cuanto entro por cada forma de pago: efectivo, tarjeta y credito"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.33.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.33/terminal-setup-1.1.33.exe",
-      "sizeBytes": 2462302,
-      "sha256": "8899aaebb4cdc4131d3a8b08c47133bba92e612684c7f60b90d81f859531d200"
+      "fileName": "terminal-setup-1.1.34.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.34/terminal-setup-1.1.34.exe",
+      "sizeBytes": 2465196,
+      "sha256": "c736fdf852ab537978c93de41edf569c0b7b550978bdd1292df80f585e635c48"
     }
   }
 }
