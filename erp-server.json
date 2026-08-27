@@ -1,21 +1,25 @@
 {
   "latest": {
-    "version": "1.1.33",
-    "releaseDate": "2026-08-26",
+    "version": "1.1.34",
+    "releaseDate": "2026-08-27",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Cada tipo de mesa guarda el valor de su chico, en vez de haber uno solo para todo el salon. La migracion copia el valor que ya estuviera configurado a todos los tipos, asi que ninguna mesa cambia de precio al actualizar",
-      "El precio se fija cuando EMPIEZA el juego: corregir la tarifa a mitad de la noche no reescribe lo que alguien ya debe ni el juego en curso; los siguientes salen con el valor nuevo",
-      "El reporte de cierre consolida los chicos en un solo renglon y, por mesa, los separa del consumo",
-      "El reporte de ventas devuelve el consolidado por concepto -tiempo de mesa, chicos y consumo- de las lineas cobradas en el rango",
+      "Una cuenta se puede APARTAR: la mesa queda libre y la cuenta espera a que la cobren, conservando su mesa para que siga contando en el consolidado por mesa del cierre. Cobrarla no cierra la sesion ni libera la mesa, que para entonces puede ser de otro grupo",
+      "El cobro por jugador tambien funciona sobre una cuenta concreta y no solo sobre una mesa, que es lo que necesita una cuenta apartada",
+      "Corregido: el traslado imponia a la mesa de destino el modo de cobro de la de origen; ahora cada mesa se cobra como diga su tipo",
+      "Corregido: al trasladar a una mesa que no juega por chicos, el juego en curso se borraba. Ahora se liquida y viaja con la cuenta, sin dueno",
+      "Corregido: el traslado podia dejar DOS cuentas abiertas en la misma mesa, y con eso una partida trasladada de ida y vuelta acababa partida en dos con los productos abandonados. El traslado ahora limpia la cuenta vacia del destino y se niega si esa mesa tiene algo sin cobrar",
+      "Donde ya quedaron dos cuentas abiertas en una mesa, se devuelve la que tiene algo que cobrar: antes podia devolverse la vacia y los productos quedaban invisibles",
+      "El reporte de cierre separa el tiempo de mesa y los chicos de los productos vendidos, y devuelve los minutos para poder mostrarlos en horas",
+      "El reporte de ventas devuelve lo cobrado por cada forma de pago, contando PAGOS y no cuentas",
       "Una migracion nueva de la base de datos; el instalador la aplica al actualizar"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.33.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.33/servidor-setup-1.1.33.exe",
-      "sizeBytes": 243420275,
-      "sha256": "2b07c6bfea78f67a0ada163559fd3faffa85ff6dd0a5a5a674ca4f434890b5fc"
+      "fileName": "servidor-setup-1.1.34.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.34/servidor-setup-1.1.34.exe",
+      "sizeBytes": 264578345,
+      "sha256": "03842da340413d03add832a2313c2aec56a1248f451d90155f9ff5867c9d9153"
     }
   }
 }
