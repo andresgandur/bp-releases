@@ -1,7 +1,7 @@
 {
   "latest": {
-    "version": "1.1.34",
-    "releaseDate": "2026-08-27",
+    "version": "1.1.35",
+    "releaseDate": "2026-08-30",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
@@ -17,10 +17,10 @@
       "El reporte de ventas muestra cuanto entro por cada forma de pago: efectivo, tarjeta y credito"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.34.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.34/terminal-setup-1.1.34.exe",
-      "sizeBytes": 2465196,
-      "sha256": "c736fdf852ab537978c93de41edf569c0b7b550978bdd1292df80f585e635c48"
+      "fileName": "terminal-setup-1.1.35.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.35/terminal-setup-1.1.35.exe",
+      "sizeBytes": 2471285,
+      "sha256": "971ff28b1bdacd08969fe0c43e87cc392a022e4f11c46d73bbc4e7b416476f7e"
     }
   }
 }
