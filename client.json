@@ -1,26 +1,24 @@
 {
   "latest": {
-    "version": "1.1.32",
-    "releaseDate": "2026-08-25",
+    "version": "1.1.33",
+    "releaseDate": "2026-08-30",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El juego por chicos ya funciona en todas las modalidades, no solo en Buchacara: a dos jugadores pierde el que no gana el SET, y con mas de dos se le carga al que menos puntos hizo",
-      "Con mas de dos jugadores, si hay empate en el ultimo puesto la mesa pregunta a quien se le carga, y ofrece SOLO a los empatados; si el empate es arriba, primero hay que desempatar para saber quien gano",
-      "La pantalla del ganador muestra tambien quien perdio el chico, que es el dato por el que se pregunta en la mesa",
-      "Buchacara a dos jugadores: al llegar a 61 puntos se declara ganador automaticamente y el chico queda a nombre del otro",
-      "Jugando por chicos la META pasa a ser obligatoria para poder marcar puntos: sin ella el marcador no declara ganador y ningun chico llegaria a tener dueño",
-      "La META solo se puede fijar por encima del puntaje mas alto de la mesa, con o sin chicos: una META por debajo dejaba partidas ya ganadas sin cerrar",
-      "El detalle del consumo abre mas ancho y con la HORA en la primera columna, suma los chicos jugados y muestra cuanto debe cada jugador, propina incluida",
-      "FINALIZAR muestra solo el resumen de lo que paga cada jugador, sin la lista de productos, y ya no genera un chico de mas al elegir al perdedor",
-      "El panel central deja de mostrar el valor del tiempo cuando el ERP tiene configurado no cobrarlo, y los recuadros de valores ocupan menos alto",
-      "Corregido: al fijar una META por debajo de lo permitido, el aviso quedaba detras del teclado numerico y la pantalla parecia trabada"
+      "El marcador envia su estado al ERP para que la transmision y la grabacion muestren nombres, puntos, sets, promedio, banderas, colores y el cronometro del modo torneo",
+      "La fuente del numero del puntaje se puede elegir entre cuatro, con una vista previa de cada una. Se anaden una mas fina, una estrecha y otra de cifras parejas que no baila al pasar de 9 a 10",
+      "El numero de mesa se ajusta con botones + y -, sin abrir el teclado",
+      "El aviso de sin conexion pasa a una sola linea arriba y centrada, ocupando la tercera parte de alto",
+      "Al pulsar 'valor consumo' se ven tambien los SETS jugados, con el consumo y el tiempo de cada uno y a que jugador se le cargo",
+      "'No se jugo' se bloquea cuando el juego lleva mas de diez minutos: a esas alturas descartarlo seria dejar de cobrar una partida que si se jugo",
+      "Corregido: el video en vivo se congelaba y se quedaba en negro una y otra vez, y la grabacion se cortaba. El panel central y la pantalla extendida se pisaban la configuracion de la camara",
+      "Corregido: al cambiar el servidor o el numero de mesa, la pantalla no volvia a reconectarse nunca mas"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.32.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.32/marcador-setup-1.1.32.exe",
-      "sizeBytes": 187583679,
-      "sha256": "36fa99398d76ebc7e804024149f636d861e1278a6dd011925174ea88afa4f729"
+      "fileName": "marcador-setup-1.1.33.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.33/marcador-setup-1.1.33.exe",
+      "sizeBytes": 187586955,
+      "sha256": "4648b2d43f81bb556f0cbd7947f3526df21b96f1ec58241f3df0a98f08cd7efb"
     }
   }
 }
