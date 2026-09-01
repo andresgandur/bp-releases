@@ -1,10 +1,12 @@
 {
   "latest": {
-    "version": "1.1.33",
-    "releaseDate": "2026-08-30",
+    "version": "1.1.34",
+    "releaseDate": "2026-09-01",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "El ancho del panel central en el constructor ya no se topa en 900 px: el limite sale del ancho REAL de la pantalla, dejando sitio a las columnas de jugadores. En un televisor de 1920 se puede llegar a 1400 px, y en pantallas mas grandes, mas",
+      "El constructor y la pantalla de Configuracion usan ahora el mismo tope. Antes el mismo ajuste tenia tres limites distintos segun donde se tocara",
       "El marcador envia su estado al ERP para que la transmision y la grabacion muestren nombres, puntos, sets, promedio, banderas, colores y el cronometro del modo torneo",
       "La fuente del numero del puntaje se puede elegir entre cuatro, con una vista previa de cada una. Se anaden una mas fina, una estrecha y otra de cifras parejas que no baila al pasar de 9 a 10",
       "El numero de mesa se ajusta con botones + y -, sin abrir el teclado",
@@ -15,10 +17,10 @@
       "Corregido: al cambiar el servidor o el numero de mesa, la pantalla no volvia a reconectarse nunca mas"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.33.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.33/marcador-setup-1.1.33.exe",
-      "sizeBytes": 187586955,
-      "sha256": "4648b2d43f81bb556f0cbd7947f3526df21b96f1ec58241f3df0a98f08cd7efb"
+      "fileName": "marcador-setup-1.1.34.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.34/marcador-setup-1.1.34.exe",
+      "sizeBytes": 187587042,
+      "sha256": "cb04472ebd5028ebf9e2660f02b4b29bfbd77f7179a832b9b3f41cc990d7fece"
     }
   }
 }
