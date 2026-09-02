@@ -1,7 +1,7 @@
 {
   "latest": {
-    "version": "1.1.34",
-    "releaseDate": "2026-09-01",
+    "version": "1.1.35",
+    "releaseDate": "2026-09-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
@@ -11,16 +11,16 @@
       "La fuente del numero del puntaje se puede elegir entre cuatro, con una vista previa de cada una. Se anaden una mas fina, una estrecha y otra de cifras parejas que no baila al pasar de 9 a 10",
       "El numero de mesa se ajusta con botones + y -, sin abrir el teclado",
       "El aviso de sin conexion pasa a una sola linea arriba y centrada, ocupando la tercera parte de alto",
-      "Al pulsar 'valor consumo' se ven tambien los SETS jugados, con el consumo y el tiempo de cada uno y a que jugador se le cargo",
+      "Al pulsar 'valor consumo' se ve la cuenta repartida: cada chico o SET con quien lo perdio, lo que costo y de que se compone -lo que se tomaron, el rato de mesa y el valor del juego-, con la hora de cada linea. Antes era una lista corrida que no decia a que set pertenecia cada cosa",
       "'No se jugo' se bloquea cuando el juego lleva mas de diez minutos: a esas alturas descartarlo seria dejar de cobrar una partida que si se jugo",
       "Corregido: el video en vivo se congelaba y se quedaba en negro una y otra vez, y la grabacion se cortaba. El panel central y la pantalla extendida se pisaban la configuracion de la camara",
       "Corregido: al cambiar el servidor o el numero de mesa, la pantalla no volvia a reconectarse nunca mas"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.34.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.34/marcador-setup-1.1.34.exe",
-      "sizeBytes": 187587042,
-      "sha256": "cb04472ebd5028ebf9e2660f02b4b29bfbd77f7179a832b9b3f41cc990d7fece"
+      "fileName": "marcador-setup-1.1.35.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.35/marcador-setup-1.1.35.exe",
+      "sizeBytes": 187587498,
+      "sha256": "093ac96d4e44679fdc6df55c3e2b617eb5124e7f7ff0dcc9ab4e1c320618aa62"
     }
   }
 }
