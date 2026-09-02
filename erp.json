@@ -1,10 +1,18 @@
 {
   "latest": {
-    "version": "1.1.35",
-    "releaseDate": "2026-08-30",
+    "version": "1.1.36",
+    "releaseDate": "2026-09-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "Exportar el catalogo de productos a un archivo .zip con la lista Y las imagenes dentro, para montar el modulo en otro negocio sin volver a teclear nada ni a subir foto por foto. Se elige si viaja el costo y si viajan las imagenes",
+      "El mismo boton de importar acepta ahora ese .zip ademas de la plantilla de Excel. Solo se AGREGAN productos nuevos: lo que ya existe alla, por codigo o por nombre, se salta y se dice cual",
+      "Nuevo ajuste: los segundos que un producto marcado varias veces seguidas se acumula en una sola linea. Treinta por defecto",
+      "Ese mismo plazo es el que se tiene para corregir: pasado el tiempo, los botones de + , - y borrar desaparecen de la linea. Un producto que ya pertenece a un chico o SET liquidado no se toca, por reciente que sea",
+      "El ticket de una mesa por chicos o SETS se reorganizo entero: cada jugador aparece UNA vez, con los juegos que perdio en orden y, dentro de cada uno, lo que se tomo, el rato de mesa y el valor del juego. Antes quien perdia dos juegos salia dos veces en el mismo papel",
+      "Corregido: al cobrar en efectivo a UN jugador de una mesa por chicos, la caja mostraba el total de la MESA. Quien pagaba su parte exacta veia 'no alcanza', y si tecleaba el de la mesa el ticket salia con un cambio que no era",
+      "Corregido: el consumo de un juego descartado ('no se jugo') salia en el ticket a nombre de quien perdio el juego anterior, y descuadraba los dos subtotales",
+      "Corregido: el ticket mostraba un bloque de 'Antes del primer juego' con productos que no se sabia a que set correspondian. Ahora se le cargan al primero, que es durante el que se sirvieron",
       "Nuevo: APARTAR LA CUENTA. Con la mesa en cobro, el boton del reloj de arena libera la mesa y deja la cuenta esperando en Ventas pendientes, con su mesa a la vista y cuanto lleva esperando. Sirve para el grupo que termino de jugar y se queda repasando lo consumido: la mesa se puede alquilar mientras discuten",
       "La cuenta apartada se cobra despues como cualquier otra -incluido el cobro por jugador de las mesas por chicos- y cobrarla no toca la mesa ni la partida de quien este jugando en ella",
       "Al cerrar el turno se avisa si quedaron cuentas apartadas sin cobrar",
@@ -17,10 +25,10 @@
       "El reporte de ventas muestra cuanto entro por cada forma de pago: efectivo, tarjeta y credito"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.35.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.35/terminal-setup-1.1.35.exe",
-      "sizeBytes": 2471285,
-      "sha256": "971ff28b1bdacd08969fe0c43e87cc392a022e4f11c46d73bbc4e7b416476f7e"
+      "fileName": "terminal-setup-1.1.36.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.36/terminal-setup-1.1.36.exe",
+      "sizeBytes": 2474470,
+      "sha256": "172226dbceea8a54601a74d5193b2277403ddb1a21180c409cfe9866ef2bb057"
     }
   }
 }
