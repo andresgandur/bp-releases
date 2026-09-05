@@ -1,10 +1,16 @@
 {
   "latest": {
-    "version": "1.1.36",
-    "releaseDate": "2026-09-02",
+    "version": "1.1.37",
+    "releaseDate": "2026-09-05",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "El ticket de una mesa por chicos o SETS usa ahora las mismas cuatro columnas que una venta directa -Producto, Cant., Vr Unit, Vr Total- manteniendo el agrupado por jugador y por juego",
+      "El nombre del chico o SET sale solo, sin importe al lado: entre el valor del juego, el total del jugador y el de la cuenta habia demasiadas cifras y el cliente no sabia cual pagaba",
+      "El ticket y el cierre de caja llevan al pie la version del ERP con la que se imprimieron",
+      "El cierre de caja dice DESDE QUE TICKET HASTA CUAL va, y cuantas ventas entraron. Es lo que permite casarlo con el talonario cuando dos cajeros se relevan",
+      "El cierre de caja muestra, solo como informacion, cuantas mesas quedaron abiertas y el consumo que llevan cargado. No entra en el arqueo: ese dinero todavia no ha entrado a la caja",
+      "Nuevos reportes de INSUMOS y GASTOS, con el consolidado por motivo -en que se esta yendo la plata- y el detalle de cada movimiento con su turno. Con CSV e impresion",
       "Exportar el catalogo de productos a un archivo .zip con la lista Y las imagenes dentro, para montar el modulo en otro negocio sin volver a teclear nada ni a subir foto por foto. Se elige si viaja el costo y si viajan las imagenes",
       "El mismo boton de importar acepta ahora ese .zip ademas de la plantilla de Excel. Solo se AGREGAN productos nuevos: lo que ya existe alla, por codigo o por nombre, se salta y se dice cual",
       "Nuevo ajuste: los segundos que un producto marcado varias veces seguidas se acumula en una sola linea. Treinta por defecto",
@@ -25,10 +31,10 @@
       "El reporte de ventas muestra cuanto entro por cada forma de pago: efectivo, tarjeta y credito"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.36.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.36/terminal-setup-1.1.36.exe",
-      "sizeBytes": 2474470,
-      "sha256": "172226dbceea8a54601a74d5193b2277403ddb1a21180c409cfe9866ef2bb057"
+      "fileName": "terminal-setup-1.1.37.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.37/terminal-setup-1.1.37.exe",
+      "sizeBytes": 2474823,
+      "sha256": "afa07faf1b536ebfe91ddb3dde069aaa21c8833f91d8f867f5c24408641fafa1"
     }
   }
 }
