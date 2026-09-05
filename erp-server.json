@@ -1,10 +1,16 @@
 {
   "latest": {
-    "version": "1.1.36",
-    "releaseDate": "2026-09-02",
+    "version": "1.1.37",
+    "releaseDate": "2026-09-05",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "La transmision emite el AUDIO de la camara cuando la camara trae microfono; cuando no, la pista muda de siempre, que es lo unico que aceptan YouTube y Facebook",
+      "Un vigilante corta la transmision que deja de sostenerse: si el video deja de avanzar o el equipo baja del tiempo real de forma sostenida, se para y se dice por que, en vez de dejar la mesa marcada EN VIVO sobre una emision muerta",
+      "El log de la transmision deja el ritmo real cada pocos segundos (1.02x, 2795 kbps, cuadros descartados): es lo que permite saber si una caida fue del equipo o de la subida de internet",
+      "Nuevos reportes de insumos y gastos sobre los movimientos de caja, agrupados por motivo, por usuario y por dia",
+      "El cierre de caja informa el rango de tickets del turno y lo que queda pendiente en las mesas abiertas",
+      "Corregido: las ventas se agrupaban por dia en UTC. Una venta de las ocho de la noche contaba al dia siguiente y, en la serie del tablero, desaparecia del grafico: justo la franja en que mas se vende",
       "El catalogo de productos se puede exportar e importar completo, imagenes incluidas, en un solo archivo .zip. Al cargarlo se dan de alta las categorias, marcas e impuestos que falten; si un impuesto ya existe aqui, manda el de este negocio y se avisa del porcentaje que traia el archivo",
       "El stock NO viaja en el catalogo: las existencias son de cada local. El minimo y el maximo si",
       "El tiempo de agrupacion de productos es configurable (30 segundos por defecto) y es tambien el plazo para corregir una linea: pasado ese tiempo no se puede cambiar la cantidad ni borrarla, y una linea de un chico o SET ya liquidado no se toca nunca",
@@ -25,10 +31,10 @@
       "Corregido: al cerrar una mesa sin cobrar, su cuenta seguia apareciendo a la derecha y se podia pulsar Cobrar sobre algo que ya no existia"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.1.36.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.36/servidor-setup-1.1.36.exe",
-      "sizeBytes": 269946995,
-      "sha256": "fbdac68cd873fbedeb2f4607370568c7e60db74d2a12bfdaee08df2bdc554b71"
+      "fileName": "servidor-setup-1.1.37.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.1.37/servidor-setup-1.1.37.exe",
+      "sizeBytes": 269939867,
+      "sha256": "853553b4deb9ea51da8eb4c21f079f655da98afc359d00e5cea4ae5e07a0ea95"
     }
   }
 }
