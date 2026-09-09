@@ -1,40 +1,28 @@
 {
   "latest": {
-    "version": "1.1.37",
-    "releaseDate": "2026-09-05",
+    "version": "1.2.0",
+    "releaseDate": "2026-09-09",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El ticket de una mesa por chicos o SETS usa ahora las mismas cuatro columnas que una venta directa -Producto, Cant., Vr Unit, Vr Total- manteniendo el agrupado por jugador y por juego",
-      "El nombre del chico o SET sale solo, sin importe al lado: entre el valor del juego, el total del jugador y el de la cuenta habia demasiadas cifras y el cliente no sabia cual pagaba",
-      "El ticket y el cierre de caja llevan al pie la version del ERP con la que se imprimieron",
-      "El cierre de caja dice DESDE QUE TICKET HASTA CUAL va, y cuantas ventas entraron. Es lo que permite casarlo con el talonario cuando dos cajeros se relevan",
-      "El cierre de caja muestra, solo como informacion, cuantas mesas quedaron abiertas y el consumo que llevan cargado. No entra en el arqueo: ese dinero todavia no ha entrado a la caja",
-      "Nuevos reportes de INSUMOS y GASTOS, con el consolidado por motivo -en que se esta yendo la plata- y el detalle de cada movimiento con su turno. Con CSV e impresion",
-      "Exportar el catalogo de productos a un archivo .zip con la lista Y las imagenes dentro, para montar el modulo en otro negocio sin volver a teclear nada ni a subir foto por foto. Se elige si viaja el costo y si viajan las imagenes",
-      "El mismo boton de importar acepta ahora ese .zip ademas de la plantilla de Excel. Solo se AGREGAN productos nuevos: lo que ya existe alla, por codigo o por nombre, se salta y se dice cual",
-      "Nuevo ajuste: los segundos que un producto marcado varias veces seguidas se acumula en una sola linea. Treinta por defecto",
-      "Ese mismo plazo es el que se tiene para corregir: pasado el tiempo, los botones de + , - y borrar desaparecen de la linea. Un producto que ya pertenece a un chico o SET liquidado no se toca, por reciente que sea",
-      "El ticket de una mesa por chicos o SETS se reorganizo entero: cada jugador aparece UNA vez, con los juegos que perdio en orden y, dentro de cada uno, lo que se tomo, el rato de mesa y el valor del juego. Antes quien perdia dos juegos salia dos veces en el mismo papel",
-      "Corregido: al cobrar en efectivo a UN jugador de una mesa por chicos, la caja mostraba el total de la MESA. Quien pagaba su parte exacta veia 'no alcanza', y si tecleaba el de la mesa el ticket salia con un cambio que no era",
-      "Corregido: el consumo de un juego descartado ('no se jugo') salia en el ticket a nombre de quien perdio el juego anterior, y descuadraba los dos subtotales",
-      "Corregido: el ticket mostraba un bloque de 'Antes del primer juego' con productos que no se sabia a que set correspondian. Ahora se le cargan al primero, que es durante el que se sirvieron",
-      "Nuevo: APARTAR LA CUENTA. Con la mesa en cobro, el boton del reloj de arena libera la mesa y deja la cuenta esperando en Ventas pendientes, con su mesa a la vista y cuanto lleva esperando. Sirve para el grupo que termino de jugar y se queda repasando lo consumido: la mesa se puede alquilar mientras discuten",
-      "La cuenta apartada se cobra despues como cualquier otra -incluido el cobro por jugador de las mesas por chicos- y cobrarla no toca la mesa ni la partida de quien este jugando en ella",
-      "Al cerrar el turno se avisa si quedaron cuentas apartadas sin cobrar",
-      "Corregido: al trasladar una partida a otra mesa, la mesa nueva se abria con el modo de la vieja. Pasar una mesa por chicos a una que cobra tiempo dejaba la nueva sin cobrar el reloj. Ahora cada mesa se cobra como diga su tipo, y el aviso del traslado lo dice",
-      "Corregido: el chico que estaba en juego se borraba al trasladar a una mesa que no juega por chicos. Ahora se liquida y viaja con la cuenta; si no llego a jugarse, la linea trae una X para quitarla con confirmacion",
-      "Corregido: una mesa podia quedar con DOS cuentas abiertas al trasladarle una partida, y un traslado de ida y vuelta acababa dejando los productos huerfanos en una mesa que se veia libre. Donde ya paso, la mesa muestra ahora la cuenta que tiene algo que cobrar",
-      "Corregido: tras trasladar, el panel de cobro seguia mostrando la cuenta que acababa de mudarse -sobre una mesa ya libre- y permitia cobrarla desde ahi",
-      "El ticket del cierre de caja baja 'Tiempo de mesa' y 'Chicos' al final de los productos vendidos -son el servicio de la mesa, no productos- y muestra el tiempo en horas con un decimal",
-      "En Caja, los egresos pasan a llamarse INSUMOS, en pantalla y en el ticket del cierre",
-      "El reporte de ventas muestra cuanto entro por cada forma de pago: efectivo, tarjeta y credito"
+      "FACTURACION ELECTRONICA: nueva seccion en Configuracion para encenderla y una pantalla propia, Facturacion DIAN, para ver que salio y que no. Apagada no se ve nada mas que el interruptor",
+      "Boton de PROBAR CONEXION que comprueba el token antes de guardar y enseña la resolucion que el proveedor tiene registrada: conectarse es la mitad de la comprobacion, tiene que contestar con la resolucion que uno cree tener",
+      "El ticket lleva el numero electronico, el CUFE y el codigo QR debajo. Sin documento todavia sale una leyenda que dice que es un comprobante interno: sin numero no se escribe nada que suene a documento fiscal",
+      "El QR sale tambien en el PDF del ticket, no solo por la impresora termica",
+      "Reimprimir un ticket una hora despues enseña el numero que ya llego: el dato se lee al imprimir y no se congela con la venta",
+      "Pantalla de Facturacion DIAN con buscador -por numero de venta, documento o CUFE-, filtro por estado y paginas. Desde ahi se reenvia un rechazo corregido, se manda el documento por correo y se abre su PDF",
+      "ANULAR UNA VENTA COBRADA desde el menu de los tres puntos del POS. Abre la lista de ventas recientes para elegir cual -anular a ciegas la ultima es el error que aqui no se puede cometer- pide el motivo y avisa de que el efectivo sale del cajon. Solo devolucion total",
+      "En Clientes: tipo de documento de la DIAN, tipo de persona y direccion. Con NIT se propone empresa, pero se puede corregir",
+      "En Impuestos: a que impuesto de la DIAN corresponde cada tarifa",
+      "Cada terminal puede declarar SU caja -placa, tipo y ubicacion- junto a la impresora, para los salones con mas de una",
+      "El menu del clic derecho ya no aparece en la aplicacion instalada: ofrecia cosas del navegador que no pintan nada en un punto de venta, y 'Recargar' a mitad de un cobro hace daño. Sobre un campo de texto si sale, que copiar y pegar son parte del trabajo",
+      "Corregido: dos renglones del cierre de caja no cabian en el rollo de 58 mm y la impresora los cortaba"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.1.37.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.1.37/terminal-setup-1.1.37.exe",
-      "sizeBytes": 2474823,
-      "sha256": "afa07faf1b536ebfe91ddb3dde069aaa21c8833f91d8f867f5c24408641fafa1"
+      "fileName": "terminal-setup-1.2.0.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.0/terminal-setup-1.2.0.exe",
+      "sizeBytes": 2498903,
+      "sha256": "b453612827c5b6c89836cc6c35b161b0cdfee7aa00c1fb4109ec2173237ddd69"
     }
   }
 }
