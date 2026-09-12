@@ -1,26 +1,22 @@
 {
   "latest": {
-    "version": "1.1.35",
-    "releaseDate": "2026-09-02",
+    "version": "1.1.36",
+    "releaseDate": "2026-09-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El ancho del panel central en el constructor ya no se topa en 900 px: el limite sale del ancho REAL de la pantalla, dejando sitio a las columnas de jugadores. En un televisor de 1920 se puede llegar a 1400 px, y en pantallas mas grandes, mas",
-      "El constructor y la pantalla de Configuracion usan ahora el mismo tope. Antes el mismo ajuste tenia tres limites distintos segun donde se tocara",
-      "El marcador envia su estado al ERP para que la transmision y la grabacion muestren nombres, puntos, sets, promedio, banderas, colores y el cronometro del modo torneo",
-      "La fuente del numero del puntaje se puede elegir entre cuatro, con una vista previa de cada una. Se anaden una mas fina, una estrecha y otra de cifras parejas que no baila al pasar de 9 a 10",
-      "El numero de mesa se ajusta con botones + y -, sin abrir el teclado",
-      "El aviso de sin conexion pasa a una sola linea arriba y centrada, ocupando la tercera parte de alto",
-      "Al pulsar 'valor consumo' se ve la cuenta repartida: cada chico o SET con quien lo perdio, lo que costo y de que se compone -lo que se tomaron, el rato de mesa y el valor del juego-, con la hora de cada linea. Antes era una lista corrida que no decia a que set pertenecia cada cosa",
-      "'No se jugo' se bloquea cuando el juego lleva mas de diez minutos: a esas alturas descartarlo seria dejar de cobrar una partida que si se jugo",
-      "Corregido: el video en vivo se congelaba y se quedaba en negro una y otra vez, y la grabacion se cortaba. El panel central y la pantalla extendida se pisaban la configuracion de la camara",
-      "Corregido: al cambiar el servidor o el numero de mesa, la pantalla no volvia a reconectarse nunca mas"
+      "LICENCIA: la mesa solo se bloquea cuando el servicio de licencias CONFIRMA que la licencia vencio, o que fue suspendida, revocada, borrada o liberada de esta mesa. Sin internet o con el servicio caido se sigue jugando",
+      "Corregido: una licencia renovada o extendida no se podia confirmar y 'Reintentar' no servia, solo reactivar. La mesa se identificaba ante el servicio con un codigo que este nunca reconocia; se repara sola la primera vez que pregunta, sin gastar cupo",
+      "Corregido: conectar una memoria USB o cambiar el disco bloqueaba la licencia como si fuera otro equipo. Ahora se tolera que cambie una pieza; si cambian dos de las tres, si es otro equipo",
+      "La licencia se comprueba sola cuando toca -el dia 1, la semana antes de vencer, cada hora si esta vencida o bloqueada- y el bloqueo aparece o se levanta sin reiniciar la mesa. Ningun problema de licencia cierra ya la aplicacion",
+      "La licencia vale hasta las 23:59 del dia de vencimiento: 'vence el 10' se juega el 10 entero",
+      "Panel central: el boton de reiniciar pasa a rojo, el de intercambiar camaras a verde y un 10% mas grande, y el de reconectar queda del mismo tamano"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.35.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.35/marcador-setup-1.1.35.exe",
-      "sizeBytes": 187587498,
-      "sha256": "093ac96d4e44679fdc6df55c3e2b617eb5124e7f7ff0dcc9ab4e1c320618aa62"
+      "fileName": "marcador-setup-1.1.36.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.36/marcador-setup-1.1.36.exe",
+      "sizeBytes": 187590673,
+      "sha256": "79f5961b147f506797e99689e52edd6ea6c3f811bf5901607c12d40b351f7b9b"
     }
   }
 }
