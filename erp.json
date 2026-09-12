@@ -1,28 +1,21 @@
 {
   "latest": {
-    "version": "1.2.0",
-    "releaseDate": "2026-09-09",
+    "version": "1.2.1",
+    "releaseDate": "2026-09-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "FACTURACION ELECTRONICA: nueva seccion en Configuracion para encenderla y una pantalla propia, Facturacion DIAN, para ver que salio y que no. Apagada no se ve nada mas que el interruptor",
-      "Boton de PROBAR CONEXION que comprueba el token antes de guardar y enseña la resolucion que el proveedor tiene registrada: conectarse es la mitad de la comprobacion, tiene que contestar con la resolucion que uno cree tener",
-      "El ticket lleva el numero electronico, el CUFE y el codigo QR debajo. Sin documento todavia sale una leyenda que dice que es un comprobante interno: sin numero no se escribe nada que suene a documento fiscal",
-      "El QR sale tambien en el PDF del ticket, no solo por la impresora termica",
-      "Reimprimir un ticket una hora despues enseña el numero que ya llego: el dato se lee al imprimir y no se congela con la venta",
-      "Pantalla de Facturacion DIAN con buscador -por numero de venta, documento o CUFE-, filtro por estado y paginas. Desde ahi se reenvia un rechazo corregido, se manda el documento por correo y se abre su PDF",
-      "ANULAR UNA VENTA COBRADA desde el menu de los tres puntos del POS. Abre la lista de ventas recientes para elegir cual -anular a ciegas la ultima es el error que aqui no se puede cometer- pide el motivo y avisa de que el efectivo sale del cajon. Solo devolucion total",
-      "En Clientes: tipo de documento de la DIAN, tipo de persona y direccion. Con NIT se propone empresa, pero se puede corregir",
-      "En Impuestos: a que impuesto de la DIAN corresponde cada tarifa",
-      "Cada terminal puede declarar SU caja -placa, tipo y ubicacion- junto a la impresora, para los salones con mas de una",
-      "El menu del clic derecho ya no aparece en la aplicacion instalada: ofrecia cosas del navegador que no pintan nada en un punto de venta, y 'Recargar' a mitad de un cobro hace daño. Sobre un campo de texto si sale, que copiar y pegar son parte del trabajo",
-      "Corregido: dos renglones del cierre de caja no cabian en el rollo de 58 mm y la impresora los cortaba"
+      "Pantalla de licencia con boton VOLVER A COMPROBAR: si ya renovaron la licencia, basta con preguntar otra vez. Antes solo ofrecia activarla, y el servicio contestaba que ya estaba en uso",
+      "Corregido: cambiar la IP del servidor obligaba a reactivar la licencia. Si la terminal no alcanza el servidor sale 'Sin conexion con el servidor' con el campo de la IP, y dice si responde o no. La licencia no depende de la IP",
+      "Un corte de conexion de un segundo ya no manda a la pantalla de activacion en mitad de un cobro: se sigue con lo ultimo que se supo de la licencia",
+      "Aviso 'Confirmando la licencia' cuando la fecha guardada ya paso y se esta preguntando a BillarPlay. Se sigue trabajando",
+      "El ultimo dia de la licencia dice 'Vence hoy' en vez de '0 dias'"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.0.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.0/terminal-setup-1.2.0.exe",
-      "sizeBytes": 2498903,
-      "sha256": "b453612827c5b6c89836cc6c35b161b0cdfee7aa00c1fb4109ec2173237ddd69"
+      "fileName": "terminal-setup-1.2.1.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.1/terminal-setup-1.2.1.exe",
+      "sizeBytes": 2502245,
+      "sha256": "f1e7a57e2a7e0bf328f0ce3e85e74dde09791771464bc40d04a8ab04fe79cbca"
     }
   }
 }
