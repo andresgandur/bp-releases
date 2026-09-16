@@ -1,22 +1,23 @@
 {
   "latest": {
-    "version": "1.2.1",
-    "releaseDate": "2026-09-12",
+    "version": "1.2.2",
+    "releaseDate": "2026-09-16",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "LICENCIA: el ERP solo se bloquea cuando el servicio de licencias CONFIRMA que la licencia vencio, o que fue suspendida, revocada, borrada o liberada de este equipo. Sin internet, con el servicio caido o saturado, o por un error nuestro, se sigue trabajando y se vuelve a intentar a la hora",
-      "Corregido: una licencia que el administrador ya habia extendido se bloqueaba en la fecha vieja. El ERP miraba la fecha guardada en la ultima comprobacion y ni siquiera preguntaba. Ahora, si esa fecha ya paso, pregunta antes de bloquear y mientras tanto se trabaja con un aviso",
-      "Corregido: licencias perpetuas que habia que reactivar. Un error del propio servicio de licencias -de su base de datos, de su hosting- se leia como 'licencia no valida'",
-      "La licencia se comprueba el dia 1 de cada mes -o el primer dia que se pueda, si ese dia no hubo internet-, a diario la semana antes de vencer, por si la extendieron, y cada hora si esta vencida o bloqueada. Antes, sin internet el dia 1, se perdia el mes entero",
-      "La licencia vale hasta las 23:59 del dia de vencimiento: 'vence el 10' se usa el 10 entero",
-      "Un bloqueo se levanta solo en cuanto renuevan la licencia, sin tener que activarla otra vez"
+      "IMPORTADOR DE PRODUCTOS: las categorias y marcas que traiga el archivo y aqui no existan SE CREAN, vengan escritas en la hoja Listas o usadas en la fila de un producto. Antes la fila se rechazaba y montar un negocio nuevo obligaba a teclear primero las veinte categorias",
+      "Al terminar se dice cuales se crearon: es asi como se descubre un 'Bebdias' recien creado por un error de escritura, antes de que salga en la pantalla de cobro",
+      "Mayusculas, tildes y espacios de mas ya no crean categorias gemelas: 'bebidas', 'Bebidas' y 'Bebidas ' van todas a la que ya existe",
+      "Las categorias nuevas se acomodan al FINAL del orden que ya tiene el negocio: ese orden es el de la pantalla de cobro y lo que llega de un Excel no tiene por que colarse antes",
+      "Los impuestos siguen sin crearse al importar, y ahora se dice por que: un impuesto es un porcentaje, no un nombre, y ese numero acaba en la factura de un cliente. Se crean en Configuracion",
+      "Dos frenos contra el error de dedo caro: un nombre de mas de 60 caracteres se rechaza -pasa al pegar la descripcion en la columna equivocada- y mas de 200 categorias nuevas en un archivo crea las primeras y avisa",
+      "CAMARAS H.265 en el video en vivo: el codec se vuelve a detectar cuando el visor no logra imagen. Cambiar una camara de H.264 a H.265 con el ERP abierto dejaba esa camara en negro, porque se seguia creyendo el codec detectado la primera vez"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.1.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.1/servidor-setup-1.2.1.exe",
-      "sizeBytes": 285854289,
-      "sha256": "a2ddb3942c3068a4f9ac8b21cbb06b68ec58082b8688a5c9fe6a4523f294f4da"
+      "fileName": "servidor-setup-1.2.2.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.2/servidor-setup-1.2.2.exe",
+      "sizeBytes": 285860139,
+      "sha256": "d5f9e60683100d28411850d9337a19cd6ebe773faf8c0cdb257446ebc1bc7137"
     }
   }
 }
