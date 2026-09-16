@@ -1,22 +1,20 @@
 {
   "latest": {
-    "version": "1.1.36",
-    "releaseDate": "2026-09-12",
+    "version": "1.1.37",
+    "releaseDate": "2026-09-16",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "LICENCIA: la mesa solo se bloquea cuando el servicio de licencias CONFIRMA que la licencia vencio, o que fue suspendida, revocada, borrada o liberada de esta mesa. Sin internet o con el servicio caido se sigue jugando",
-      "Corregido: una licencia renovada o extendida no se podia confirmar y 'Reintentar' no servia, solo reactivar. La mesa se identificaba ante el servicio con un codigo que este nunca reconocia; se repara sola la primera vez que pregunta, sin gastar cupo",
-      "Corregido: conectar una memoria USB o cambiar el disco bloqueaba la licencia como si fuera otro equipo. Ahora se tolera que cambie una pieza; si cambian dos de las tres, si es otro equipo",
-      "La licencia se comprueba sola cuando toca -el dia 1, la semana antes de vencer, cada hora si esta vencida o bloqueada- y el bloqueo aparece o se levanta sin reiniciar la mesa. Ningun problema de licencia cierra ya la aplicacion",
-      "La licencia vale hasta las 23:59 del dia de vencimiento: 'vence el 10' se juega el 10 entero",
-      "Panel central: el boton de reiniciar pasa a rojo, el de intercambiar camaras a verde y un 10% mas grande, y el de reconectar queda del mismo tamano"
+      "CAMARAS H.265: cambiar una camara de H.264 a H.265 con el marcador abierto dejaba la mesa en negro para siempre. Ahora el codec se vuelve a sondear cuando un intento no logra imagen y, tras varios en vano, el vivo pasa a HLS, que reproduce los dos codecs. Ya no hay que reiniciar la aplicacion",
+      "Tambien saca del negro al equipo donde el WebRTC no puede salir por la red: antes se reintentaba lo mismo indefinidamente",
+      "LICENCIA: cuando la consulta no llega a salir del equipo se dice que hacer, en vez del mensaje tecnico. El caso mas comun en una mesa recien instalada es la FECHA del equipo mal puesta: con una fecha atrasada el certificado del servicio 'todavia no es valido' y Windows corta la conexion. Ahora el aviso lo dice con la fecha que tiene el equipo",
+      "Se traducen igual el certificado vencido, la conexion interceptada por un antivirus o un cortafuegos, el DNS y los tiempos de espera. La verificacion del certificado NO se baja: hacerlo dejaria la clave de licencia viajando donde cualquiera en esa red podria leerla"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.36.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.36/marcador-setup-1.1.36.exe",
-      "sizeBytes": 187590673,
-      "sha256": "79f5961b147f506797e99689e52edd6ea6c3f811bf5901607c12d40b351f7b9b"
+      "fileName": "marcador-setup-1.1.37.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.37/marcador-setup-1.1.37.exe",
+      "sizeBytes": 187591996,
+      "sha256": "24c9ffdb52ef22155e4da209e144b099a079c9b5c6e37cfec1a8dfb46ff2d462"
     }
   }
 }
