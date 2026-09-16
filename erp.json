@@ -1,21 +1,20 @@
 {
   "latest": {
-    "version": "1.2.1",
-    "releaseDate": "2026-09-12",
+    "version": "1.2.2",
+    "releaseDate": "2026-09-16",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Pantalla de licencia con boton VOLVER A COMPROBAR: si ya renovaron la licencia, basta con preguntar otra vez. Antes solo ofrecia activarla, y el servicio contestaba que ya estaba en uso",
-      "Corregido: cambiar la IP del servidor obligaba a reactivar la licencia. Si la terminal no alcanza el servidor sale 'Sin conexion con el servidor' con el campo de la IP, y dice si responde o no. La licencia no depende de la IP",
-      "Un corte de conexion de un segundo ya no manda a la pantalla de activacion en mitad de un cobro: se sigue con lo ultimo que se supo de la licencia",
-      "Aviso 'Confirmando la licencia' cuando la fecha guardada ya paso y se esta preguntando a BillarPlay. Se sigue trabajando",
-      "El ultimo dia de la licencia dice 'Vence hoy' en vez de '0 dias'"
+      "IMPORTADOR: en la hoja de productos, las columnas Categoria, Marca e Impuesto se eligen de un DESPLEGABLE con lo que ya existe, para no escribirlas a mano. Avisa pero deja continuar: una categoria nueva escrita a mano es valida y se crea al importar",
+      "El desplegable llega diez filas mas alla de lo que hay, asi que una categoria agregada al final de la hoja Listas aparece enseguida para elegirla en los productos",
+      "La pantalla de importar cuenta las categorias y marcas nuevas que se crearon, con sus nombres",
+      "CAMARAS H.265: el visor de video en vivo le pide al servidor volver a detectar el codec cuando no logra imagen y, tras varios intentos, pasa a HLS -que reproduce H.264 y H.265-. Saca del negro tanto a la camara que cambio de codec como al equipo donde el WebRTC no puede salir"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.1.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.1/terminal-setup-1.2.1.exe",
-      "sizeBytes": 2502245,
-      "sha256": "f1e7a57e2a7e0bf328f0ce3e85e74dde09791771464bc40d04a8ab04fe79cbca"
+      "fileName": "terminal-setup-1.2.2.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.2/terminal-setup-1.2.2.exe",
+      "sizeBytes": 2501382,
+      "sha256": "bde194e609d452dbe5d4f28fbd0d3e429a77fae9738b56780a9acd8727c647d1"
     }
   }
 }
