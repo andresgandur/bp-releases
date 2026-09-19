@@ -1,23 +1,20 @@
 {
   "latest": {
-    "version": "1.2.2",
-    "releaseDate": "2026-09-16",
+    "version": "1.2.3",
+    "releaseDate": "2026-09-19",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "IMPORTADOR DE PRODUCTOS: las categorias y marcas que traiga el archivo y aqui no existan SE CREAN, vengan escritas en la hoja Listas o usadas en la fila de un producto. Antes la fila se rechazaba y montar un negocio nuevo obligaba a teclear primero las veinte categorias",
-      "Al terminar se dice cuales se crearon: es asi como se descubre un 'Bebdias' recien creado por un error de escritura, antes de que salga en la pantalla de cobro",
-      "Mayusculas, tildes y espacios de mas ya no crean categorias gemelas: 'bebidas', 'Bebidas' y 'Bebidas ' van todas a la que ya existe",
-      "Las categorias nuevas se acomodan al FINAL del orden que ya tiene el negocio: ese orden es el de la pantalla de cobro y lo que llega de un Excel no tiene por que colarse antes",
-      "Los impuestos siguen sin crearse al importar, y ahora se dice por que: un impuesto es un porcentaje, no un nombre, y ese numero acaba en la factura de un cliente. Se crean en Configuracion",
-      "Dos frenos contra el error de dedo caro: un nombre de mas de 60 caracteres se rechaza -pasa al pegar la descripcion en la columna equivocada- y mas de 200 categorias nuevas en un archivo crea las primeras y avisa",
-      "CAMARAS H.265 en el video en vivo: el codec se vuelve a detectar cuando el visor no logra imagen. Cambiar una camara de H.264 a H.265 con el ERP abierto dejaba esa camara en negro, porque se seguia creyendo el codec detectado la primera vez"
+      "TRANSMISION A YOUTUBE: ya no se corta al minuto y medio. El vigilante confundia una camara con el reloj lento con un equipo que no da abasto y cortaba la emision. Ahora las marcas de tiempo son las del reloj del equipo y el ritmo se mide por tramos, no con un promedio desde el arranque",
+      "GRABACION DE PARTIDAS: ya no se detiene a los pocos minutos, y los videos duran lo que duro la partida (antes podian quedar un 12% mas cortos). La grabacion tiene su propio vigilante: si la camara deja de entregar imagen, se detiene y lo dice",
+      "El registro dice por que termino cada transmision o grabacion: a pedido, porque la camara dejo de responder o porque el equipo no sostiene",
+      "ENLACE DEL CANAL: junto a la clave de emision se indica el canal (youtube.com/@su-canal o la pagina de Facebook). Se guarda el del CANAL, que lleva siempre a la emision en curso; el de una emision suelta se rechaza explicando cual hace falta"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.2.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.2/servidor-setup-1.2.2.exe",
-      "sizeBytes": 285860139,
-      "sha256": "d5f9e60683100d28411850d9337a19cd6ebe773faf8c0cdb257446ebc1bc7137"
+      "fileName": "servidor-setup-1.2.3.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.3/servidor-setup-1.2.3.exe",
+      "sizeBytes": 285871022,
+      "sha256": "3bdcf1345fdb8893e9e4666dfa4d2fb05ad6dbc1efa123b3f7991d5a6b0b9d12"
     }
   }
 }
