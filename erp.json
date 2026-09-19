@@ -1,20 +1,19 @@
 {
   "latest": {
-    "version": "1.2.2",
-    "releaseDate": "2026-09-16",
+    "version": "1.2.3",
+    "releaseDate": "2026-09-19",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "IMPORTADOR: en la hoja de productos, las columnas Categoria, Marca e Impuesto se eligen de un DESPLEGABLE con lo que ya existe, para no escribirlas a mano. Avisa pero deja continuar: una categoria nueva escrita a mano es valida y se crea al importar",
-      "El desplegable llega diez filas mas alla de lo que hay, asi que una categoria agregada al final de la hoja Listas aparece enseguida para elegirla en los productos",
-      "La pantalla de importar cuenta las categorias y marcas nuevas que se crearon, con sus nombres",
-      "CAMARAS H.265: el visor de video en vivo le pide al servidor volver a detectar el codec cuando no logra imagen y, tras varios intentos, pasa a HLS -que reproduce H.264 y H.265-. Saca del negro tanto a la camara que cambio de codec como al equipo donde el WebRTC no puede salir"
+      "POS: nueva accion 'Copiar enlace de la transmision' junto a Transmitir. Aparece solo cuando se conoce el canal y muestra el enlace copiado, para compartirlo con los clientes",
+      "Configuracion de la transmision: campo para el canal donde se ve la emision, con el enlace que se compartira",
+      "La transmision a YouTube y la grabacion de partidas ya no se cortan a los pocos minutos (arreglo en el servidor)"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.2.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.2/terminal-setup-1.2.2.exe",
-      "sizeBytes": 2501382,
-      "sha256": "bde194e609d452dbe5d4f28fbd0d3e429a77fae9738b56780a9acd8727c647d1"
+      "fileName": "terminal-setup-1.2.3.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.3/terminal-setup-1.2.3.exe",
+      "sizeBytes": 2502103,
+      "sha256": "2b67de0d9f704162a808cea636736a42caff2de1ffe0793fb2f79a2e365e911e"
     }
   }
 }
