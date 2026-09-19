@@ -1,20 +1,21 @@
 {
   "latest": {
-    "version": "1.1.37",
-    "releaseDate": "2026-09-16",
+    "version": "1.1.39",
+    "releaseDate": "2026-09-19",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "CAMARAS H.265: cambiar una camara de H.264 a H.265 con el marcador abierto dejaba la mesa en negro para siempre. Ahora el codec se vuelve a sondear cuando un intento no logra imagen y, tras varios en vano, el vivo pasa a HLS, que reproduce los dos codecs. Ya no hay que reiniciar la aplicacion",
-      "Tambien saca del negro al equipo donde el WebRTC no puede salir por la red: antes se reintentaba lo mismo indefinidamente",
-      "LICENCIA: cuando la consulta no llega a salir del equipo se dice que hacer, en vez del mensaje tecnico. El caso mas comun en una mesa recien instalada es la FECHA del equipo mal puesta: con una fecha atrasada el certificado del servicio 'todavia no es valido' y Windows corta la conexion. Ahora el aviso lo dice con la fecha que tiene el equipo",
-      "Se traducen igual el certificado vencido, la conexion interceptada por un antivirus o un cortafuegos, el DNS y los tiempos de espera. La verificacion del certificado NO se baja: hacerlo dejaria la clave de licencia viajando donde cualquiera en esa red podria leerla"
+      "ACADEMIA: se abre siempre en la pantalla principal, que es la tactil. En la configuracion queda solo activarla o desactivarla",
+      "Mientras la academia esta abierta, la pantalla extendida muestra el video en vivo de la camara IP, con el retardo configurado",
+      "Botones en la esquina inferior derecha de la academia: la X para cerrarla y, a su izquierda, el boton verde de intercambiar camara (igual al del panel central), que pasa la extendida a la otra camara IP",
+      "Si la camara no da imagen en 20 segundos, la extendida pasa sola a la otra camara",
+      "Corregido: volver a pulsar el boton de academia con la academia ya abierta la cerraba"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.37.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.37/marcador-setup-1.1.37.exe",
-      "sizeBytes": 187591996,
-      "sha256": "24c9ffdb52ef22155e4da209e144b099a079c9b5c6e37cfec1a8dfb46ff2d462"
+      "fileName": "marcador-setup-1.1.39.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.39/marcador-setup-1.1.39.exe",
+      "sizeBytes": 187596004,
+      "sha256": "74e37853adf201fd8c3712d25535c771d2be58ebe19ab1c6e07861a0b0ed275a"
     }
   }
 }
