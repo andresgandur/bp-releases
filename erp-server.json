@@ -1,20 +1,20 @@
 {
   "latest": {
-    "version": "1.2.3",
-    "releaseDate": "2026-09-19",
+    "version": "1.2.4",
+    "releaseDate": "2026-09-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "TRANSMISION A YOUTUBE: ya no se corta al minuto y medio. El vigilante confundia una camara con el reloj lento con un equipo que no da abasto y cortaba la emision. Ahora las marcas de tiempo son las del reloj del equipo y el ritmo se mide por tramos, no con un promedio desde el arranque",
-      "GRABACION DE PARTIDAS: ya no se detiene a los pocos minutos, y los videos duran lo que duro la partida (antes podian quedar un 12% mas cortos). La grabacion tiene su propio vigilante: si la camara deja de entregar imagen, se detiene y lo dice",
-      "El registro dice por que termino cada transmision o grabacion: a pedido, porque la camara dejo de responder o porque el equipo no sostiene",
-      "ENLACE DEL CANAL: junto a la clave de emision se indica el canal (youtube.com/@su-canal o la pagina de Facebook). Se guarda el del CANAL, que lleva siempre a la emision en curso; el de una emision suelta se rechaza explicando cual hace falta"
+      "CIERRE DE CAJA: el reporte separa lo que queda sin cobrar por tipo de venta -mesas en juego, cuentas apartadas y ventas de mostrador- y suma un TOTAL SIN COBRAR. Antes solo contaba las cuentas con mesa, asi que una venta de la barra abierta no aparecia en ninguna parte del cierre",
+      "Sigue siendo informativo y no entra en el arqueo: ese dinero todavia no ha entrado a la caja",
+      "SEGURIDAD: la clave de emision ya no queda escrita en el registro del servidor. La linea de la transmision la mostraba completa, y ese registro se manda por correo al reportar un problema. Ahora se ve el servidor y la clave tapada. Si ya envio un registro con la transmision andando, cambie la clave en su canal",
+      "El registro de la transmision dice de que ruta de camara sale. La ruta lleva el ID de la camara en la base de datos y no el numero de camara de la mesa: con una sola camara podia leerse 'cam-2' y parecer que se buscaba otra que no existe"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.3.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.3/servidor-setup-1.2.3.exe",
-      "sizeBytes": 285871022,
-      "sha256": "3bdcf1345fdb8893e9e4666dfa4d2fb05ad6dbc1efa123b3f7991d5a6b0b9d12"
+      "fileName": "servidor-setup-1.2.4.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.4/servidor-setup-1.2.4.exe",
+      "sizeBytes": 285865296,
+      "sha256": "cf6d8f15ef9ed0240b2de3313db07b7081d0da42f3fbeeecd7ffbebfcb8cffff"
     }
   }
 }
