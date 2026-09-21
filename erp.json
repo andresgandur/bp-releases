@@ -1,19 +1,18 @@
 {
   "latest": {
-    "version": "1.2.3",
-    "releaseDate": "2026-09-19",
+    "version": "1.2.4",
+    "releaseDate": "2026-09-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "POS: nueva accion 'Copiar enlace de la transmision' junto a Transmitir. Aparece solo cuando se conoce el canal y muestra el enlace copiado, para compartirlo con los clientes",
-      "Configuracion de la transmision: campo para el canal donde se ve la emision, con el enlace que se compartira",
-      "La transmision a YouTube y la grabacion de partidas ya no se cortan a los pocos minutos (arreglo en el servidor)"
+      "CAJA: al cerrar el turno avisa de TODAS las ventas sin cobrar, no solo de las cuentas apartadas. Tambien las de mostrador -la barra, las butacas-, que no estan en el mapa de mesas y eran justo las que se quedaban abiertas sin que nada las recordara. Dice cuantas son, de que es cada una y cuanto suman, y se puede cerrar igual",
+      "El reporte impreso del cierre separa mesas en juego, cuentas apartadas y ventas de mostrador, con el total sin cobrar"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.3.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.3/terminal-setup-1.2.3.exe",
-      "sizeBytes": 2502103,
-      "sha256": "2b67de0d9f704162a808cea636736a42caff2de1ffe0793fb2f79a2e365e911e"
+      "fileName": "terminal-setup-1.2.4.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.4/terminal-setup-1.2.4.exe",
+      "sizeBytes": 2502409,
+      "sha256": "a0b23f2e22b1fa99c551e83a6288e40fdb7d55dd24446d3852946393825f33f2"
     }
   }
 }
