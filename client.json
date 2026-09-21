@@ -1,21 +1,20 @@
 {
   "latest": {
-    "version": "1.1.39",
-    "releaseDate": "2026-09-19",
+    "version": "1.1.40",
+    "releaseDate": "2026-09-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "ACADEMIA: se abre siempre en la pantalla principal, que es la tactil. En la configuracion queda solo activarla o desactivarla",
-      "Mientras la academia esta abierta, la pantalla extendida muestra el video en vivo de la camara IP, con el retardo configurado",
-      "Botones en la esquina inferior derecha de la academia: la X para cerrarla y, a su izquierda, el boton verde de intercambiar camara (igual al del panel central), que pasa la extendida a la otra camara IP",
-      "Si la camara no da imagen en 20 segundos, la extendida pasa sola a la otra camara",
-      "Corregido: volver a pulsar el boton de academia con la academia ya abierta la cerraba"
+      "GRABACIONES: si no se eligio carpeta, ahora se graba en la carpeta Videos del usuario ('Billar Play' dentro). Antes se creaba una carpeta 'Andru' en la raiz del disco, que ademas suele pedir permisos de administrador",
+      "La configuracion de video muestra la ruta real donde se graba",
+      "Las grabaciones que ya esten en la carpeta anterior NO se mueven solas: se pueden dejar, mover a la nueva o elegir esa misma carpeta en la configuracion",
+      "REPETICIONES: las flechas para subir y bajar por la tira de videos tienen el mismo alto que el boton de descargar. Eran una franja delgada y en la pantalla tactil se fallaba al tocarlas"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.39.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.39/marcador-setup-1.1.39.exe",
-      "sizeBytes": 187596004,
-      "sha256": "74e37853adf201fd8c3712d25535c771d2be58ebe19ab1c6e07861a0b0ed275a"
+      "fileName": "marcador-setup-1.1.40.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.40/marcador-setup-1.1.40.exe",
+      "sizeBytes": 187596425,
+      "sha256": "2c16ba5cbc74232568c6fe003692267e81d40cee564bd07758f9cc294d6365a4"
     }
   }
 }
