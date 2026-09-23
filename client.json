@@ -1,20 +1,18 @@
 {
   "latest": {
-    "version": "1.1.40",
-    "releaseDate": "2026-09-21",
+    "version": "1.1.41",
+    "releaseDate": "2026-09-23",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "GRABACIONES: si no se eligio carpeta, ahora se graba en la carpeta Videos del usuario ('Billar Play' dentro). Antes se creaba una carpeta 'Andru' en la raiz del disco, que ademas suele pedir permisos de administrador",
-      "La configuracion de video muestra la ruta real donde se graba",
-      "Las grabaciones que ya esten en la carpeta anterior NO se mueven solas: se pueden dejar, mover a la nueva o elegir esa misma carpeta en la configuracion",
-      "REPETICIONES: las flechas para subir y bajar por la tira de videos tienen el mismo alto que el boton de descargar. Eran una franja delgada y en la pantalla tactil se fallaba al tocarlas"
+      "Nueva opcion en Configuracion > General: mostrar u ocultar el boton FINALIZAR del panel central. Viene activada, como hasta ahora",
+      "Desactivela si la mesa la cierra siempre el cajero desde el ERP: el boton desaparece de la mesa en todos los juegos y la cuenta se sigue cerrando desde el POS"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.40.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.40/marcador-setup-1.1.40.exe",
-      "sizeBytes": 187596425,
-      "sha256": "2c16ba5cbc74232568c6fe003692267e81d40cee564bd07758f9cc294d6365a4"
+      "fileName": "marcador-setup-1.1.41.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.41/marcador-setup-1.1.41.exe",
+      "sizeBytes": 187596664,
+      "sha256": "42a75d69b410709e8bfda2e674d0cc2c1fb7214e18f73f7134dbdbe2910f0373"
     }
   }
 }
