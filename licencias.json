@@ -1,18 +1,19 @@
 {
   "latest": {
-    "version": "1.1.2",
+    "version": "1.1.3",
     "releaseDate": "2026-09-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Se retira el proxy de actualizaciones (api/updates.php y api/updates_download.php): ninguna aplicacion lo uso nunca, todas leen sus actualizaciones del repositorio publico de descargas. Sus archivos se borran del servidor al abrir el panel",
-      "El token de licencia queda documentado como informativo: no autoriza nada y nunca debe usarse para autorizar. Los ERP, marcadores y Android siguen recibiendolo igual"
+      "Las licencias vencen a las 12:00 del MEDIODIA del dia de vencimiento (hora de Colombia), no a medianoche: los salones trabajan de noche y es cuando menos soporte hay para reactivar. Los ERP y marcadores preguntan cada hora y al arrancar, asi que el bloqueo llega entre las 12:00 y la 1 p. m., o al encender el equipo si estaba apagado a esa hora",
+      "Migracion 0004: las fechas ya guardadas pasan a las 12:00 del mismo dia, y el evento horario de la base marca 'expirada' desde el mediodia",
+      "El panel lo indica bajo la fecha de expiracion al crear o editar una licencia"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.2.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.2/licencias-1.1.2.zip",
-      "sizeBytes": 107214,
-      "sha256": "090553e49c1f3f2420693fc5785bce9f2b2f3722f1de4db207899fab4fdb148c"
+      "fileName": "licencias-1.1.3.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.3/licencias-1.1.3.zip",
+      "sizeBytes": 108527,
+      "sha256": "78e0793e5a5c6b5dcab479ea595aabb89f143bc60fb3031d1e534611f2f206b1"
     }
   }
 }
