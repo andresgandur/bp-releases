@@ -1,20 +1,23 @@
 {
   "latest": {
-    "version": "1.2.4",
-    "releaseDate": "2026-09-21",
+    "version": "1.2.5",
+    "releaseDate": "2026-09-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "CIERRE DE CAJA: el reporte separa lo que queda sin cobrar por tipo de venta -mesas en juego, cuentas apartadas y ventas de mostrador- y suma un TOTAL SIN COBRAR. Antes solo contaba las cuentas con mesa, asi que una venta de la barra abierta no aparecia en ninguna parte del cierre",
-      "Sigue siendo informativo y no entra en el arqueo: ese dinero todavia no ha entrado a la caja",
-      "SEGURIDAD: la clave de emision ya no queda escrita en el registro del servidor. La linea de la transmision la mostraba completa, y ese registro se manda por correo al reportar un problema. Ahora se ve el servidor y la clave tapada. Si ya envio un registro con la transmision andando, cambie la clave en su canal",
-      "El registro de la transmision dice de que ruta de camara sale. La ruta lleva el ID de la camara en la base de datos y no el numero de camara de la mesa: con una sola camara podia leerse 'cam-2' y parecer que se buscaba otra que no existe"
+      "PARAMETROS: modulo nuevo con lo que el negocio ajusta en el dia a dia -datos del ticket, reparto del POS, chicos, impuestos, propina, cortesia, agrupar productos, caja obligatoria e impresion-. Se le puede dar al cliente sin darle la Configuracion (licencia, moneda, facturacion, actualizaciones, respaldos)",
+      "PERMISOS POR ROL: mesas y tipos, tarifas, y encender o apagar los equipos de las mesas tienen ahora su propio permiso, que se da o se quita en Roles. Los roles que ya cambiaban la configuracion conservan todo lo que hacian",
+      "ENCENDER LAS MESAS POR LA RED (Wake on LAN): el servidor aprende solo la tarjeta de red de cada equipo cuando su marcador se conecta. Cada equipo necesita Wake on LAN activo en la BIOS y estar conectado por cable",
+      "LICENCIA: vence a las 12:00 del mediodia del dia de vencimiento, no a medianoche: si no se renovo, el aviso llega en horario de oficina y no de noche",
+      "SEGURIDAD: el canal de las mesas ya no acepta las ordenes del panel del servidor anterior (abrir, cerrar o trasladar mesas, configuracion, marquesina): se podian mandar desde cualquier equipo del WiFi sin usuario ni contrasena. Lo administrativo va por la terminal, y si alguien lo intenta queda anotado en el registro",
+      "SEGURIDAD: la API interna de video (MediaMTX) solo escucha en el propio servidor. Desde la red se podian leer las direcciones de las camaras con su usuario y contrasena",
+      "Se retira la conexion de canales de YouTube y Facebook por cuenta: se transmite con la clave del canal, como hasta ahora"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.4.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.4/servidor-setup-1.2.4.exe",
-      "sizeBytes": 285865296,
-      "sha256": "cf6d8f15ef9ed0240b2de3313db07b7081d0da42f3fbeeecd7ffbebfcb8cffff"
+      "fileName": "servidor-setup-1.2.5.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.5/servidor-setup-1.2.5.exe",
+      "sizeBytes": 291172104,
+      "sha256": "001b220008041f13705805156df49bddd32fffcda9c48f93540fb14462224264"
     }
   }
 }
