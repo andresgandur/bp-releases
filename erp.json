@@ -1,18 +1,21 @@
 {
   "latest": {
-    "version": "1.2.4",
-    "releaseDate": "2026-09-21",
+    "version": "1.2.5",
+    "releaseDate": "2026-09-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "CAJA: al cerrar el turno avisa de TODAS las ventas sin cobrar, no solo de las cuentas apartadas. Tambien las de mostrador -la barra, las butacas-, que no estan en el mapa de mesas y eran justo las que se quedaban abiertas sin que nada las recordara. Dice cuantas son, de que es cada una y cuanto suman, y se puede cerrar igual",
-      "El reporte impreso del cierre separa mesas en juego, cuentas apartadas y ventas de mostrador, con el total sin cobrar"
+      "PARAMETROS: en el menu de Administracion, con los datos del ticket, el reparto del POS, los chicos, impuestos, propina, cortesia, agrupar productos, caja obligatoria e impresion. Salen de Configuracion para poder darselos al cliente sin darle lo demas",
+      "Mesas y tipos, Tarifas y los botones de encender y apagar las mesas se controlan por rol, cada uno con su permiso",
+      "Boton ENCENDER en la barra de arriba, junto al de apagar: enciende por la red los equipos de las mesas que esten apagados",
+      "La campana avisa que la licencia vence hoy a las 12:00 del mediodia",
+      "Transmision: se quita la seccion para conectar un canal por cuenta. Se transmite pegando la clave del canal, como hasta ahora"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.4.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.4/terminal-setup-1.2.4.exe",
-      "sizeBytes": 2502409,
-      "sha256": "a0b23f2e22b1fa99c551e83a6288e40fdb7d55dd24446d3852946393825f33f2"
+      "fileName": "terminal-setup-1.2.5.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.5/terminal-setup-1.2.5.exe",
+      "sizeBytes": 2502280,
+      "sha256": "725b528641cb182cd5400ccc00e41038778da0a93e3a5141b7a257a76d1fd13b"
     }
   }
 }
