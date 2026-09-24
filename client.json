@@ -1,18 +1,19 @@
 {
   "latest": {
-    "version": "1.1.41",
-    "releaseDate": "2026-09-23",
+    "version": "1.1.42",
+    "releaseDate": "2026-09-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Nueva opcion en Configuracion > General: mostrar u ocultar el boton FINALIZAR del panel central. Viene activada, como hasta ahora",
-      "Desactivela si la mesa la cierra siempre el cajero desde el ERP: el boton desaparece de la mesa en todos los juegos y la cuenta se sigue cerrando desde el POS"
+      "LICENCIA: vence a las 12:00 del MEDIODIA del dia de vencimiento, no a medianoche. Los salones trabajan de noche y es cuando menos soporte hay para reactivar; asi, si la licencia no se renovo, el aviso llega en horario de oficina",
+      "SEGURIDAD: el apagado remoto de la mesa solo obedece al servidor del ERP configurado en ella. Antes cualquier telefono o equipo conectado al WiFi del salon podia apagar todas las mesas con un solo mensaje, en plena partida",
+      "Si al cerrar el salon el ERP dice que una mesa 'no acepta ordenes de este servidor', revise la direccion del ERP en la configuracion de esa mesa"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.41.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.41/marcador-setup-1.1.41.exe",
-      "sizeBytes": 187596664,
-      "sha256": "42a75d69b410709e8bfda2e674d0cc2c1fb7214e18f73f7134dbdbe2910f0373"
+      "fileName": "marcador-setup-1.1.42.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.42/marcador-setup-1.1.42.exe",
+      "sizeBytes": 187597780,
+      "sha256": "165ee1156827c10d6d6fc8c38e4a8e815d48044faea84f81a4b53b322af37938"
     }
   }
 }
