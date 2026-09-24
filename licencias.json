@@ -1,26 +1,25 @@
 {
   "latest": {
-    "version": "1.1.0",
-    "releaseDate": "2026-09-16",
+    "version": "1.1.1",
+    "releaseDate": "2026-09-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "ACTUALIZACION DESDE EL PANEL: Configuracion > Actualizaciones comprueba si hay version nueva, la descarga, verifica su SHA-256 y la instala. Ya no hay que mover archivos por FTP",
-      "Tambien se puede subir el paquete .zip a mano, para un hosting que no pueda salir a internet",
-      "El servicio dice que version tiene instalada, y guarda el historial de actualizaciones: quien, cuando, de que version a cual",
-      "MIGRACIONES DE BASE DE DATOS: los cambios de esquema viajan en el paquete y se aplican solos, una sola vez cada uno, con registro de lo aplicado. Antes habia que ejecutar el SQL a mano en phpMyAdmin y era facil olvidarse",
-      "Antes de instalar se guarda un respaldo de los archivos que se reemplazan, y hay un boton para volver a la version anterior",
-      "Mientras dura la actualizacion las APIs contestan 503, que el ERP y los marcadores leen como 'no se pudo preguntar': ningun salon se queda bloqueado por una actualizacion",
-      "Se comprueba antes lo que el hosting permite -escritura, extension zip, salida a internet, permisos de la base- y se dice que falta, en vez de fallar a mitad",
-      "Cada rechazo de una licencia lleva ahora un codigo (reason) y los errores del propio servicio salen como 503: asi el ERP y los marcadores distinguen 'tu licencia no vale' de 'no pude preguntar'",
-      "Una licencia vale hasta las 23:59 del dia de vencimiento: 'vence el 10' se usa el 10 entero",
-      "Una licencia marcada como Expirada a la que se le extiende la fecha vuelve sola a estar activa, en el panel y al validarse"
+      "SEGURIDAD: la contrasena de la base de datos y los secretos ya no viajan en el paquete. Al instalar esta version se recuperan solos del config.php anterior (de la copia que guarda el actualizador) y quedan en includes/config.secretos.php, que ninguna actualizacion toca. No hay que hacer nada a mano, y los ERP y marcadores no notan el cambio",
+      "El empaquetador se niega a publicar si algun archivo lleva una credencial con valor",
+      "Todos los formularios del panel llevan token CSRF: crear, editar, eliminar y liberar licencias, configuracion y login",
+      "Limite de intentos en el login del panel: tras 5 fallos seguidos contra un usuario, o 10 desde una misma IP, hay que esperar 15 minutos. El bloqueo queda anotado en la actividad",
+      "El panel se abre siempre por HTTPS y el navegador lo recuerda (HSTS). Las APIs que usan el ERP y los marcadores responden igual que antes",
+      "La pantalla de login muestra la version instalada",
+      "Se retiran diagnostico.php y el corredor de transmision (conectar canales de YouTube y Facebook): el ERP emite con la clave del canal. Sus archivos se borran del servidor aunque la version anterior se haya subido por FTP",
+      "Migracion 0002: tabla de intentos fallidos del login. Si no se pudiera aplicar, el login sigue funcionando como antes, sin limite",
+      "Migracion 0003: borra las tablas del corredor, solo si las tres estan vacias. Si tienen datos no se toca nada"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.0.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.0/licencias-1.1.0.zip",
-      "sizeBytes": 125145,
-      "sha256": "95d292cf53ef74cf05447e0d14ec5a3238d5d9f90be4809433df66054de11388"
+      "fileName": "licencias-1.1.1.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.1/licencias-1.1.1.zip",
+      "sizeBytes": 111216,
+      "sha256": "28c3e6f5d54c136b4302138d10fff2b636d83c1d81f3397b223e00d1ac37c921"
     }
   }
 }
