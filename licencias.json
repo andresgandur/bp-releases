@@ -1,25 +1,18 @@
 {
   "latest": {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "releaseDate": "2026-09-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "SEGURIDAD: la contrasena de la base de datos y los secretos ya no viajan en el paquete. Al instalar esta version se recuperan solos del config.php anterior (de la copia que guarda el actualizador) y quedan en includes/config.secretos.php, que ninguna actualizacion toca. No hay que hacer nada a mano, y los ERP y marcadores no notan el cambio",
-      "El empaquetador se niega a publicar si algun archivo lleva una credencial con valor",
-      "Todos los formularios del panel llevan token CSRF: crear, editar, eliminar y liberar licencias, configuracion y login",
-      "Limite de intentos en el login del panel: tras 5 fallos seguidos contra un usuario, o 10 desde una misma IP, hay que esperar 15 minutos. El bloqueo queda anotado en la actividad",
-      "El panel se abre siempre por HTTPS y el navegador lo recuerda (HSTS). Las APIs que usan el ERP y los marcadores responden igual que antes",
-      "La pantalla de login muestra la version instalada",
-      "Se retiran diagnostico.php y el corredor de transmision (conectar canales de YouTube y Facebook): el ERP emite con la clave del canal. Sus archivos se borran del servidor aunque la version anterior se haya subido por FTP",
-      "Migracion 0002: tabla de intentos fallidos del login. Si no se pudiera aplicar, el login sigue funcionando como antes, sin limite",
-      "Migracion 0003: borra las tablas del corredor, solo si las tres estan vacias. Si tienen datos no se toca nada"
+      "Se retira el proxy de actualizaciones (api/updates.php y api/updates_download.php): ninguna aplicacion lo uso nunca, todas leen sus actualizaciones del repositorio publico de descargas. Sus archivos se borran del servidor al abrir el panel",
+      "El token de licencia queda documentado como informativo: no autoriza nada y nunca debe usarse para autorizar. Los ERP, marcadores y Android siguen recibiendolo igual"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.1.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.1/licencias-1.1.1.zip",
-      "sizeBytes": 111216,
-      "sha256": "28c3e6f5d54c136b4302138d10fff2b636d83c1d81f3397b223e00d1ac37c921"
+      "fileName": "licencias-1.1.2.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.2/licencias-1.1.2.zip",
+      "sizeBytes": 107214,
+      "sha256": "090553e49c1f3f2420693fc5785bce9f2b2f3722f1de4db207899fab4fdb148c"
     }
   }
 }
