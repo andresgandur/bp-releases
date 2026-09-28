@@ -1,22 +1,17 @@
 {
   "latest": {
-    "version": "1.2.6",
+    "version": "1.2.7",
     "releaseDate": "2026-09-28",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "TRASLADOS ENTRE SEDES: un ERP puede enviar inventario a otro ERP de la misma red. Queda registrado en las dos sedes: salida en el origen y entrada en el destino, cada una con su movimiento en el kardex y en la auditoria",
-      "Las sedes se conectan en Configuracion -> Sedes conectadas, con la direccion del otro servidor y una clave que se escribe igual en los dos. Cada peticion entre servidores va firmada con esa clave: un equipo cualquiera del WiFi no puede meter ni sacar mercancia",
-      "Si se corta la red a mitad de un traslado, queda EN TRANSITO y se reintenta solo, sin sumar dos veces en el destino. Anular solo se puede con el destino respondiendo, para que la mercancia nunca quede en los dos inventarios ni en ninguno",
-      "Los productos se emparejan por codigo de barras (o por nombre si no tienen), y el destino puede crear los que no tenga",
-      "Permiso nuevo: Enviar y anular traslados a otras sedes. El rol admin lo recibe solo; a los demas roles se les da en Roles",
-      "IMPORTANTE: las dos sedes deben tener esta version y la hora de Windows correcta (se admiten 5 minutos de diferencia)"
+      "CORRECCION: el servidor ya no deja que las terminales guarden en cache las respuestas de la API. Tras un corte de luz, la copia guardada en una terminal podia quedar danada y el POS se caia al abrir Ventas pendientes (\"n.map is not a function\") y no dejaba cerrar la caja, hasta que alguna venta cambiara"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.6.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.6/servidor-setup-1.2.6.exe",
-      "sizeBytes": 296466899,
-      "sha256": "1b6d45f70520b3c394cb79c39ebe140e0f22a5065d3e80158fc413492853ff89"
+      "fileName": "servidor-setup-1.2.7.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.7/servidor-setup-1.2.7.exe",
+      "sizeBytes": 296481808,
+      "sha256": "43a7a28b74ed4ffff93e98c1817659933570c1451da87dd6e2e5b3b33a923290"
     }
   }
 }
