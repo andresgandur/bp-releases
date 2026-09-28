@@ -1,21 +1,18 @@
 {
   "latest": {
-    "version": "1.2.6",
+    "version": "1.2.7",
     "releaseDate": "2026-09-28",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "TRASLADOS ENTRE SEDES: nueva pagina en Inventario para enviar mercancia a otro ERP de la red. Solo aparece cuando hay alguna sede conectada",
-      "Configuracion -> Sedes conectadas: dar de alta las otras sedes con su direccion y una clave compartida, y probar la conexion. No se conecta con nadie hasta que se pulsa Probar",
-      "Antes de enviar se puede verificar que el destino tiene cada producto. El traslado sale en la ticketera o en PDF, con los folios de las dos sedes y espacio para firmar quien entrega y quien recibe",
-      "Historial de traslados enviados y recibidos, por paginas, con filtros por estado, sede, fechas y busqueda por folio o producto, y reimpresion del ticket o del PDF",
-      "El kardex muestra los movimientos de tipo Traslado"
+      "CORRECCION: si la lista de ventas pendientes llega danada, el POS muestra \"No se pudieron cargar las ventas\" en vez de caerse, y la caja se puede cerrar. Lo recibido queda anotado en el log de la terminal para diagnosticarlo",
+      "Requiere el servidor 1.2.7, que es el que evita el problema de raiz"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.6.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.6/terminal-setup-1.2.6.exe",
-      "sizeBytes": 2510287,
-      "sha256": "26a39f7a3f00b392282c811c2eba93b8ed42cf0845b488cb80071f5809ed230f"
+      "fileName": "terminal-setup-1.2.7.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.7/terminal-setup-1.2.7.exe",
+      "sizeBytes": 2511316,
+      "sha256": "6632be68ac6b42b3982633c0272c97674798546319d36a57a00154e3e19760a9"
     }
   }
 }
