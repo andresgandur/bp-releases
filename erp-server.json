@@ -1,23 +1,22 @@
 {
   "latest": {
-    "version": "1.2.5",
-    "releaseDate": "2026-09-24",
+    "version": "1.2.6",
+    "releaseDate": "2026-09-28",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "PARAMETROS: modulo nuevo con lo que el negocio ajusta en el dia a dia -datos del ticket, reparto del POS, chicos, impuestos, propina, cortesia, agrupar productos, caja obligatoria e impresion-. Se le puede dar al cliente sin darle la Configuracion (licencia, moneda, facturacion, actualizaciones, respaldos)",
-      "PERMISOS POR ROL: mesas y tipos, tarifas, y encender o apagar los equipos de las mesas tienen ahora su propio permiso, que se da o se quita en Roles. Los roles que ya cambiaban la configuracion conservan todo lo que hacian",
-      "ENCENDER LAS MESAS POR LA RED (Wake on LAN): el servidor aprende solo la tarjeta de red de cada equipo cuando su marcador se conecta. Cada equipo necesita Wake on LAN activo en la BIOS y estar conectado por cable",
-      "LICENCIA: vence a las 12:00 del mediodia del dia de vencimiento, no a medianoche: si no se renovo, el aviso llega en horario de oficina y no de noche",
-      "SEGURIDAD: el canal de las mesas ya no acepta las ordenes del panel del servidor anterior (abrir, cerrar o trasladar mesas, configuracion, marquesina): se podian mandar desde cualquier equipo del WiFi sin usuario ni contrasena. Lo administrativo va por la terminal, y si alguien lo intenta queda anotado en el registro",
-      "SEGURIDAD: la API interna de video (MediaMTX) solo escucha en el propio servidor. Desde la red se podian leer las direcciones de las camaras con su usuario y contrasena",
-      "Se retira la conexion de canales de YouTube y Facebook por cuenta: se transmite con la clave del canal, como hasta ahora"
+      "TRASLADOS ENTRE SEDES: un ERP puede enviar inventario a otro ERP de la misma red. Queda registrado en las dos sedes: salida en el origen y entrada en el destino, cada una con su movimiento en el kardex y en la auditoria",
+      "Las sedes se conectan en Configuracion -> Sedes conectadas, con la direccion del otro servidor y una clave que se escribe igual en los dos. Cada peticion entre servidores va firmada con esa clave: un equipo cualquiera del WiFi no puede meter ni sacar mercancia",
+      "Si se corta la red a mitad de un traslado, queda EN TRANSITO y se reintenta solo, sin sumar dos veces en el destino. Anular solo se puede con el destino respondiendo, para que la mercancia nunca quede en los dos inventarios ni en ninguno",
+      "Los productos se emparejan por codigo de barras (o por nombre si no tienen), y el destino puede crear los que no tenga",
+      "Permiso nuevo: Enviar y anular traslados a otras sedes. El rol admin lo recibe solo; a los demas roles se les da en Roles",
+      "IMPORTANTE: las dos sedes deben tener esta version y la hora de Windows correcta (se admiten 5 minutos de diferencia)"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.5.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.5/servidor-setup-1.2.5.exe",
-      "sizeBytes": 291172104,
-      "sha256": "001b220008041f13705805156df49bddd32fffcda9c48f93540fb14462224264"
+      "fileName": "servidor-setup-1.2.6.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.6/servidor-setup-1.2.6.exe",
+      "sizeBytes": 296466899,
+      "sha256": "1b6d45f70520b3c394cb79c39ebe140e0f22a5065d3e80158fc413492853ff89"
     }
   }
 }
