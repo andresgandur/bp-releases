@@ -1,18 +1,17 @@
 {
   "latest": {
-    "version": "1.2.7",
-    "releaseDate": "2026-09-28",
+    "version": "1.2.8",
+    "releaseDate": "2026-09-29",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "CORRECCION: si la lista de ventas pendientes llega danada, el POS muestra \"No se pudieron cargar las ventas\" en vez de caerse, y la caja se puede cerrar. Lo recibido queda anotado en el log de la terminal para diagnosticarlo",
-      "Requiere el servidor 1.2.7, que es el que evita el problema de raiz"
+      "TICKET: una venta directa sin cliente muestra en el ticket (papel y PDF) lo escrito en \"De quien es\" como \"Cliente: ...\". Si la venta tiene un cliente elegido, sale solo el cliente"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.7.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.7/terminal-setup-1.2.7.exe",
-      "sizeBytes": 2511316,
-      "sha256": "6632be68ac6b42b3982633c0272c97674798546319d36a57a00154e3e19760a9"
+      "fileName": "terminal-setup-1.2.8.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.8/terminal-setup-1.2.8.exe",
+      "sizeBytes": 2509389,
+      "sha256": "419494333c8fad642e7808e2ee2995635f4b8ee54681c4ddefae728c2edc533c"
     }
   }
 }
