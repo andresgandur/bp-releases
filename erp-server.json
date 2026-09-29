@@ -1,17 +1,17 @@
 {
   "latest": {
-    "version": "1.2.7",
-    "releaseDate": "2026-09-28",
+    "version": "1.2.8",
+    "releaseDate": "2026-09-29",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "CORRECCION: el servidor ya no deja que las terminales guarden en cache las respuestas de la API. Tras un corte de luz, la copia guardada en una terminal podia quedar danada y el POS se caia al abrir Ventas pendientes (\"n.map is not a function\") y no dejaba cerrar la caja, hasta que alguna venta cambiara"
+      "Sin cambios en el servidor: sube de version para acompanar a la terminal 1.2.8"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.7.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.7/servidor-setup-1.2.7.exe",
-      "sizeBytes": 296481808,
-      "sha256": "43a7a28b74ed4ffff93e98c1817659933570c1451da87dd6e2e5b3b33a923290"
+      "fileName": "servidor-setup-1.2.8.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.8/servidor-setup-1.2.8.exe",
+      "sizeBytes": 296484719,
+      "sha256": "7d2a17a39691e8a5670472993b7b281e7005d5e7a8340b2dd0a75ef17cfc9b70"
     }
   }
 }
