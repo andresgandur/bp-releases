@@ -1,17 +1,18 @@
 {
   "latest": {
-    "version": "1.2.8",
-    "releaseDate": "2026-09-29",
+    "version": "1.2.9",
+    "releaseDate": "2026-10-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "TICKET: una venta directa sin cliente muestra en el ticket (papel y PDF) lo escrito en \"De quien es\" como \"Cliente: ...\". Si la venta tiene un cliente elegido, sale solo el cliente"
+      "PARAMETROS: nuevo ajuste \"Inventario en el cierre de caja\" (debajo de Caja obligatoria) para que la casilla Incluir inventario salga marcada por defecto al cerrar la caja",
+      "Actualizar el servidor: textos que explican que el instalador se abre en la pantalla del servidor y donde quedan los registros"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.8.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.8/terminal-setup-1.2.8.exe",
-      "sizeBytes": 2509389,
-      "sha256": "419494333c8fad642e7808e2ee2995635f4b8ee54681c4ddefae728c2edc533c"
+      "fileName": "terminal-setup-1.2.9.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.9/terminal-setup-1.2.9.exe",
+      "sizeBytes": 2512567,
+      "sha256": "e67c1943aac52b6514f8a8e2cf282e4305a99e488b5fe1cb5d396c85dcaddb84"
     }
   }
 }
