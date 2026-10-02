@@ -1,19 +1,19 @@
 {
   "latest": {
-    "version": "1.1.42",
-    "releaseDate": "2026-09-24",
+    "version": "1.1.43",
+    "releaseDate": "2026-10-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "LICENCIA: vence a las 12:00 del MEDIODIA del dia de vencimiento, no a medianoche. Los salones trabajan de noche y es cuando menos soporte hay para reactivar; asi, si la licencia no se renovo, el aviso llega en horario de oficina",
-      "SEGURIDAD: el apagado remoto de la mesa solo obedece al servidor del ERP configurado en ella. Antes cualquier telefono o equipo conectado al WiFi del salon podia apagar todas las mesas con un solo mensaje, en plena partida",
-      "Si al cerrar el salon el ERP dice que una mesa 'no acepta ordenes de este servidor', revise la direccion del ERP en la configuracion de esa mesa"
+      "CAMARAS: se pueden agregar mas camaras IP auxiliares (4, 5, ...) ademas de la 3. Funcionan igual que la 3: solo video en vivo en la pantalla extendida, sin grabacion ni repeticion. Cada una tiene su nombre, sus datos de conexion, boton Probar y se puede borrar",
+      "Con mas de una camara auxiliar, el boton del panel central se convierte en una lista para elegir cual ver en la pantalla extendida, con el nombre de cada camara (o Camara 3, Camara 4... si no tiene nombre)",
+      "Una camara auxiliar configurada con la misma direccion que la camara 1 o 2 ya no se queda en negro: reutiliza la conexion abierta en vez de abrir otra (algunas camaras, como las Tapo, solo aceptan 3 conexiones a la vez)"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.42.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.42/marcador-setup-1.1.42.exe",
-      "sizeBytes": 187597780,
-      "sha256": "165ee1156827c10d6d6fc8c38e4a8e815d48044faea84f81a4b53b322af37938"
+      "fileName": "marcador-setup-1.1.43.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.43/marcador-setup-1.1.43.exe",
+      "sizeBytes": 187600605,
+      "sha256": "29ccf105143671d5f8254fbc0de28c6ca95fae5b5bc250e81ab0589fe9360e34"
     }
   }
 }
