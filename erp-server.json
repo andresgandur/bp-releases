@@ -1,17 +1,20 @@
 {
   "latest": {
-    "version": "1.2.8",
-    "releaseDate": "2026-09-29",
+    "version": "1.2.9",
+    "releaseDate": "2026-10-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Sin cambios en el servidor: sube de version para acompanar a la terminal 1.2.8"
+      "ACTUALIZAR EL SERVIDOR desde Configuracion ahora si instala: detiene el servidor y abre el instalador en la pantalla del equipo del servidor, como al actualizar a mano, y lo vuelve a arrancar al terminar. Antes el proceso se cortaba a si mismo al detener el servicio y la version nunca se aplicaba",
+      "Esta vez hay que actualizar el servidor A MANO con el instalador: el actualizador que traen las versiones anteriores es el que fallaba. Desde esta version ya se puede hacer desde el ERP",
+      "Los registros de la actualizacion quedan en C:/ProgramData/BillarPlay/actualizacion",
+      "PARAMETROS: nuevo ajuste para que al cerrar la caja la casilla Incluir inventario salga marcada por defecto"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.8.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.8/servidor-setup-1.2.8.exe",
-      "sizeBytes": 296484719,
-      "sha256": "7d2a17a39691e8a5670472993b7b281e7005d5e7a8340b2dd0a75ef17cfc9b70"
+      "fileName": "servidor-setup-1.2.9.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.9/servidor-setup-1.2.9.exe",
+      "sizeBytes": 296490807,
+      "sha256": "52a024df7e2364223ca30981daea0f678a3e2f71c5d1ea044e8db7ad4463d043"
     }
   }
 }
