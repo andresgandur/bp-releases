@@ -1,19 +1,19 @@
 {
   "latest": {
-    "version": "1.1.43",
-    "releaseDate": "2026-10-02",
+    "version": "1.1.44",
+    "releaseDate": "2026-10-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "CAMARAS: se pueden agregar mas camaras IP auxiliares (4, 5, ...) ademas de la 3. Funcionan igual que la 3: solo video en vivo en la pantalla extendida, sin grabacion ni repeticion. Cada una tiene su nombre, sus datos de conexion, boton Probar y se puede borrar",
-      "Con mas de una camara auxiliar, el boton del panel central se convierte en una lista para elegir cual ver en la pantalla extendida, con el nombre de cada camara (o Camara 3, Camara 4... si no tiene nombre)",
-      "Una camara auxiliar configurada con la misma direccion que la camara 1 o 2 ya no se queda en negro: reutiliza la conexion abierta en vez de abrir otra (algunas camaras, como las Tapo, solo aceptan 3 conexiones a la vez)"
+      "VIDEO: las camaras H.265 (por ejemplo de un DVR) ya se ven en las PC que no decodifican H.265: el marcador las convierte a H.264. Antes la mesa mostraba Falla tecnica con el video",
+      "La prueba de la camara IP dice el codec real (H.264 o H.265) y si esa PC lo puede mostrar directo o lo va a convertir, con la recomendacion de usar H.264 en el DVR",
+      "Sin pantalla extendida, el marcador ya no le envia la configuracion ni la marquesina"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.43.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.43/marcador-setup-1.1.43.exe",
-      "sizeBytes": 187600605,
-      "sha256": "29ccf105143671d5f8254fbc0de28c6ca95fae5b5bc250e81ab0589fe9360e34"
+      "fileName": "marcador-setup-1.1.44.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.44/marcador-setup-1.1.44.exe",
+      "sizeBytes": 187600906,
+      "sha256": "6abe71c9a2b224029569e3296967795032a92d8fc817fdfb8b05e8427c0ae734"
     }
   }
 }
