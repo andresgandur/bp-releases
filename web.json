@@ -1,21 +1,21 @@
 {
   "latest": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "releaseDate": "2026-10-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Plataforma de soporte en /soporte: los clientes crean tickets con titulo, descripcion e imagenes o archivos de texto, y ven solo los suyos; los tecnicos ven todos, los atienden, los transfieren y dejan notas internas",
-      "Cada ticket con su consecutivo (TK-000001), estados (nuevo, en progreso, en espera del cliente, resuelto, cerrado), prioridad, responsable y el tiempo que lleva sin atenderse",
-      "Tablero con los tickets abiertos, sin respuesta, asignados, en espera y el tiempo promedio de primera respuesta",
-      "En el panel, la seccion Soporte crea clientes y tecnicos y define el responsable por defecto",
-      "El boton Contacto del menu pasa a ser Soporte"
+      "Soporte: se quita el estado Resuelto; los tickets que estaban resueltos pasan a Cerrado",
+      "La contrasena minima pasa a 6 caracteres (con letras y numeros)",
+      "Recordarme en el login de soporte: la sesion queda abierta 30 dias en ese equipo",
+      "El cliente debe cambiar la contrasena que le dio el administrador la primera vez que entra",
+      "El administrador del sitio puede borrar tickets, con su conversacion y sus adjuntos"
     ],
     "paquete": {
-      "fileName": "web-1.0.2.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.2/web-1.0.2.zip",
-      "sizeBytes": 1705731,
-      "sha256": "d6d7f4bf835d54b520ae58036fbc452bffa59187b001c992af1d23200dda66c6"
+      "fileName": "web-1.0.3.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.3/web-1.0.3.zip",
+      "sizeBytes": 1708962,
+      "sha256": "bd87ebcc5a19a46067f81515b6f1a4b3ccc6e0045708112f407358887a413c1c"
     }
   }
 }
