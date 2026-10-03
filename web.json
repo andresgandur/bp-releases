@@ -1,0 +1,18 @@
+{
+  "latest": {
+    "version": "1.0.1",
+    "releaseDate": "2026-10-03",
+    "mandatory": false,
+    "minSupportedVersion": "1.0.0",
+    "notes": [
+      "El boton flotante de WhatsApp queda solo con el icono",
+      "El actualizador explica que no hay version publicada en vez de mostrar \"HTTP 404\""
+    ],
+    "paquete": {
+      "fileName": "web-1.0.1.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.1/web-1.0.1.zip",
+      "sizeBytes": 1670558,
+      "sha256": "1ed32e23274a57f195dcf7676a45d9e9cf0e000417669ee739319afa128a1d86"
+    }
+  }
+}
