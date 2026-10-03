@@ -1,19 +1,19 @@
 {
   "latest": {
-    "version": "1.1.44",
+    "version": "1.1.45",
     "releaseDate": "2026-10-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "VIDEO: las camaras H.265 (por ejemplo de un DVR) ya se ven en las PC que no decodifican H.265: el marcador las convierte a H.264. Antes la mesa mostraba Falla tecnica con el video",
-      "La prueba de la camara IP dice el codec real (H.264 o H.265) y si esa PC lo puede mostrar directo o lo va a convertir, con la recomendacion de usar H.264 en el DVR",
-      "Sin pantalla extendida, el marcador ya no le envia la configuracion ni la marquesina"
+      "VIDEO: las camaras H.265 convertidas a H.264 en la PC ya no se ven como un cuadro verde. La conversion con la tarjeta grafica (AMD, NVIDIA, Intel) se configura como lo exige el video en vivo: sin B-frames y con un punto de arranque cada segundo",
+      "Copiar al portapapeles ya funciona (antes fallaba con Write permission denied)",
+      "Sin segundo monitor, el marcador deja de enviar la configuracion y la marquesina en cuanto sabe que la ventana de video no se abrio"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.44.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.44/marcador-setup-1.1.44.exe",
-      "sizeBytes": 187600906,
-      "sha256": "6abe71c9a2b224029569e3296967795032a92d8fc817fdfb8b05e8427c0ae734"
+      "fileName": "marcador-setup-1.1.45.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.45/marcador-setup-1.1.45.exe",
+      "sizeBytes": 187601657,
+      "sha256": "5f232e0ff21f30573c9811dac5868a21c4179192152643d54a8fb2fb79b6c432"
     }
   }
 }
