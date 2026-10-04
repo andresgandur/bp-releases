@@ -1,21 +1,22 @@
 {
   "latest": {
-    "version": "1.0.3",
-    "releaseDate": "2026-10-03",
+    "version": "1.0.4",
+    "releaseDate": "2026-10-04",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Soporte: se quita el estado Resuelto; los tickets que estaban resueltos pasan a Cerrado",
-      "La contrasena minima pasa a 6 caracteres (con letras y numeros)",
-      "Recordarme en el login de soporte: la sesion queda abierta 30 dias en ese equipo",
-      "El cliente debe cambiar la contrasena que le dio el administrador la primera vez que entra",
-      "El administrador del sitio puede borrar tickets, con su conversacion y sus adjuntos"
+      "Soporte y panel: fechas en formato DD/MM/AAAA y horas AM/PM",
+      "Al crear o editar usuarios, si la contrasena no sirve se muestra el error y se conservan los datos escritos",
+      "Portada: 3 Bandas y Libres primero; nuevo bloque y mensajes para rana, bolirana, tejo, cartas y mas juegos",
+      "La facturacion queda como POS o electronica segun lo que requiera el negocio, sin referencias a la DIAN",
+      "Licencias: la garantia es de 1 ano para el hardware y del tiempo del contrato de soporte para el software (sin devoluciones)",
+      "La tarjeta de permisos pasa a Multiples permisos y parametros"
     ],
     "paquete": {
-      "fileName": "web-1.0.3.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.3/web-1.0.3.zip",
-      "sizeBytes": 1708962,
-      "sha256": "bd87ebcc5a19a46067f81515b6f1a4b3ccc6e0045708112f407358887a413c1c"
+      "fileName": "web-1.0.4.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.4/web-1.0.4.zip",
+      "sizeBytes": 1709948,
+      "sha256": "48d733d3a98ec67d7d159fd03424b6e1446ef3878fe438b444576fffe2bd1355"
     }
   }
 }
