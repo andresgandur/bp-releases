@@ -1,17 +1,17 @@
 {
   "latest": {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "releaseDate": "2026-10-04",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Galeria: cada foto tiene Cambiar imagen; se reemplaza solo la imagen y se conservan su titulo, descripcion, orden y si es la portada"
+      "Portada sin la etiqueta superior y con el titulo mas arriba, pegado al menu"
     ],
     "paquete": {
-      "fileName": "web-1.0.7.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.7/web-1.0.7.zip",
-      "sizeBytes": 1711260,
-      "sha256": "4828d391d116fa0ed0933e7df472a87e1ecfce05dd64c6f2ec995cb98afd70a8"
+      "fileName": "web-1.0.8.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.8/web-1.0.8.zip",
+      "sizeBytes": 1711183,
+      "sha256": "288517bbbf2543a5f62350febcd3b1247e12c54c5b1c4630c0b5c4214783fc95"
     }
   }
 }
