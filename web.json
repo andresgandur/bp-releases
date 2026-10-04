@@ -1,22 +1,18 @@
 {
   "latest": {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "releaseDate": "2026-10-04",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Soporte y panel: fechas en formato DD/MM/AAAA y horas AM/PM",
-      "Al crear o editar usuarios, si la contrasena no sirve se muestra el error y se conservan los datos escritos",
-      "Portada: 3 Bandas y Libres primero; nuevo bloque y mensajes para rana, bolirana, tejo, cartas y mas juegos",
-      "La facturacion queda como POS o electronica segun lo que requiera el negocio, sin referencias a la DIAN",
-      "Licencias: la garantia es de 1 ano para el hardware y del tiempo del contrato de soporte para el software (sin devoluciones)",
-      "La tarjeta de permisos pasa a Multiples permisos y parametros"
+      "Soporte: Mantener la sesion iniciada ya no vence a los 30 dias; se renueva sola cada vez que se usa (solo se pierde al Salir, al cambiar la contrasena o si el administrador desactiva al usuario)",
+      "Soporte: nueva casilla de Mantener la sesion iniciada en el login, mas clara y con su explicacion"
     ],
     "paquete": {
-      "fileName": "web-1.0.4.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.4/web-1.0.4.zip",
-      "sizeBytes": 1709948,
-      "sha256": "48d733d3a98ec67d7d159fd03424b6e1446ef3878fe438b444576fffe2bd1355"
+      "fileName": "web-1.0.5.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.5/web-1.0.5.zip",
+      "sizeBytes": 1710384,
+      "sha256": "644153e648e908e82494d2c1c1cb77b9b72351d47197ea54409949d34b0d161a"
     }
   }
 }
