@@ -1,18 +1,19 @@
 {
   "latest": {
-    "version": "1.0.5",
+    "version": "1.0.6",
     "releaseDate": "2026-10-04",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Soporte: Mantener la sesion iniciada ya no vence a los 30 dias; se renueva sola cada vez que se usa (solo se pierde al Salir, al cambiar la contrasena o si el administrador desactiva al usuario)",
-      "Soporte: nueva casilla de Mantener la sesion iniciada en el login, mas clara y con su explicacion"
+      "Portada sin el logo grande sobre el titulo",
+      "La imagen de la portada es la del Panel de juego, y desde Panel > Galeria se puede elegir otra con Usar en la portada",
+      "Textos de la portada ajustados en espanol, con su traduccion al ingles"
     ],
     "paquete": {
-      "fileName": "web-1.0.5.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.5/web-1.0.5.zip",
-      "sizeBytes": 1710384,
-      "sha256": "644153e648e908e82494d2c1c1cb77b9b72351d47197ea54409949d34b0d161a"
+      "fileName": "web-1.0.6.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.6/web-1.0.6.zip",
+      "sizeBytes": 1710764,
+      "sha256": "10a078e77ce882efa96b895e7afaf1ee3200bd493186c491c781644982f81ab1"
     }
   }
 }
