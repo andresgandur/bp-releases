@@ -1,19 +1,17 @@
 {
   "latest": {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "releaseDate": "2026-10-04",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Portada sin el logo grande sobre el titulo",
-      "La imagen de la portada es la del Panel de juego, y desde Panel > Galeria se puede elegir otra con Usar en la portada",
-      "Textos de la portada ajustados en espanol, con su traduccion al ingles"
+      "Galeria: cada foto tiene Cambiar imagen; se reemplaza solo la imagen y se conservan su titulo, descripcion, orden y si es la portada"
     ],
     "paquete": {
-      "fileName": "web-1.0.6.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.6/web-1.0.6.zip",
-      "sizeBytes": 1710764,
-      "sha256": "10a078e77ce882efa96b895e7afaf1ee3200bd493186c491c781644982f81ab1"
+      "fileName": "web-1.0.7.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.7/web-1.0.7.zip",
+      "sizeBytes": 1711260,
+      "sha256": "4828d391d116fa0ed0933e7df472a87e1ecfce05dd64c6f2ec995cb98afd70a8"
     }
   }
 }
