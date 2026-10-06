@@ -1,20 +1,25 @@
 {
   "latest": {
-    "version": "1.2.9",
-    "releaseDate": "2026-10-02",
+    "version": "1.2.10",
+    "releaseDate": "2026-10-06",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "ACTUALIZAR EL SERVIDOR desde Configuracion ahora si instala: detiene el servidor y abre el instalador en la pantalla del equipo del servidor, como al actualizar a mano, y lo vuelve a arrancar al terminar. Antes el proceso se cortaba a si mismo al detener el servicio y la version nunca se aplicaba",
-      "Esta vez hay que actualizar el servidor A MANO con el instalador: el actualizador que traen las versiones anteriores es el que fallaba. Desde esta version ya se puede hacer desde el ERP",
-      "Los registros de la actualizacion quedan en C:/ProgramData/BillarPlay/actualizacion",
-      "PARAMETROS: nuevo ajuste para que al cerrar la caja la casilla Incluir inventario salga marcada por defecto"
+      "PREFACTURA (solo con facturacion electronica): casilla en el POS para cobrar sin enviar a la DIAN; el ticket sale con el total y los impuestos dentro de cada linea, sin el renglon de impuestos. En Parametros se elige si viene marcada por defecto",
+      "CONVERTIR UNA PREFACTURA en factura electronica: en Reportes > Ventas (filtro Solo prefacturas) se abre la venta y se emite a la DIAN en el momento, con el cliente de la venta o con otro",
+      "TRASLADAR VENTAS PENDIENTES A UNA MESA: boton Trasladar junto a Reanudar y opcion en los tres puntos de una venta directa; la mesa se abre con el reloj en cero y la cuenta pasa a ser la suya",
+      "POS: Dividir cuenta, Bitacora de la cuenta y Ver en vivo pasaron a los tres puntos",
+      "INVENTARIO completo en la impresora de tickets: agrupado por categoria, con producto y stock, en orden alfabetico",
+      "PRODUCTOS: la ficha muestra el ultimo costo (ultima compra) y el costo promedio ponderado de las compras",
+      "COMPRAS: al elegir un producto se ve su stock actual, minimo y maximo",
+      "Arreglo: el inventario completo y la lista de productos de compras solo mostraban los primeros 100 productos",
+      "Este servidor agrega una columna a la base de datos (ventas: prefactura); el instalador la crea solo"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.9.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.9/servidor-setup-1.2.9.exe",
-      "sizeBytes": 296490807,
-      "sha256": "52a024df7e2364223ca30981daea0f678a3e2f71c5d1ea044e8db7ad4463d043"
+      "fileName": "servidor-setup-1.2.10.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.10/servidor-setup-1.2.10.exe",
+      "sizeBytes": 296488000,
+      "sha256": "ce8753d4856de19aee8b781d8611aafab776d813042a5860fdcc5ca0f94db104"
     }
   }
 }
