@@ -1,18 +1,24 @@
 {
   "latest": {
-    "version": "1.2.9",
-    "releaseDate": "2026-10-02",
+    "version": "1.2.10",
+    "releaseDate": "2026-10-06",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "PARAMETROS: nuevo ajuste \"Inventario en el cierre de caja\" (debajo de Caja obligatoria) para que la casilla Incluir inventario salga marcada por defecto al cerrar la caja",
-      "Actualizar el servidor: textos que explican que el instalador se abre en la pantalla del servidor y donde quedan los registros"
+      "PREFACTURA (solo con facturacion electronica): casilla en el POS para cobrar sin enviar a la DIAN; el ticket sale con el total y los impuestos dentro de cada linea, sin el renglon de impuestos. En Parametros se elige si viene marcada por defecto",
+      "CONVERTIR UNA PREFACTURA en factura electronica: en Reportes > Ventas (filtro Solo prefacturas) se abre la venta y se emite a la DIAN en el momento, con el cliente de la venta o con otro",
+      "TRASLADAR VENTAS PENDIENTES A UNA MESA: boton Trasladar junto a Reanudar y opcion en los tres puntos de una venta directa; la mesa se abre con el reloj en cero y la cuenta pasa a ser la suya",
+      "POS: Dividir cuenta, Bitacora de la cuenta y Ver en vivo pasaron a los tres puntos",
+      "INVENTARIO completo en la impresora de tickets: agrupado por categoria, con producto y stock, en orden alfabetico",
+      "PRODUCTOS: la ficha muestra el ultimo costo (ultima compra) y el costo promedio ponderado de las compras",
+      "COMPRAS: al elegir un producto se ve su stock actual, minimo y maximo",
+      "Arreglo: el inventario completo y la lista de productos de compras solo mostraban los primeros 100 productos"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.9.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.9/terminal-setup-1.2.9.exe",
-      "sizeBytes": 2512567,
-      "sha256": "e67c1943aac52b6514f8a8e2cf282e4305a99e488b5fe1cb5d396c85dcaddb84"
+      "fileName": "terminal-setup-1.2.10.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.10/terminal-setup-1.2.10.exe",
+      "sizeBytes": 2511647,
+      "sha256": "1cadf8db6c34a5a77fb2536c47e2d3f73cdf5d3b027f553d7aa6b0b3b4c1d624"
     }
   }
 }
