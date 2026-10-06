@@ -1,11 +1,11 @@
 {
   "latest": {
     "version": "1.1.46",
-    "releaseDate": "2026-10-03",
+    "releaseDate": "2026-10-06",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "VIDEO: nuevo modo compatibilidad para las tarjetas graficas que pintan el video como una pantalla VERDE (visto en equipos AMD). En Configuracion > Video > Dibujar el video con la tarjeta grafica: No. Aplica solo a ese equipo y reinicia el marcador. Por defecto sigue en Si, como siempre",
+      "VIDEO: nuevo modo compatibilidad para las tarjetas graficas que pintan el video como una pantalla VERDE (visto en equipos AMD). En Configuracion > Video > Video con la tarjeta grafica: No (debajo de Fuentes de video). Aplica solo a ese equipo y reinicia el marcador. Por defecto sigue en Si, como siempre",
       "El log del marcador registra un diagnostico del video en vivo (cuadros recibidos y decodificados, decodificador y color) y avisa si detecta la pantalla verde",
       "Sin segundo monitor, el marcador deja de enviar la configuracion y la marquesina a la pantalla extendida"
     ],
