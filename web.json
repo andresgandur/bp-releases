@@ -1,17 +1,17 @@
 {
   "latest": {
-    "version": "1.0.8",
-    "releaseDate": "2026-10-04",
+    "version": "1.0.9",
+    "releaseDate": "2026-10-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Portada sin la etiqueta superior y con el titulo mas arriba, pegado al menu"
+      "La pagina de mantenimiento recupera su fondo de antes: el pano con el rayado diagonal fino y los resplandores verde y vino"
     ],
     "paquete": {
-      "fileName": "web-1.0.8.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.8/web-1.0.8.zip",
-      "sizeBytes": 1711183,
-      "sha256": "288517bbbf2543a5f62350febcd3b1247e12c54c5b1c4630c0b5c4214783fc95"
+      "fileName": "web-1.0.9.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.9/web-1.0.9.zip",
+      "sizeBytes": 1711499,
+      "sha256": "81c7dc3a5bbd341b76348bc2e708a7f06e9ec18597e556dfdd8249c8cfc8b915"
     }
   }
 }
