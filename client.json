@@ -1,19 +1,18 @@
 {
   "latest": {
-    "version": "1.1.46",
-    "releaseDate": "2026-10-06",
+    "version": "1.1.47",
+    "releaseDate": "2026-10-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "VIDEO: nuevo modo compatibilidad para las tarjetas graficas que pintan el video como una pantalla VERDE (visto en equipos AMD). En Configuracion > Video > Video con la tarjeta grafica: No (debajo de Fuentes de video). Aplica solo a ese equipo y reinicia el marcador. Por defecto sigue en Si, como siempre",
-      "El log del marcador registra un diagnostico del video en vivo (cuadros recibidos y decodificados, decodificador y color) y avisa si detecta la pantalla verde",
-      "Sin segundo monitor, el marcador deja de enviar la configuracion y la marquesina a la pantalla extendida"
+      "LICENCIA: si la activacion no recibe la respuesta del servicio de licencias sino un rechazo de la red (un 403 del cortafuegos) o la pagina de verificacion anti-bots del servidor, el aviso explica que no es la licencia y que hacer, en lugar de 'Request failed with status code 403' o 'Error al activar licencia'. El log guarda quien respondio",
+      "El log del marcador muestra la hora de Colombia (antes cada linea iba en UTC, cinco horas adelante)"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.46.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.46/marcador-setup-1.1.46.exe",
-      "sizeBytes": 187605363,
-      "sha256": "86a526a6fdd4bc0763a3dd8b3dd6fc4c8b85d2939d31dd8b000bb49409fa4026"
+      "fileName": "marcador-setup-1.1.47.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.47/marcador-setup-1.1.47.exe",
+      "sizeBytes": 187605613,
+      "sha256": "6113027d3758981f0c7656996636e8efce23f15beb26ecdd729be4925c1e934e"
     }
   }
 }
