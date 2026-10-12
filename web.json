@@ -1,27 +1,17 @@
 {
   "latest": {
-    "version": "1.0.10",
+    "version": "1.0.11",
     "releaseDate": "2026-10-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "PORTADA NUEVA: rediseno completo, mas moderno, con animaciones al recorrerla (desplazamiento suave, entradas, galeria que avanza de lado). Mas rapida: Lighthouse 100 en escritorio y 95 en movil. Galeria, planes, WhatsApp y SEO se siguen editando desde el panel",
-      "Paginas legales, 404 y mantenimiento con el mismo diseno nuevo; la de mantenimiento conserva su fondo de rayado diagonal",
-      "MESA DE AYUDA: la misma aplicacion se puede instalar en otro servidor como plataforma de tickets generica (PERFIL = 'mesa_de_ayuda' en app/config.local.php): sin portada ni nada que diga Billar Play",
-      "Identidad configurable en Configuracion general: nombre, sitio principal y color. El logo y el favicon subidos se usan tambien en la plataforma de soporte y en el panel",
-      "AVISOS POR CORREO (SMTP del hosting): al cliente cuando crea un ticket, cuando le responden y cuando se cierra; al tecnico cuando se le asigna y cuando el cliente responde. Cada usuario los puede apagar en Mi cuenta",
-      "Olvide mi contrasena e invitaciones por correo: al crear un usuario sin contrasena le llega un enlace para crearla el",
-      "Nueva seccion Correo en el panel: estado del envio, cola, errores, reintentos, correo de prueba y la tarea programada (cron) para cPanel",
-      "EMPRESAS: cada cliente puede pertenecer a una empresa con su tecnico responsable (los tickets se le asignan solos) y varios usuarios que ven los tickets de sus companeros",
-      "CIERRE AUTOMATICO: los tickets en espera del cliente se cierran solos a los N dias (Panel > Soporte; 0 = nunca), con aviso al cliente un dia antes",
-      "ENCUESTA DE SATISFACCION en el correo de cierre (1 a 5 y comentario, sin entrar); el promedio sale en el tablero de soporte y en el panel",
-      "El dominio canonico lo aplica la aplicacion con SITIO_URL en vez del .htaccess, que tenia billarplay.com fijo"
+      "Portada: se quita la etiqueta \"Marcador · ERP · Video\" y el titulo sube, sin el espacio vacio de arriba"
     ],
     "paquete": {
-      "fileName": "web-1.0.10.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.10/web-1.0.10.zip",
-      "sizeBytes": 2154346,
-      "sha256": "d167693a1647d2e638c0b9878b505a1d57e85f156444c6ebfe6f05926abf9358"
+      "fileName": "web-1.0.11.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.11/web-1.0.11.zip",
+      "sizeBytes": 2153451,
+      "sha256": "5518469bcc50dc1b0560ca1c3a7ef65de0724f418ad07197b943b78da51624a2"
     }
   }
 }
