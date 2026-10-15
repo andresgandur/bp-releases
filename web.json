@@ -1,17 +1,18 @@
 {
   "latest": {
-    "version": "1.0.11",
-    "releaseDate": "2026-10-12",
+    "version": "1.0.12",
+    "releaseDate": "2026-10-15",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Portada: se quita la etiqueta \"Marcador · ERP · Video\" y el titulo sube, sin el espacio vacio de arriba"
+      "Tecnicos administradores: una casilla en la ficha del tecnico le da la seccion Administracion en /soporte (usuarios, empresas y ajustes de soporte) y el permiso de borrar tickets, sin entrar al panel del sitio",
+      "Un tecnico administrador no puede quitarse el permiso ni desactivarse a si mismo; lo que hace queda en la auditoria con su correo"
     ],
     "paquete": {
-      "fileName": "web-1.0.11.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.11/web-1.0.11.zip",
-      "sizeBytes": 2153451,
-      "sha256": "5518469bcc50dc1b0560ca1c3a7ef65de0724f418ad07197b943b78da51624a2"
+      "fileName": "web-1.0.12.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.12/web-1.0.12.zip",
+      "sizeBytes": 2158211,
+      "sha256": "04b6728f53256de624c5fbc3a6e3b9a2ba99f7b258fa4f1090fb38e3155097d4"
     }
   }
 }
