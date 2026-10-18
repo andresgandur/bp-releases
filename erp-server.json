@@ -1,21 +1,19 @@
 {
   "latest": {
-    "version": "1.2.12",
+    "version": "1.2.13",
     "releaseDate": "2026-10-18",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Tarifa fija de tiempo (torneos): un producto marcado 'Tarifa fija de tiempo' (opcionalmente limitado a un tipo de mesa) que, cargado a la cuenta de una mesa, cobra el tiempo a ese valor fijo dure lo que dure la partida. En la cuenta, el ticket, la factura electronica y la bitacora sale como 'Tiempo tarifa: ...'",
-      "Por chicos, la tarifa fija la paga quien mas chicos perdio; con empate se reparte entre los empatados",
-      "Al quitar la tarifa fija el tiempo vuelve a cobrarse por minutos desde la apertura de la mesa, y lo ya liquidado regresa a la cuenta. Quien la pone o la quita queda en la auditoria",
-      "Formas de pago en Parametros: opciones para el boton Tarjeta (credito, debito, Visa...) y para Mixto (Nequi, transferencia, bonos, cheque...), con su medio DIAN opcional. Con opciones, el cobro pregunta con cual se paga; sin ellas cobra de un toque como siempre",
-      "El informe de ventas, el cierre de caja, el ticket y el detalle de la venta muestran lo cobrado con cada opcion"
+      "El boton de cobro 'Mixto' ahora se llama 'Otros': es un solo medio por pago (Nequi, transferencia, bonos, cheque...). Cambia solo el nombre; lo ya cobrado y las opciones configuradas siguen igual",
+      "Ordenes de compra: al elegir un producto, ademas del stock se muestra su costo promedio (ponderado de las compras recibidas), para compararlo con lo que cotiza el proveedor",
+      "El dashboard de reportes muestra las formas de pago con su nombre (Otros, Credito) en lugar del codigo interno"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.12.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.12/servidor-setup-1.2.12.exe",
-      "sizeBytes": 312368079,
-      "sha256": "53fb69a090ca1568045023676965b86c4e1158b411322359e27b88570aacc5a0"
+      "fileName": "servidor-setup-1.2.13.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.13/servidor-setup-1.2.13.exe",
+      "sizeBytes": 312376831,
+      "sha256": "c4fbd1d6dbc7910bfc4756639a4856dc54f3214f29aafdb3b2297a219038af74"
     }
   }
 }
