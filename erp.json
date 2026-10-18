@@ -1,24 +1,21 @@
 {
   "latest": {
-    "version": "1.2.10",
-    "releaseDate": "2026-10-06",
+    "version": "1.2.12",
+    "releaseDate": "2026-10-18",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "PREFACTURA (solo con facturacion electronica): casilla en el POS para cobrar sin enviar a la DIAN; el ticket sale con el total y los impuestos dentro de cada linea, sin el renglon de impuestos. En Parametros se elige si viene marcada por defecto",
-      "CONVERTIR UNA PREFACTURA en factura electronica: en Reportes > Ventas (filtro Solo prefacturas) se abre la venta y se emite a la DIAN en el momento, con el cliente de la venta o con otro",
-      "TRASLADAR VENTAS PENDIENTES A UNA MESA: boton Trasladar junto a Reanudar y opcion en los tres puntos de una venta directa; la mesa se abre con el reloj en cero y la cuenta pasa a ser la suya",
-      "POS: Dividir cuenta, Bitacora de la cuenta y Ver en vivo pasaron a los tres puntos",
-      "INVENTARIO completo en la impresora de tickets: agrupado por categoria, con producto y stock, en orden alfabetico",
-      "PRODUCTOS: la ficha muestra el ultimo costo (ultima compra) y el costo promedio ponderado de las compras",
-      "COMPRAS: al elegir un producto se ve su stock actual, minimo y maximo",
-      "Arreglo: el inventario completo y la lista de productos de compras solo mostraban los primeros 100 productos"
+      "Tarifa fija de tiempo (torneos): un producto marcado 'Tarifa fija de tiempo' (opcionalmente limitado a un tipo de mesa) que, cargado a la cuenta de una mesa, cobra el tiempo a ese valor fijo dure lo que dure la partida. En la cuenta, el ticket, la factura electronica y la bitacora sale como 'Tiempo tarifa: ...'",
+      "Por chicos, la tarifa fija la paga quien mas chicos perdio; con empate se reparte entre los empatados",
+      "Al quitar la tarifa fija el tiempo vuelve a cobrarse por minutos desde la apertura de la mesa, y lo ya liquidado regresa a la cuenta. Quien la pone o la quita queda en la auditoria",
+      "Formas de pago en Parametros: opciones para el boton Tarjeta (credito, debito, Visa...) y para Mixto (Nequi, transferencia, bonos, cheque...), con su medio DIAN opcional. Con opciones, el cobro pregunta con cual se paga; sin ellas cobra de un toque como siempre",
+      "El informe de ventas, el cierre de caja, el ticket y el detalle de la venta muestran lo cobrado con cada opcion"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.10.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.10/terminal-setup-1.2.10.exe",
-      "sizeBytes": 2511647,
-      "sha256": "1cadf8db6c34a5a77fb2536c47e2d3f73cdf5d3b027f553d7aa6b0b3b4c1d624"
+      "fileName": "terminal-setup-1.2.12.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.12/terminal-setup-1.2.12.exe",
+      "sizeBytes": 2516035,
+      "sha256": "1b6959e21796391c03fe53c3e9fde56b8f5cb6fea8640c43ca8d8a932bc1716b"
     }
   }
 }
