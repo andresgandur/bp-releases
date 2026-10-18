@@ -1,18 +1,17 @@
 {
   "latest": {
-    "version": "1.1.47",
-    "releaseDate": "2026-10-12",
+    "version": "1.1.48",
+    "releaseDate": "2026-10-18",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "LICENCIA: si la activacion no recibe la respuesta del servicio de licencias sino un rechazo de la red (un 403 del cortafuegos) o la pagina de verificacion anti-bots del servidor, el aviso explica que no es la licencia y que hacer, en lugar de 'Request failed with status code 403' o 'Error al activar licencia'. El log guarda quien respondio",
-      "El log del marcador muestra la hora de Colombia (antes cada linea iba en UTC, cinco horas adelante)"
+      "Tarifa fija de tiempo: si la mesa tiene una tarifa fija desde el ERP, el recuadro del tiempo dice 'TIEMPO TARIFA' y muestra ese valor en vez de multiplicar los minutos, tambien en el resumen al finalizar"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.47.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.47/marcador-setup-1.1.47.exe",
-      "sizeBytes": 187605613,
-      "sha256": "6113027d3758981f0c7656996636e8efce23f15beb26ecdd729be4925c1e934e"
+      "fileName": "marcador-setup-1.1.48.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.48/marcador-setup-1.1.48.exe",
+      "sizeBytes": 187605738,
+      "sha256": "34970dfcf910edf28fd14ccb769f0252c69c5333ce050b18d62a25bade5956e0"
     }
   }
 }
