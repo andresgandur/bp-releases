@@ -1,19 +1,20 @@
 {
   "latest": {
-    "version": "1.2.13",
-    "releaseDate": "2026-10-18",
+    "version": "1.2.14",
+    "releaseDate": "2026-10-19",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El boton de cobro 'Mixto' ahora se llama 'Otros': es un solo medio por pago (Nequi, transferencia, bonos, cheque...). Cambia solo el nombre; lo ya cobrado y las opciones configuradas siguen igual",
-      "Ordenes de compra: al elegir un producto, ademas del stock se muestra su costo promedio (ponderado de las compras recibidas), para compararlo con lo que cotiza el proveedor",
-      "El dashboard de reportes muestra las formas de pago con su nombre (Otros, Credito) en lugar del codigo interno"
+      "Inventario > Resumen es solo de consulta (el ajuste de stock se hace desde Entradas, Salidas y Conteo fisico) y muestra productos, unidades, valor al costo y de venta, agotados, stock bajo, exceso, productos sin rotacion en 30 dias, los de mayor valor, valor por categoria y los movimientos de la semana",
+      "Conteo fisico: el kardex se muestra del movimiento mas reciente al mas antiguo",
+      "Nuevo Inventario > Movimientos por fecha: compras, entradas, salidas y ajustes del dia (o de otro dia o un rango de fechas) con boton para imprimirlos en la ticketera. Los roles distintos de administrador deben habilitar la pagina en Roles",
+      "Ordenes de compra: boton 'Ticket' para imprimir la orden en la impresora de tickets ademas del PDF"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.13.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.13/terminal-setup-1.2.13.exe",
-      "sizeBytes": 2517721,
-      "sha256": "7d947d99e492504ae6d230d46251300bdc255216db7eaa1c14650ed57a9571f8"
+      "fileName": "terminal-setup-1.2.14.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.14/terminal-setup-1.2.14.exe",
+      "sizeBytes": 2520299,
+      "sha256": "b922f00624802998beee479766c8ce090bb848037d018c1ecff351655283c0aa"
     }
   }
 }
