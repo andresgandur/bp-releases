@@ -1,20 +1,18 @@
 {
   "latest": {
-    "version": "1.2.14",
-    "releaseDate": "2026-10-19",
+    "version": "1.2.15",
+    "releaseDate": "2026-10-20",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Inventario > Resumen es solo de consulta (el ajuste de stock se hace desde Entradas, Salidas y Conteo fisico) y muestra productos, unidades, valor al costo y de venta, agotados, stock bajo, exceso, productos sin rotacion en 30 dias, los de mayor valor, valor por categoria y los movimientos de la semana",
-      "Conteo fisico: el kardex se muestra del movimiento mas reciente al mas antiguo",
-      "Nuevo Inventario > Movimientos por fecha: compras, entradas, salidas y ajustes del dia (o de otro dia o un rango de fechas) con boton para imprimirlos en la ticketera. Los roles distintos de administrador deben habilitar la pagina en Roles",
-      "Ordenes de compra: boton 'Ticket' para imprimir la orden en la impresora de tickets ademas del PDF"
+      "Parametros > Formas de pago: se pueden desactivar los botones de cobro Tarjeta, Otros y Credito (por defecto activos). Un boton desactivado se ve en gris en el POS y no cobra; el servidor tambien rechaza ese cobro. Efectivo no se puede desactivar",
+      "La ventana 'Cobro con tarjeta' / 'Cobro con otros medios' tiene botones verdes de mejor contraste, en modo claro y en modo oscuro"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.14.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.14/servidor-setup-1.2.14.exe",
-      "sizeBytes": 312376275,
-      "sha256": "43d65c52d2fd73b59e5433849256c533eb4ed90e1fea9ceab6d32a0c38d77452"
+      "fileName": "servidor-setup-1.2.15.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.15/servidor-setup-1.2.15.exe",
+      "sizeBytes": 317684045,
+      "sha256": "7cf2647f8512a9b329d8cc6349eee18a1626d07bc94ad803e316400b94314701"
     }
   }
 }
