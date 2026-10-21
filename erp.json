@@ -1,18 +1,21 @@
 {
   "latest": {
-    "version": "1.2.15",
-    "releaseDate": "2026-10-20",
+    "version": "1.2.16",
+    "releaseDate": "2026-10-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Parametros > Formas de pago: se pueden desactivar los botones de cobro Tarjeta, Otros y Credito (por defecto activos). Un boton desactivado se ve en gris en el POS y no cobra; el servidor tambien rechaza ese cobro. Efectivo no se puede desactivar",
-      "La ventana 'Cobro con tarjeta' / 'Cobro con otros medios' tiene botones verdes de mejor contraste, en modo claro y en modo oscuro"
+      "El inventario se descuenta al despachar: en cuanto el producto se carga a la cuenta, no al cobrarla. Quitar la linea (dentro del plazo de correccion) devuelve el stock, y anular o descartar la cuenta devuelve lo que salio. Las cuentas que ya estaban abiertas al actualizar se descuentan al cobrarlas",
+      "Favoritos: categoria fija del POS con los productos marcados como favoritos (de cualquier categoria); se oculta si no hay ninguno. Nuevo Productos > Favoritos con el catalogo del mas vendido al menos vendido para marcarlos",
+      "Categorias: se elige la que abre el POS (una sola, Favoritos incluida; sin ninguna abre en Todos) y se ordenan arrastrando o con las flechas",
+      "Menu de Inventario: 'Movimientos' y 'Traslados'",
+      "Estados de cuenta: el boton PDF / Imprimir arma un documento limpio (antes imprimia la pantalla) y el nuevo boton Ticket lo imprime en la ticketera. Los roles distintos de administrador deben habilitar la pagina Favoritos en Roles"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.15.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.15/terminal-setup-1.2.15.exe",
-      "sizeBytes": 2519879,
-      "sha256": "b9d36b76e8aa8368c632ccddedd44f95ed705a63543c8b57c2354f75748d450d"
+      "fileName": "terminal-setup-1.2.16.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.16/terminal-setup-1.2.16.exe",
+      "sizeBytes": 2521124,
+      "sha256": "5d47b994ff256e2ef6e9dcef818ba519ea8a43a17c1da4be976aef63ed4bd85f"
     }
   }
 }
