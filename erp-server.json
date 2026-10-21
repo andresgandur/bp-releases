@@ -1,18 +1,21 @@
 {
   "latest": {
-    "version": "1.2.15",
-    "releaseDate": "2026-10-20",
+    "version": "1.2.16",
+    "releaseDate": "2026-10-21",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Parametros > Formas de pago: se pueden desactivar los botones de cobro Tarjeta, Otros y Credito (por defecto activos). Un boton desactivado se ve en gris en el POS y no cobra; el servidor tambien rechaza ese cobro. Efectivo no se puede desactivar",
-      "La ventana 'Cobro con tarjeta' / 'Cobro con otros medios' tiene botones verdes de mejor contraste, en modo claro y en modo oscuro"
+      "El inventario se descuenta al despachar: en cuanto el producto se carga a la cuenta, no al cobrarla. Quitar la linea (dentro del plazo de correccion) devuelve el stock, y anular o descartar la cuenta devuelve lo que salio. Las cuentas que ya estaban abiertas al actualizar se descuentan al cobrarlas",
+      "Favoritos: categoria fija del POS con los productos marcados como favoritos (de cualquier categoria); se oculta si no hay ninguno. Nuevo Productos > Favoritos con el catalogo del mas vendido al menos vendido para marcarlos",
+      "Categorias: se elige la que abre el POS (una sola, Favoritos incluida; sin ninguna abre en Todos) y se ordenan arrastrando o con las flechas",
+      "Menu de Inventario: 'Movimientos' y 'Traslados'",
+      "Estados de cuenta: el boton PDF / Imprimir arma un documento limpio (antes imprimia la pantalla) y el nuevo boton Ticket lo imprime en la ticketera. Los roles distintos de administrador deben habilitar la pagina Favoritos en Roles"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.15.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.15/servidor-setup-1.2.15.exe",
-      "sizeBytes": 317684045,
-      "sha256": "7cf2647f8512a9b329d8cc6349eee18a1626d07bc94ad803e316400b94314701"
+      "fileName": "servidor-setup-1.2.16.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.16/servidor-setup-1.2.16.exe",
+      "sizeBytes": 322964870,
+      "sha256": "fb09933ea11b9b4f03a113672ae8537d59ebb032e6bb54ec30a5f0cd711c66d1"
     }
   }
 }
