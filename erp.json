@@ -1,21 +1,22 @@
 {
   "latest": {
-    "version": "1.2.16",
-    "releaseDate": "2026-10-21",
+    "version": "1.2.17",
+    "releaseDate": "2026-10-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El inventario se descuenta al despachar: en cuanto el producto se carga a la cuenta, no al cobrarla. Quitar la linea (dentro del plazo de correccion) devuelve el stock, y anular o descartar la cuenta devuelve lo que salio. Las cuentas que ya estaban abiertas al actualizar se descuentan al cobrarlas",
-      "Favoritos: categoria fija del POS con los productos marcados como favoritos (de cualquier categoria); se oculta si no hay ninguno. Nuevo Productos > Favoritos con el catalogo del mas vendido al menos vendido para marcarlos",
-      "Categorias: se elige la que abre el POS (una sola, Favoritos incluida; sin ninguna abre en Todos) y se ordenan arrastrando o con las flechas",
-      "Menu de Inventario: 'Movimientos' y 'Traslados'",
-      "Estados de cuenta: el boton PDF / Imprimir arma un documento limpio (antes imprimia la pantalla) y el nuevo boton Ticket lo imprime en la ticketera. Los roles distintos de administrador deben habilitar la pagina Favoritos en Roles"
+      "Plantillas de configuracion de los marcadores guardadas en el servidor: una para Pool, otra para 3 Bandas y Libres, y otra para Android. En Mesas y tipos > Configuracion de marcadores se ven las plantillas, en que version esta cada mesa, y se envian a todas o a las elegidas (las que estan jugando la aplican al volver al menu; las apagadas, al conectarse). El antiguo 'Enviar a las demas mesas' queda bloqueado",
+      "Pantalla extendida de la terminal: si hay segundo monitor, una ventana acumula las mesas que piden servicio o tiza; se puede cerrar y vuelve con la siguiente solicitud nueva",
+      "Inventario > Movimientos: se listan las devoluciones (lineas quitadas de una cuenta y cuentas anuladas) con su mesa o venta directa, y la casilla 'Incluir ventas' agrega las ventas",
+      "Favoritos: las tarifas de tiempo tambien se pueden marcar como favoritas",
+      "La marquesina tiene permiso propio en Roles; quien ya la usaba lo conserva",
+      "Instalador del servidor: abre los puertos del ERP para acceso remoto por Tailscale (solo la red 100.64.0.0/10)"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.16.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.16/terminal-setup-1.2.16.exe",
-      "sizeBytes": 2521124,
-      "sha256": "5d47b994ff256e2ef6e9dcef818ba519ea8a43a17c1da4be976aef63ed4bd85f"
+      "fileName": "terminal-setup-1.2.17.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.17/terminal-setup-1.2.17.exe",
+      "sizeBytes": 2531664,
+      "sha256": "1613f1fe853f719b97904b68a8150c116554a86452bcf9ceafb4f9a6a010db36"
     }
   }
 }
