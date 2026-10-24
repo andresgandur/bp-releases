@@ -1,19 +1,19 @@
 {
   "latest": {
-    "version": "1.1.49",
-    "releaseDate": "2026-10-18",
+    "version": "1.1.50",
+    "releaseDate": "2026-10-24",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Panel central: el boton de intercambiar camaras es un 50% mas grande (y el de reconectar camaras con el)",
-      "Repeticion: el boton CERRAR es redondo y mas grande, y hay velocidades 2x y 3x a la derecha de Normal",
-      "Menu principal: el boton de la Academia es un 50% mas grande"
+      "Plantilla de configuracion en el servidor (Configuracion > General): 'Guardar en el servidor' e 'Importar del servidor', una para Pool y otra para 3 Bandas y Libres. Copia General (torneo, sonido, finalizar, siempre al frente, academia, nombre, logo, decimales, servicio, cajoneras, tiempo de entrada y contrasenas del menu), Tamanos y Constructor, Modos de juego, Colores y Grabacion. No toca las camaras ni el video de cada mesa",
+      "El ERP puede enviar la plantilla a las mesas: se aplica al volver al menu, nunca en plena partida",
+      "Mesa reservada: la pantalla dice 'MESA RESERVADA A:' y el nombre de quien la reservo"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.49.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.49/marcador-setup-1.1.49.exe",
-      "sizeBytes": 187605609,
-      "sha256": "b492b2798441807c29aaef136c5c16d405644ef9e9780578821d7796819d940c"
+      "fileName": "marcador-setup-1.1.50.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.50/marcador-setup-1.1.50.exe",
+      "sizeBytes": 187607142,
+      "sha256": "551fc0f0ebd1af46ad7de9b25cd2ee60ff279357cc91411ae898fc5ed6ea4ffc"
     }
   }
 }
