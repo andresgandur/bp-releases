@@ -1,22 +1,25 @@
 {
   "latest": {
-    "version": "1.2.17",
-    "releaseDate": "2026-10-24",
+    "version": "1.2.18",
+    "releaseDate": "2026-10-25",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Plantillas de configuracion de los marcadores guardadas en el servidor: una para Pool, otra para 3 Bandas y Libres, y otra para Android. En Mesas y tipos > Configuracion de marcadores se ven las plantillas, en que version esta cada mesa, y se envian a todas o a las elegidas (las que estan jugando la aplican al volver al menu; las apagadas, al conectarse). El antiguo 'Enviar a las demas mesas' queda bloqueado",
-      "Pantalla extendida de la terminal: si hay segundo monitor, una ventana acumula las mesas que piden servicio o tiza; se puede cerrar y vuelve con la siguiente solicitud nueva",
-      "Inventario > Movimientos: se listan las devoluciones (lineas quitadas de una cuenta y cuentas anuladas) con su mesa o venta directa, y la casilla 'Incluir ventas' agrega las ventas",
-      "Favoritos: las tarifas de tiempo tambien se pueden marcar como favoritas",
-      "La marquesina tiene permiso propio en Roles; quien ya la usaba lo conserva",
-      "Instalador del servidor: abre los puertos del ERP para acceso remoto por Tailscale (solo la red 100.64.0.0/10)"
+      "Pantalla extendida del ERP: fija y a pantalla completa en el segundo monitor (sale sola al conectarlo). Muestra la hora, las mesas por categoria con su estado y tiempo, los proximos torneos y la marquesina; las solicitudes de servicio y tiza salen en grande. Se pueden ocultar categorias en Parametros",
+      "Sonidos de alerta configurables en Parametros: uno para servicio y otro para tiza, con volumen (incluye el de aeropuerto y el clasico de antes)",
+      "Proximos torneos en Parametros, con cuenta regresiva en la pantalla extendida",
+      "Marquesina por destino: cada mesa y la pantalla del ERP conservan su propio mensaje; enviar a todas lo reemplaza",
+      "Nuevo reporte Ventas por mesa: consumo, tiempo, chicos y total por mesa, por fechas o por cierres de caja, con impresion en ticket",
+      "Inventario: buscador de productos en Conteo fisico, Entradas y Salidas; kardex con tipo correcto, detalle y agrupado por cuenta",
+      "Chicos: el tiempo del chico en curso se cobra aunque no se indique el perdedor, y reabrir la mesa ya no borra el tiempo cobrado",
+      "Cobrar una mesa que pidio la cuenta la cierra directamente, y reabrirla libera el marcador",
+      "El POS se recupera solo si la cuenta en pantalla se borro, y la terminal ya no reintenta las respuestas 4xx"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.2.17.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.17/terminal-setup-1.2.17.exe",
-      "sizeBytes": 2531664,
-      "sha256": "1613f1fe853f719b97904b68a8150c116554a86452bcf9ceafb4f9a6a010db36"
+      "fileName": "terminal-setup-1.2.18.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.2.18/terminal-setup-1.2.18.exe",
+      "sizeBytes": 2544130,
+      "sha256": "2e48a1090529849e3f72921762afbefb2cfe6b25fac2b94ebfb8330ab1b0ae24"
     }
   }
 }
