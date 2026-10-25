@@ -1,19 +1,18 @@
 {
   "latest": {
-    "version": "1.1.50",
-    "releaseDate": "2026-10-24",
+    "version": "1.1.51",
+    "releaseDate": "2026-10-25",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Plantilla de configuracion en el servidor (Configuracion > General): 'Guardar en el servidor' e 'Importar del servidor', una para Pool y otra para 3 Bandas y Libres. Copia General (torneo, sonido, finalizar, siempre al frente, academia, nombre, logo, decimales, servicio, cajoneras, tiempo de entrada y contrasenas del menu), Tamanos y Constructor, Modos de juego, Colores y Grabacion. No toca las camaras ni el video de cada mesa",
-      "El ERP puede enviar la plantilla a las mesas: se aplica al volver al menu, nunca en plena partida",
-      "Mesa reservada: la pantalla dice 'MESA RESERVADA A:' y el nombre de quien la reservo"
+      "Repeticion: al terminar un archivo sigue con el minuto siguiente (antes saltaba al anterior y se perdia la continuidad entre archivos), y ANT/SIG van hacia atras y hacia adelante en el tiempo",
+      "Repeticion: un solo boton de avance rapido que pasa por 2x, 3x, 4x y 5x y vuelve a Normal, mostrando la velocidad"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.50.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.50/marcador-setup-1.1.50.exe",
-      "sizeBytes": 187607142,
-      "sha256": "551fc0f0ebd1af46ad7de9b25cd2ee60ff279357cc91411ae898fc5ed6ea4ffc"
+      "fileName": "marcador-setup-1.1.51.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.51/marcador-setup-1.1.51.exe",
+      "sizeBytes": 187607320,
+      "sha256": "740adce8d9eadb5d8065a025cedc980a7b74b4a04c45edcaa5c2f62670558590"
     }
   }
 }
