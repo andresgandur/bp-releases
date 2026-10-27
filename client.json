@@ -1,18 +1,17 @@
 {
   "latest": {
-    "version": "1.1.51",
-    "releaseDate": "2026-10-25",
+    "version": "1.1.52",
+    "releaseDate": "2026-10-27",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Repeticion: al terminar un archivo sigue con el minuto siguiente (antes saltaba al anterior y se perdia la continuidad entre archivos), y ANT/SIG van hacia atras y hacia adelante en el tiempo",
-      "Repeticion: un solo boton de avance rapido que pasa por 2x, 3x, 4x y 5x y vuelve a Normal, mostrando la velocidad"
+      "VALOR TIEMPO correcto cuando la mesa pasa la medianoche hacia un dia festivo: suma lo jugado a la tarifa normal y lo que sigue a la tarifa de festivos, sin reiniciar el reloj (requiere ERP 1.2.19)"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.51.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.51/marcador-setup-1.1.51.exe",
-      "sizeBytes": 187607320,
-      "sha256": "740adce8d9eadb5d8065a025cedc980a7b74b4a04c45edcaa5c2f62670558590"
+      "fileName": "marcador-setup-1.1.52.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.52/marcador-setup-1.1.52.exe",
+      "sizeBytes": 187607331,
+      "sha256": "617d10c0e135c0aea0827c4a98ba184e44c5e920b462d66b3ce4c28aaa0954c4"
     }
   }
 }
