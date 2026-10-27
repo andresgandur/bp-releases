@@ -1,25 +1,24 @@
 {
   "latest": {
-    "version": "1.2.18",
-    "releaseDate": "2026-10-25",
+    "version": "1.2.19",
+    "releaseDate": "2026-10-27",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Pantalla extendida del ERP: fija y a pantalla completa en el segundo monitor (sale sola al conectarlo). Muestra la hora, las mesas por categoria con su estado y tiempo, los proximos torneos y la marquesina; las solicitudes de servicio y tiza salen en grande. Se pueden ocultar categorias en Parametros",
-      "Sonidos de alerta configurables en Parametros: uno para servicio y otro para tiza, con volumen (incluye el de aeropuerto y el clasico de antes)",
-      "Proximos torneos en Parametros, con cuenta regresiva en la pantalla extendida",
-      "Marquesina por destino: cada mesa y la pantalla del ERP conservan su propio mensaje; enviar a todas lo reemplaza",
-      "Nuevo reporte Ventas por mesa: consumo, tiempo, chicos y total por mesa, por fechas o por cierres de caja, con impresion en ticket",
-      "Inventario: buscador de productos en Conteo fisico, Entradas y Salidas; kardex con tipo correcto, detalle y agrupado por cuenta",
-      "Chicos: el tiempo del chico en curso se cobra aunque no se indique el perdedor, y reabrir la mesa ya no borra el tiempo cobrado",
-      "Cobrar una mesa que pidio la cuenta la cierra directamente, y reabrirla libera el marcador",
-      "El POS se recupera solo si la cuenta en pantalla se borro, y la terminal ya no reintenta las respuestas 4xx"
+      "Dias festivos en Tarifas: calendario 2026-2030 de Colombia o Panama, editable dia por dia, y una tarifa de festivos que se cobra en esos dias",
+      "Una mesa abierta que pasa la medianoche hacia un festivo liquida su tiempo y sigue con la tarifa de festivos; la cuenta muestra cada tramo con su tarifa y el reloj de la mesa no se reinicia",
+      "Marquesina: el mensaje general aparece en la lista de mensajes activos y se puede quitar sin tocar los propios de cada destino",
+      "POS: junto al nombre de la mesa se ve su tipo (o su categoria en las mesas adicionales)",
+      "Bitacora: muestra la fecha y hora de apertura de la mesa en pantalla, PDF y ticket",
+      "Pantalla extendida: el nombre de la mesa en las solicitudes se ve completo y lo mas grande posible",
+      "Pantalla extendida: corregida la pantalla que quedaba toda azul o roja y la marquesina quieta en equipos con las animaciones de Windows apagadas",
+      "Registros del servidor con la hora de Colombia (DD/MM/AAAA HH:MM AM/PM)"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.2.18.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.18/servidor-setup-1.2.18.exe",
-      "sizeBytes": 344134160,
-      "sha256": "db613c4c4b9958b917f2a5756b30511380116f2d8371f5c9ca1b347a59d01070"
+      "fileName": "servidor-setup-1.2.19.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.2.19/servidor-setup-1.2.19.exe",
+      "sizeBytes": 344145925,
+      "sha256": "626226ea241db61e321333e80563dc95376fe5106040de02002d844b689d90d5"
     }
   }
 }
