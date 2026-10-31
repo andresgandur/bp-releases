@@ -1,18 +1,20 @@
 {
   "latest": {
-    "version": "1.1.4",
-    "releaseDate": "2026-10-07",
+    "version": "1.1.5",
+    "releaseDate": "2026-10-31",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Se puede volver a activar una licencia en el equipo del que se libero. Antes el servidor contestaba 503 y el marcador decia 'El servicio de licencias no esta disponible', porque la activacion liberada de ese equipo seguia en la base y chocaba con la nueva. Ahora se reactiva esa misma fila",
-      "El esquema base (schema.sql) incluye la columna device_type de activations, que en produccion ya existe por su migracion"
+      "Mapa de licencias: un punto por licencia, ubicado de forma aproximada por la IP publica con una base local de DB-IP, que se descarga desde el mismo mapa",
+      "Los clientes ya instalados aparecen con la IP guardada y se actualizan en cada verificacion, sin tener que actualizar el programa",
+      "Cada equipo muestra su producto (ERP, marcador o Android) y su version, si ya tiene un programa que la envia",
+      "El punto se puede ajustar a mano, y ninguna verificacion lo cambia despues; cada licencia se puede ocultar del mapa"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.4.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.4/licencias-1.1.4.zip",
-      "sizeBytes": 109707,
-      "sha256": "7d06b2fdd22fbb948879b184393d97b8acfbffc1f92f6435bc0ea3715a49c98f"
+      "fileName": "licencias-1.1.5.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.5/licencias-1.1.5.zip",
+      "sizeBytes": 189566,
+      "sha256": "d1b22e77eadfa893a4ba54dd8de502c8a3c8bf7dbe803aac092c229f03a5ffbf"
     }
   }
 }
