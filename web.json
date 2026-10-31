@@ -1,18 +1,21 @@
 {
   "latest": {
-    "version": "1.0.12",
-    "releaseDate": "2026-10-15",
+    "version": "1.0.13",
+    "releaseDate": "2026-10-30",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Tecnicos administradores: una casilla en la ficha del tecnico le da la seccion Administracion en /soporte (usuarios, empresas y ajustes de soporte) y el permiso de borrar tickets, sin entrar al panel del sitio",
-      "Un tecnico administrador no puede quitarse el permiso ni desactivarse a si mismo; lo que hace queda en la auditoria con su correo"
+      "Un cliente puede tener acceso a una o mas empresas, con una casilla por empresa en su ficha; con varias elige la empresa al crear el ticket y con una se pone sola",
+      "Los administradores pueden borrar empresas: sus usuarios pierden el acceso y sus tickets quedan sin empresa, sin borrar ni unos ni otros",
+      "Los tecnicos consultan la lista de empresas en /soporte/empresas",
+      "La tarjeta Cerrados del tablero cuenta todos los tickets cerrados, no solo los de 7 dias",
+      "Los companeros de empresa ya pueden abrir los adjuntos de los tickets que ven"
     ],
     "paquete": {
-      "fileName": "web-1.0.12.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.12/web-1.0.12.zip",
-      "sizeBytes": 2158211,
-      "sha256": "04b6728f53256de624c5fbc3a6e3b9a2ba99f7b258fa4f1090fb38e3155097d4"
+      "fileName": "web-1.0.13.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.13/web-1.0.13.zip",
+      "sizeBytes": 2162207,
+      "sha256": "89221df3d7634f97747059fd60afa7b507a5bd71dc5a4a8148f75285be71d6f3"
     }
   }
 }
