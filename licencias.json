@@ -1,18 +1,18 @@
 {
   "latest": {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "releaseDate": "2026-10-31",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "El mapa de licencias se ve aunque el navegador tenga guardados los estilos de la version anterior; antes solo aparecia la tabla",
-      "Se quito la leyenda debajo del mapa"
+      "Los puntos del mapa se quedan fijos en su posicion con cualquier zoom; los de una misma coordenada quedan uno encima de otro",
+      "Selector de tipo de mapa: calles, satelite o topografico. Cada navegador recuerda la eleccion"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.6.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.6/licencias-1.1.6.zip",
-      "sizeBytes": 189301,
-      "sha256": "dea2b3e3a2eec3fd12750ce3c1572852539dd99a2884f9651875a04f83cc4c09"
+      "fileName": "licencias-1.1.7.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.7/licencias-1.1.7.zip",
+      "sizeBytes": 189409,
+      "sha256": "ad5e9568bfd83fdcd9835f57782d565bac335b644d4482bd46121ef397663f58"
     }
   }
 }
