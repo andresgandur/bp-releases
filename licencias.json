@@ -1,23 +1,18 @@
 {
   "latest": {
-    "version": "1.1.8",
+    "version": "1.1.9",
     "releaseDate": "2026-10-31",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Filtros en el mapa por color, tipo y producto; la tabla de ciudades cuenta lo que queda visible",
-      "Colores segun la licencia: verde al dia, amarillo si vence en 30 dias, rojo en 7, negro expirada y gris suspendida o revocada",
-      "Tabla de clientes por ciudad con el nombre del pais, ordenable tocando el titulo de cada columna, y ciudades normalizadas con OpenStreetMap",
-      "La tarjeta del punto muestra el tipo, el vencimiento y los equipos agrupados por producto, y permite ajustar la posicion desde el mismo mapa; los botones quedan debajo del mapa",
-      "Un punto ajustado a mano muestra su ciudad, departamento y pais",
-      "La lista de clientes arranca plegada y tiene buscador",
-      "Se retiraron las vistas de satelite y topografica: el mapa queda solo con la vista de calles"
+      "Los clientes con la misma coordenada se ven como un punto con la cantidad; al tocarlo se abren alrededor, cada uno con su tarjeta y su boton de ajuste",
+      "Filtro para ver solo los puntos con varios clientes y reubicarlos"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.8.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.8/licencias-1.1.8.zip",
-      "sizeBytes": 196452,
-      "sha256": "cae1fde3bf054074925e9ff8f39054e063f3ff28b05289f3ca6c14887c51434a"
+      "fileName": "licencias-1.1.9.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.9/licencias-1.1.9.zip",
+      "sizeBytes": 197323,
+      "sha256": "80b910278c3af2072474e63d1ca187c5b59a845dead87625da74a8a4be433713"
     }
   }
 }
