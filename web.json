@@ -1,21 +1,19 @@
 {
   "latest": {
-    "version": "1.0.13",
-    "releaseDate": "2026-10-30",
+    "version": "1.0.14",
+    "releaseDate": "2026-11-01",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Un cliente puede tener acceso a una o mas empresas, con una casilla por empresa en su ficha; con varias elige la empresa al crear el ticket y con una se pone sola",
-      "Los administradores pueden borrar empresas: sus usuarios pierden el acceso y sus tickets quedan sin empresa, sin borrar ni unos ni otros",
-      "Los tecnicos consultan la lista de empresas en /soporte/empresas",
-      "La tarjeta Cerrados del tablero cuenta todos los tickets cerrados, no solo los de 7 dias",
-      "Los companeros de empresa ya pueden abrir los adjuntos de los tickets que ven"
+      "Portada renovada: animaciones mas cortas, galeria y visor que se manejan con la mano, y la imagen del marcador a la altura del titulo",
+      "Textos mas breves: 12 modulos del ERP con una linea cada uno",
+      "Novedades actualizadas: pantalla de la sala, repeticion a la medida, festivos con su tarifa, tarifa fija para torneos y prefactura"
     ],
     "paquete": {
-      "fileName": "web-1.0.13.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.13/web-1.0.13.zip",
-      "sizeBytes": 2162207,
-      "sha256": "89221df3d7634f97747059fd60afa7b507a5bd71dc5a4a8148f75285be71d6f3"
+      "fileName": "web-1.0.14.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.14/web-1.0.14.zip",
+      "sizeBytes": 2154437,
+      "sha256": "da74ade1549967404bfd3cce6e63083605d5c091697d0b3a1031f2f5168039ee"
     }
   }
 }
