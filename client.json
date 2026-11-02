@@ -1,17 +1,18 @@
 {
   "latest": {
-    "version": "1.1.52",
-    "releaseDate": "2026-10-27",
+    "version": "1.1.54",
+    "releaseDate": "2026-11-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "VALOR TIEMPO correcto cuando la mesa pasa la medianoche hacia un dia festivo: suma lo jugado a la tarifa normal y lo que sigue a la tarifa de festivos, sin reiniciar el reloj (requiere ERP 1.2.19)"
+      "La repeticion abre los ultimos 2 minutos y arranca en los ultimos 25 segundos; la barra permite retroceder sin cambiar de archivo. La duracion se puede cambiar en la configuracion de video",
+      "Al descargar se puede elegir que parte llevarse tocando la barra, sin deslizar el dedo, y revisar el video con una barra y saltos de 1 y 5 segundos"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.52.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.52/marcador-setup-1.1.52.exe",
-      "sizeBytes": 187607331,
-      "sha256": "617d10c0e135c0aea0827c4a98ba184e44c5e920b462d66b3ce4c28aaa0954c4"
+      "fileName": "marcador-setup-1.1.54.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.54/marcador-setup-1.1.54.exe",
+      "sizeBytes": 187611462,
+      "sha256": "117ee0c02f30712d546102fed5d9249951bde1b4964d03e4dde5d2af8c781220"
     }
   }
 }
