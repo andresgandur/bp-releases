@@ -1,20 +1,22 @@
 {
   "latest": {
-    "version": "1.1.55",
+    "version": "1.1.56",
     "releaseDate": "2026-11-02",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
+      "La repeticion ya no salta en el tiempo: los minutos del clip quedan en orden",
+      "Al terminar un video de la repeticion sigue con el clip de la ultima jugada, donde termino el anterior",
       "La repeticion se recupera sola si el video se traba, baja a 2x si el equipo no aguanta la velocidad y Play vuelve a responder",
       "Si la carpeta de grabacion no existe, se crea",
       "El video a descargar debe pesar menos de 50 MB; si pesa mas, se pide recortarlo",
       "Las contrasenas ya no quedan escritas en el log"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.55.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.55/marcador-setup-1.1.55.exe",
-      "sizeBytes": 187614018,
-      "sha256": "d1bb6ead3c150e7a81ab6bff59592ec1386fa743d7e844bd4ac787655227530e"
+      "fileName": "marcador-setup-1.1.56.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.56/marcador-setup-1.1.56.exe",
+      "sizeBytes": 187614215,
+      "sha256": "07e226cd83a616dcf6340ad7c6bbea7c1bfcdf6e4b57d41e515c8cc4cac8d693"
     }
   }
 }
