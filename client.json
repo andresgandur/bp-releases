@@ -1,18 +1,23 @@
 {
   "latest": {
-    "version": "1.1.58",
+    "version": "1.2.0",
     "releaseDate": "2026-11-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "En equipos lentos la repeticion ya no se traba a saltos: se espera a que el equipo alcance en vez de forzar el video",
-      "El log indica si el equipo usa la tarjeta grafica para el video, la resolucion de cada repeticion y cuando el equipo no da abasto"
+      "Motor actualizado: Electron 45 (antes 32, ya sin parches de seguridad), MediaMTX 1.21 y FFmpeg 9",
+      "Nueva opcion por equipo en Configuracion > Video: decodificar el video con el procesador, para los equipos donde la repeticion se traba al acelerarla",
+      "Mientras se ve una repeticion, el panel deja de mostrar el vivo que queda tapado (las camaras siguen grabando)",
+      "Las miniaturas de la repeticion aparecen hasta 5 veces mas rapido y al volver a entrar salen al instante",
+      "Los botones del panel central tienen todos el mismo ancho",
+      "El log registra la tarjeta grafica, cuanto tarda cada camara en verse y cuando la repeticion se queda esperando cuadros; las contrasenas tambien se ocultan en la consola",
+      "Instalador unos 100 MB mas liviano (sin ffplay, que no se usaba)"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.58.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.58/marcador-setup-1.1.58.exe",
-      "sizeBytes": 187614468,
-      "sha256": "affb98e4be842835cb1babca3408010dda3ad5556934556cb1b61f5d0cdb420c"
+      "fileName": "marcador-setup-1.2.0.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.0/marcador-setup-1.2.0.exe",
+      "sizeBytes": 221801108,
+      "sha256": "becfd791720676e689f42287f75edcbcde8f359ddab06882d4560a5f6127e2b9"
     }
   }
 }
