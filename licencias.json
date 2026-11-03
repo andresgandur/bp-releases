@@ -1,18 +1,18 @@
 {
   "latest": {
-    "version": "1.1.9",
-    "releaseDate": "2026-10-31",
+    "version": "1.1.10",
+    "releaseDate": "2026-11-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Los clientes con la misma coordenada se ven como un punto con la cantidad; al tocarlo se abren alrededor, cada uno con su tarjeta y su boton de ajuste",
-      "Filtro para ver solo los puntos con varios clientes y reubicarlos"
+      "Al actualizar se conserva la version de PHP elegida en cPanel: antes el servicio volvia a la version por defecto del servidor",
+      "La comprobacion del hosting pide PHP 8.2 o mas y avisa si hay que volver a aplicarla en MultiPHP Manager"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.9.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.9/licencias-1.1.9.zip",
-      "sizeBytes": 197323,
-      "sha256": "80b910278c3af2072474e63d1ca187c5b59a845dead87625da74a8a4be433713"
+      "fileName": "licencias-1.1.10.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.10/licencias-1.1.10.zip",
+      "sizeBytes": 197703,
+      "sha256": "0e79c6387da19065c501febceec5bf5ac693036ae964341a4a09691590e52d57"
     }
   }
 }
