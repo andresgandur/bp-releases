@@ -1,18 +1,18 @@
 {
   "latest": {
-    "version": "1.1.57",
+    "version": "1.1.58",
     "releaseDate": "2026-11-03",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "En la repeticion el primer video ya no sale repetido",
-      "El boton INICIO tiene una casa blanca, sin colores"
+      "En equipos lentos la repeticion ya no se traba a saltos: se espera a que el equipo alcance en vez de forzar el video",
+      "El log indica si el equipo usa la tarjeta grafica para el video, la resolucion de cada repeticion y cuando el equipo no da abasto"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.1.57.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.57/marcador-setup-1.1.57.exe",
-      "sizeBytes": 187614204,
-      "sha256": "a254ddc0c35667057926fa584a37dd3f2c8eee032ecdc575c32fc616c994e929"
+      "fileName": "marcador-setup-1.1.58.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.1.58/marcador-setup-1.1.58.exe",
+      "sizeBytes": 187614468,
+      "sha256": "affb98e4be842835cb1babca3408010dda3ad5556934556cb1b61f5d0cdb420c"
     }
   }
 }
