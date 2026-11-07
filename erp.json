@@ -1,20 +1,22 @@
 {
   "latest": {
-    "version": "1.3.0",
-    "releaseDate": "2026-11-03",
+    "version": "1.3.1",
+    "releaseDate": "2026-11-07",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "La caja que esta en el mismo equipo del servidor sigue funcionando aunque se caiga la red (se conecta por 127.0.0.1)",
-      "Documentos electronicos: boton Corregir en los rechazados, con lo que esta mal resaltado en rojo",
-      "Pantalla extendida: las mesas libres se resaltan en verde y las que estan en juego quedan atenuadas",
-      "Tauri 2.12 y librerias al dia"
+      "Borrar ventas: pantalla nueva para quitar ventas y cierres de caja de prueba",
+      "Boton Mixto en el cobro: una parte en efectivo y otra con tarjeta, o con dos tarjetas; Parametros > Formas de pago reorganizado",
+      "Anular ventas desde el buscador, el detalle de la venta y Facturacion DIAN; la tabla de documentos resalta las ventas anuladas",
+      "Cierre de caja con total por forma de pago y productos por categoria",
+      "Los botones de cobro se desactivan con la cuenta en $0 y el total incluye el tiempo del chico en curso",
+      "Roles con los permisos en orden alfabetico"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.3.0.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.0/terminal-setup-1.3.0.exe",
-      "sizeBytes": 2622710,
-      "sha256": "854764fb8ba19446ca8034eb162972f71283a560657c92df08f40b261f22715d"
+      "fileName": "terminal-setup-1.3.1.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.1/terminal-setup-1.3.1.exe",
+      "sizeBytes": 2626981,
+      "sha256": "2f2fd41a74c979a1d02face05a0facbe31dad833a59220c7ded94d821fb2f943"
     }
   }
 }
