@@ -1,22 +1,20 @@
 {
   "latest": {
-    "version": "1.3.1",
-    "releaseDate": "2026-11-07",
+    "version": "1.3.2",
+    "releaseDate": "2026-11-10",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Borrar ventas: modulo nuevo (permiso propio) para quitar ventas y cierres de caja de prueba; el inventario vuelve, se respalda la base antes y queda en la auditoria",
-      "Cobro Mixto: reparte una cuenta entre efectivo y los medios de Tarjeta (por ejemplo efectivo y debito, o debito y credito); las opciones de Otros pasan solas a Tarjeta",
-      "Cierre de caja: total por forma de pago y productos e inventario agrupados por categoria",
-      "Las cuentas en $0 no se cobran (se descartan) y no se descarta una mesa con tiempo jugado sin cobrar, tambien por chicos",
-      "Encendido y apagado de los marcadores con los equipos guardados en la base: funciona aunque el marcador no este conectado (despues de un corte de luz)",
-      "Facturacion: las ventas de $0 tienen su propio estado y al anular una venta con el documento rechazado este sale de la lista"
+      "Acceso remoto: el dueno ve ventas, caja, inventario y cartera desde el celular en mi.billarplay.com; el ERP envia un resumen por dia de trabajo cada 15 minutos y al cerrar caja",
+      "Acceso remoto: codigos de un solo uso para autorizar dispositivos, lista de dispositivos y quitar el acceso; nada se envia hasta generar el primer codigo",
+      "Auditoria: quedan registrados inventario (entradas, salidas, ajustes, conteos), productos, compras, clientes, apertura de caja, respaldos y lo que pasa en el POS (quitar productos, descuentos, traslados, apartar, dividir)",
+      "Auditoria: cada registro dice quien lo hizo y desde que equipo, con lo que cambio antes y despues; las claves y contrasenas nunca se guardan"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.3.1.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.3.1/servidor-setup-1.3.1.exe",
-      "sizeBytes": 362619564,
-      "sha256": "246d5c5615a4d46e744aebee1d53964516157c7155fd71408e3ff55e8b340094"
+      "fileName": "servidor-setup-1.3.2.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.3.2/servidor-setup-1.3.2.exe",
+      "sizeBytes": 362654792,
+      "sha256": "df1ec0a01de20a28a6e421c471bb9489d9128dd6dbe56193bdc401041a259860"
     }
   }
 }
