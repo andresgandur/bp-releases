@@ -1,18 +1,19 @@
 {
   "latest": {
-    "version": "1.1.10",
-    "releaseDate": "2026-11-03",
+    "version": "1.1.11",
+    "releaseDate": "2026-11-10",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Al actualizar se conserva la version de PHP elegida en cPanel: antes el servicio volvia a la version por defecto del servidor",
-      "La comprobacion del hosting pide PHP 8.2 o mas y avisa si hay que volver a aplicarla en MultiPHP Manager"
+      "Portal del negocio (mi.billarplay.com): el dueno de cada salon ve ventas, caja, inventario y cartera desde el celular",
+      "API para que el ERP envie sus resumenes diarios y administre los codigos de acceso y los dispositivos",
+      "Importante: despues de esta actualizacion aplique el mismo paquete otra vez con 'reinstalar la misma version' para que se instale la carpeta del portal"
     ],
     "paquete": {
-      "fileName": "licencias-1.1.10.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.10/licencias-1.1.10.zip",
-      "sizeBytes": 197703,
-      "sha256": "0e79c6387da19065c501febceec5bf5ac693036ae964341a4a09691590e52d57"
+      "fileName": "licencias-1.1.11.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/licencias-v1.1.11/licencias-1.1.11.zip",
+      "sizeBytes": 332351,
+      "sha256": "f138fe4cb4e20cdc5124e0ffc1896f486d99018dd5e893943e49afc291c43449"
     }
   }
 }
