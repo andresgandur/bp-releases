@@ -1,22 +1,19 @@
 {
   "latest": {
-    "version": "1.3.1",
-    "releaseDate": "2026-11-07",
+    "version": "1.3.2",
+    "releaseDate": "2026-11-10",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Borrar ventas: pantalla nueva para quitar ventas y cierres de caja de prueba",
-      "Boton Mixto en el cobro: una parte en efectivo y otra con tarjeta, o con dos tarjetas; Parametros > Formas de pago reorganizado",
-      "Anular ventas desde el buscador, el detalle de la venta y Facturacion DIAN; la tabla de documentos resalta las ventas anuladas",
-      "Cierre de caja con total por forma de pago y productos por categoria",
-      "Los botones de cobro se desactivan con la cuenta en $0 y el total incluye el tiempo del chico en curso",
-      "Roles con los permisos en orden alfabetico"
+      "Acceso remoto: pantalla nueva para dar acceso al celular del dueno con un codigo o un QR, ver y quitar dispositivos y elegir la hora en que empieza el dia de trabajo",
+      "Auditoria renovada: frases claras, agrupada por dia, filtros por usuario, categoria y fechas, detalle con lo que cambio y exportar a CSV",
+      "El buscador de Auditoria encuentra un numero de venta, mesa o turno, o un texto como un producto, un cliente o un motivo"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.3.1.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.1/terminal-setup-1.3.1.exe",
-      "sizeBytes": 2626981,
-      "sha256": "2f2fd41a74c979a1d02face05a0facbe31dad833a59220c7ded94d821fb2f943"
+      "fileName": "terminal-setup-1.3.2.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.2/terminal-setup-1.3.2.exe",
+      "sizeBytes": 2640754,
+      "sha256": "f0135e1d0b3f03f17061aba6dd12174af29f0de96d540ac61a188f9feb024644"
     }
   }
 }
