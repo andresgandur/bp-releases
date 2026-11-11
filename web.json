@@ -1,18 +1,19 @@
 {
   "latest": {
-    "version": "1.0.15",
-    "releaseDate": "2026-11-03",
+    "version": "1.0.16",
+    "releaseDate": "2026-11-11",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Al actualizar se conserva la version de PHP elegida en cPanel: antes el sitio volvia a la version por defecto del servidor",
-      "La comprobacion del hosting pide PHP 8.2 o mas y avisa si hay que volver a aplicarla en MultiPHP Manager"
+      "Seccion destacada de la app del dueno (mi.billarplay.com): ventas, mesas, caja, crecimiento mes a mes, inventario con alertas y cuentas por cobrar y por pagar desde el celular",
+      "Entrada App del dueno en el menu y el pie, pregunta frecuente y modulo Acceso remoto",
+      "El menu superior ya no se corta en pantallas medianas"
     ],
     "paquete": {
-      "fileName": "web-1.0.15.zip",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.15/web-1.0.15.zip",
-      "sizeBytes": 2154693,
-      "sha256": "a01d60fba201caf345d0cde3cfb7745ba4a8a08f2d818100efe5ec4b767ebb87"
+      "fileName": "web-1.0.16.zip",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/web-v1.0.16/web-1.0.16.zip",
+      "sizeBytes": 2159039,
+      "sha256": "fadf8744d47ea1c699505493bef27c08c7e18a9a2b8dc418c27c90683ae2ae5f"
     }
   }
 }
