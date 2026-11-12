@@ -1,23 +1,17 @@
 {
   "latest": {
-    "version": "1.2.0",
-    "releaseDate": "2026-11-03",
+    "version": "1.2.1",
+    "releaseDate": "2026-11-12",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Motor actualizado: Electron 45 (antes 32, ya sin parches de seguridad), MediaMTX 1.21 y FFmpeg 9",
-      "Nueva opcion por equipo en Configuracion > Video: decodificar el video con el procesador, para los equipos donde la repeticion se traba al acelerarla",
-      "Mientras se ve una repeticion, el panel deja de mostrar el vivo que queda tapado (las camaras siguen grabando)",
-      "Las miniaturas de la repeticion aparecen hasta 5 veces mas rapido y al volver a entrar salen al instante",
-      "Los botones del panel central tienen todos el mismo ancho",
-      "El log registra la tarjeta grafica, cuanto tarda cada camara en verse y cuando la repeticion se queda esperando cuadros; las contrasenas tambien se ocultan en la consola",
-      "Instalador unos 100 MB mas liviano (sin ffplay, que no se usaba)"
+      "Si se va la luz o se reinicia el equipo en medio de una partida, al volver ofrece continuarla con los mismos puntajes (Pool, Buchacara, 3 Bandas, Libres y Supervivencia)"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.2.0.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.0/marcador-setup-1.2.0.exe",
-      "sizeBytes": 221801108,
-      "sha256": "becfd791720676e689f42287f75edcbcde8f359ddab06882d4560a5f6127e2b9"
+      "fileName": "marcador-setup-1.2.1.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.1/marcador-setup-1.2.1.exe",
+      "sizeBytes": 221802157,
+      "sha256": "472615c6c8020ce22393d594c6f5c4bee559f1d1bb153278cabd63a0d186f688"
     }
   }
 }
