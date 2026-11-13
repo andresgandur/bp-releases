@@ -1,26 +1,25 @@
 {
   "latest": {
-    "version": "1.3.4",
-    "releaseDate": "2026-11-12",
+    "version": "1.3.5",
+    "releaseDate": "2026-11-13",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Cobro, anulacion y apertura de caja seguros ante doble clic o dos terminales: ya no se duplican pagos, devoluciones ni turnos",
-      "Permisos nuevos: poner descuentos, cambiar el precio y quitar productos de una cuenta (se dan solos a los roles que cobran)",
-      "Los cambios de rol valen al instante, sin cerrar sesion; un usuario desactivado queda fuera en el acto",
-      "Limite de intentos de inicio de sesion: 5 fallos bloquean el usuario unos minutos y queda en la auditoria",
-      "Productos exentos de impuesto: casilla en Productos; en el ticket salen con (E) y en la factura electronica sin impuestos",
-      "El ticket del cobro con facturacion electronica espera el documento y sale con su numero, CUFE y QR",
-      "La caja que corre junto al servidor sigue cobrando si se cae la red, aunque se haya abierto sin red o el equipo tenga varias tarjetas",
-      "Auditoria: se guarda 400 dias (configurable en Parametros) y se exporta a un archivo antes de borrarse",
-      "El descuento de una linea no puede superar su valor; dos terminales sumando el mismo producto ya no pierden cantidades",
-      "Reportes por fecha mas rapidos con bases grandes"
+      "Los precios de los productos incluyen el impuesto: el cliente paga el precio y el impuesto se calcula dentro (base = precio / 1,19 redondeada al peso)",
+      "Varios impuestos a la vez: cada producto lleva el suyo (por ejemplo IVA 19% o INC 8%) o va exento",
+      "Impuesto por defecto en cada categoria: se propone al crear productos, y un boton se lo asigna a los productos que no tienen impuesto",
+      "Con facturacion electronica no se puede vender un producto sin impuesto asignado (o marcado exento)",
+      "Ticket, prefactura y detalle de la venta: subtotal sin impuesto, renglon de impuestos y desglose por tarifa con su base",
+      "Nuevo reporte de Impuestos: base gravable e impuesto por tarifa, por fechas o cierres de caja, por dia o por mes, con CSV",
+      "Los reportes de Impuestos, Propinas, Gastos e Insumos tambien se imprimen en la impresora de tickets",
+      "POS: doble clic en una mesa en juego para ponerle un nombre (sale junto al tipo de mesa)",
+      "Las ventas cobradas antes de esta version conservan sus cifras y su ticket"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.3.4.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.3.4/servidor-setup-1.3.4.exe",
-      "sizeBytes": 378527959,
-      "sha256": "4b8ec47641ee6bff2bc8e98053046be6972baaf244543e54a561a6929496fc83"
+      "fileName": "servidor-setup-1.3.5.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.3.5/servidor-setup-1.3.5.exe",
+      "sizeBytes": 389134701,
+      "sha256": "adb0849f8e7d72b19dc85059d325748771b54fe6c5f7abb31667455c265fab36"
     }
   }
 }
