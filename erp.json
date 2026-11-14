@@ -1,25 +1,27 @@
 {
   "latest": {
-    "version": "1.3.5",
-    "releaseDate": "2026-11-13",
+    "version": "1.3.6",
+    "releaseDate": "2026-11-14",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Los precios de los productos incluyen el impuesto: el cliente paga el precio y el impuesto se calcula dentro (base = precio / 1,19 redondeada al peso)",
-      "Varios impuestos a la vez: cada producto lleva el suyo (por ejemplo IVA 19% o INC 8%) o va exento",
-      "Impuesto por defecto en cada categoria: se propone al crear productos, y un boton se lo asigna a los productos que no tienen impuesto",
-      "Con facturacion electronica no se puede vender un producto sin impuesto asignado (o marcado exento)",
-      "Ticket, prefactura y detalle de la venta: subtotal sin impuesto, renglon de impuestos y desglose por tarifa con su base",
-      "Nuevo reporte de Impuestos: base gravable e impuesto por tarifa, por fechas o cierres de caja, por dia o por mes, con CSV",
+      "Impuestos fijos: IVA 19%, IVA 0%, INC 8% e ICUI 10%, los que acepta la DIAN. Ya no se crean, editan ni borran",
+      "Los impuestos solo se muestran y se cobran si el negocio factura electronicamente",
+      "Los productos exentos pasan a IVA 0% (desaparece la casilla Exento de impuesto)",
+      "Los precios de los productos incluyen el impuesto: el cliente paga el precio y el impuesto se calcula dentro",
+      "Cada producto lleva su impuesto, y cada categoria propone uno por defecto; un boton se lo asigna a los productos que no tienen",
+      "Con facturacion electronica no se puede vender un producto sin impuesto asignado",
+      "Ticket, prefactura y detalle de la venta: subtotal sin impuesto, renglon de impuestos y desglose por impuesto con su base",
+      "Nuevo reporte de Impuestos: base gravable e impuesto por impuesto, por fechas o cierres de caja, por dia o por mes, con CSV",
       "Los reportes de Impuestos, Propinas, Gastos e Insumos tambien se imprimen en la impresora de tickets",
       "POS: doble clic en una mesa en juego para ponerle un nombre (sale junto al tipo de mesa)",
       "Las ventas cobradas antes de esta version conservan sus cifras y su ticket"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.3.5.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.5/terminal-setup-1.3.5.exe",
-      "sizeBytes": 2648361,
-      "sha256": "08794db1ca46f6265b63870274f6e062b4b570877f25eaea443259cf02108e5a"
+      "fileName": "terminal-setup-1.3.6.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.6/terminal-setup-1.3.6.exe",
+      "sizeBytes": 2641809,
+      "sha256": "d116d53a4dc32e2400fddc35558c3b95d873d8ba6eff8bfc35951d84abb3c56f"
     }
   }
 }
