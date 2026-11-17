@@ -1,19 +1,20 @@
 {
   "latest": {
-    "version": "1.3.7",
-    "releaseDate": "2026-11-15",
+    "version": "1.3.8",
+    "releaseDate": "2026-11-17",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Ticket: el nombre que se le pone a la mesa (doble clic en el POS) sale en Cliente cuando la venta no tiene un cliente asignado, igual que el De quien es de las ventas directas",
-      "Parametros: nueva seccion Valores por defecto para elegir si salen marcadas de entrada las casillas Prefactura (POS), Imprimir el reporte de cierre e Incluir inventario (cierre de caja)",
-      "Las tres casillas salen apagadas de fabrica; quien cobra o cierra la caja puede cambiarlas en ese momento"
+      "Productos: no se permiten dos productos con el mismo nombre (sin importar mayusculas, tildes ni espacios), tampoco al importar",
+      "Cierre de caja: si falta el efectivo contado (arqueo) avisa que se debe escribir, y 0 si no se recibio efectivo",
+      "Cierre de caja: la lista de ventas sin cobrar se desplaza dentro de la ventana y los botones siempre quedan a la vista",
+      "Portal Mi Billar: el ERP envia avisos al celular del dueno (caja cerrada, venta anulada, productos bajo el minimo o sobre el maximo)"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.3.7.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.7/terminal-setup-1.3.7.exe",
-      "sizeBytes": 2643529,
-      "sha256": "ccf51ed4a96f5e50943a48912483610fabceb8d48bc990fb458fe0e9ca01c3e5"
+      "fileName": "terminal-setup-1.3.8.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.8/terminal-setup-1.3.8.exe",
+      "sizeBytes": 2641032,
+      "sha256": "4f8d561ccf407b16561082ef080e3bcf27b8b1aad7b660d363e501fec427f6ca"
     }
   }
 }
