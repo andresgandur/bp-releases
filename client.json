@@ -1,17 +1,20 @@
 {
   "latest": {
-    "version": "1.2.1",
-    "releaseDate": "2026-11-12",
+    "version": "1.2.2",
+    "releaseDate": "2026-11-20",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Si se va la luz o se reinicia el equipo en medio de una partida, al volver ofrece continuarla con los mismos puntajes (Pool, Buchacara, 3 Bandas, Libres y Supervivencia)"
+      "Modo torneo sin arbitro (3 Bandas): al tocar TORNEO se elige con arbitro o sin arbitro; sin arbitro se fija la META y los jugadores llevan los puntos desde la pantalla",
+      "Sin arbitro: tocar el puntaje del jugador en mesa suma un punto y tocar el del rival cierra la serie y le pasa el turno; botones +1, -1 para corregir y FALTA, y las faltas se quitan tocando las marcas",
+      "Boton para pausar y reanudar el tiempo de la jugada en el panel central; el tiempo arranca solo con cada punto y cada cambio de turno",
+      "En Configuracion se ajustan las faltas del torneo (2 por defecto) y los segundos por jugada (40 por defecto); aplican tambien al torneo con arbitro"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.2.1.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.1/marcador-setup-1.2.1.exe",
-      "sizeBytes": 221802157,
-      "sha256": "472615c6c8020ce22393d594c6f5c4bee559f1d1bb153278cabd63a0d186f688"
+      "fileName": "marcador-setup-1.2.2.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.2/marcador-setup-1.2.2.exe",
+      "sizeBytes": 221804322,
+      "sha256": "ba8491c8905d94bf95ba840f800b30394786c3b7e8595ca4b8929a919d10eb76"
     }
   }
 }
