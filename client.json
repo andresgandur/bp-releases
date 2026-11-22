@@ -1,20 +1,18 @@
 {
   "latest": {
-    "version": "1.2.2",
-    "releaseDate": "2026-11-20",
+    "version": "1.2.3",
+    "releaseDate": "2026-11-22",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Modo torneo sin arbitro (3 Bandas): al tocar TORNEO se elige con arbitro o sin arbitro; sin arbitro se fija la META y los jugadores llevan los puntos desde la pantalla",
-      "Sin arbitro: tocar el puntaje del jugador en mesa suma un punto y tocar el del rival cierra la serie y le pasa el turno; botones +1, -1 para corregir y FALTA, y las faltas se quitan tocando las marcas",
-      "Boton para pausar y reanudar el tiempo de la jugada en el panel central; el tiempo arranca solo con cada punto y cada cambio de turno",
-      "En Configuracion se ajustan las faltas del torneo (2 por defecto) y los segundos por jugada (40 por defecto); aplican tambien al torneo con arbitro"
+      "Actualizacion automatica: al pulsar Descargar e instalar en Configuracion, el marcador descarga la version, la instala sin asistente y se vuelve a abrir solo al terminar",
+      "Esta mejora aplica a partir de la siguiente actualizacion: la instalacion de esta version todavia usa el asistente"
     ],
     "windows": {
-      "fileName": "marcador-setup-1.2.2.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.2/marcador-setup-1.2.2.exe",
-      "sizeBytes": 221804322,
-      "sha256": "ba8491c8905d94bf95ba840f800b30394786c3b7e8595ca4b8929a919d10eb76"
+      "fileName": "marcador-setup-1.2.3.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/client-v1.2.3/marcador-setup-1.2.3.exe",
+      "sizeBytes": 221805213,
+      "sha256": "2868566b607044e7501ffd9038dfce0ab30aee801fdd7366f6bd4d15b0471a6b"
     }
   }
 }
