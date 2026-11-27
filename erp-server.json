@@ -1,21 +1,23 @@
 {
   "latest": {
-    "version": "1.3.9",
-    "releaseDate": "2026-11-22",
+    "version": "1.3.10",
+    "releaseDate": "2026-11-27",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Actualizaciones unificadas: un solo boton en Configuracion actualiza servidor y terminal",
-      "En el equipo del servidor se descarga todo primero, luego se instala el servidor y por ultimo la terminal, sin intervencion del usuario",
-      "Desde otro equipo solo se actualiza la terminal, y solo si el servidor ya esta en la misma version o mas nueva",
-      "El servidor reconoce por la IP si la peticion viene de su propio equipo y rechaza actualizarse desde otra terminal",
-      "La terminal se instala sin asistente y se vuelve a abrir sola al terminar (aplica desde la siguiente actualizacion)"
+      "Ordenes de compra por partes: al recibir se escribe lo que llego; lo que falta queda pendiente para otra entrega y el inventario y la deuda suben solo por lo recibido",
+      "Cancelar ordenes de compra con motivo: sin nada recibido se anula; con parte recibida se cancela lo pendiente y lo recibido se conserva",
+      "Nueva compra: buscador de productos como en Entradas y boton X para quitar un producto agregado por error",
+      "Cuentas por pagar: detalle de la deuda por orden de compra (lo pagado salda las mas antiguas), ticket con todas las ordenes y PDF de lo pendiente",
+      "Nueva pagina Compras > Pagos a proveedores: historial por fechas, proveedor y metodo, detalle de cada pago y comprobante para imprimir",
+      "El ticket de venta (prefactura y factura) muestra el cajero que cobro; la precuenta, quien atendio",
+      "Margenes iguales en Categorias, Marcas, Favoritos, Cuentas por pagar, Cuentas por cobrar y Estado de cuenta"
     ],
     "windows": {
-      "fileName": "servidor-setup-1.3.9.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.3.9/servidor-setup-1.3.9.exe",
-      "sizeBytes": 399706652,
-      "sha256": "d5c93568e9f31043ff67b9fc9c8a02bda7d58642af66c1bbf224ab5498115a76"
+      "fileName": "servidor-setup-1.3.10.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-server-v1.3.10/servidor-setup-1.3.10.exe",
+      "sizeBytes": 410324762,
+      "sha256": "51d914bd06e8ba599fd3bcd3ccc8da139199cb40c75ae8ea20c3d3d8a54b9a46"
     }
   }
 }
