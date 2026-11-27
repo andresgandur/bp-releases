@@ -1,21 +1,23 @@
 {
   "latest": {
-    "version": "1.3.9",
-    "releaseDate": "2026-11-22",
+    "version": "1.3.10",
+    "releaseDate": "2026-11-27",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Actualizaciones unificadas: un solo boton en Configuracion actualiza servidor y terminal",
-      "En el equipo del servidor se descarga todo primero, luego se instala el servidor y por ultimo la terminal, sin intervencion del usuario",
-      "Desde otro equipo solo se actualiza la terminal, y solo si el servidor ya esta en la misma version o mas nueva",
-      "El servidor reconoce por la IP si la peticion viene de su propio equipo y rechaza actualizarse desde otra terminal",
-      "La terminal se instala sin asistente y se vuelve a abrir sola al terminar (aplica desde la siguiente actualizacion)"
+      "Ordenes de compra por partes: al recibir se escribe lo que llego; lo que falta queda pendiente para otra entrega y el inventario y la deuda suben solo por lo recibido",
+      "Cancelar ordenes de compra con motivo: sin nada recibido se anula; con parte recibida se cancela lo pendiente y lo recibido se conserva",
+      "Nueva compra: buscador de productos como en Entradas y boton X para quitar un producto agregado por error",
+      "Cuentas por pagar: detalle de la deuda por orden de compra (lo pagado salda las mas antiguas), ticket con todas las ordenes y PDF de lo pendiente",
+      "Nueva pagina Compras > Pagos a proveedores: historial por fechas, proveedor y metodo, detalle de cada pago y comprobante para imprimir",
+      "El ticket de venta (prefactura y factura) muestra el cajero que cobro; la precuenta, quien atendio",
+      "Margenes iguales en Categorias, Marcas, Favoritos, Cuentas por pagar, Cuentas por cobrar y Estado de cuenta"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.3.9.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.9/terminal-setup-1.3.9.exe",
-      "sizeBytes": 2647978,
-      "sha256": "6e8880255fd84ae0a2a8809626fd525e2aa296d52b8b48efb60d917811d5a0de"
+      "fileName": "terminal-setup-1.3.10.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.10/terminal-setup-1.3.10.exe",
+      "sizeBytes": 2653567,
+      "sha256": "d043c8f8fe5f2fd93037dbac100f1fbd7ce3d21b7cd479f2f53504287f7d31d4"
     }
   }
 }
