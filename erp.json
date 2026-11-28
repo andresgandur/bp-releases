@@ -1,23 +1,23 @@
 {
   "latest": {
-    "version": "1.3.10",
-    "releaseDate": "2026-11-27",
+    "version": "1.3.11",
+    "releaseDate": "2026-11-28",
     "mandatory": false,
     "minSupportedVersion": "1.0.0",
     "notes": [
-      "Ordenes de compra por partes: al recibir se escribe lo que llego; lo que falta queda pendiente para otra entrega y el inventario y la deuda suben solo por lo recibido",
-      "Cancelar ordenes de compra con motivo: sin nada recibido se anula; con parte recibida se cancela lo pendiente y lo recibido se conserva",
-      "Nueva compra: buscador de productos como en Entradas y boton X para quitar un producto agregado por error",
-      "Cuentas por pagar: detalle de la deuda por orden de compra (lo pagado salda las mas antiguas), ticket con todas las ordenes y PDF de lo pendiente",
-      "Nueva pagina Compras > Pagos a proveedores: historial por fechas, proveedor y metodo, detalle de cada pago y comprobante para imprimir",
-      "El ticket de venta (prefactura y factura) muestra el cajero que cobro; la precuenta, quien atendio",
-      "Margenes iguales en Categorias, Marcas, Favoritos, Cuentas por pagar, Cuentas por cobrar y Estado de cuenta"
+      "Compras: anular una orden ya recibida (permiso propio por rol): saca lo recibido del inventario, quita su deuda y anula lo pagado por ella; lo pagado en efectivo vuelve a la caja",
+      "Nueva compra: el costo se llena con el ultimo costo de compra del producto (se puede cambiar)",
+      "Nueva pagina Compras > Productos por proveedor: cada producto puede tener varios proveedores; la orden de compra solo muestra los del proveedor elegido",
+      "Toda orden de compra lleva proveedor; la que no lo tiene va a 'Sin proveedor' (muestra los productos sin proveedor) y despues se asigna a su proveedor, que recibe la cuenta por pagar",
+      "Inventario > Entradas: filtro por proveedor",
+      "El kardex muestra el usuario que recibio cada compra",
+      "POS: una venta pendiente se puede sumar a la cuenta de una mesa en juego, y el stock de los productos baja al agregarlos a la cuenta"
     ],
     "windows": {
-      "fileName": "terminal-setup-1.3.10.exe",
-      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.10/terminal-setup-1.3.10.exe",
-      "sizeBytes": 2653567,
-      "sha256": "d043c8f8fe5f2fd93037dbac100f1fbd7ce3d21b7cd479f2f53504287f7d31d4"
+      "fileName": "terminal-setup-1.3.11.exe",
+      "url": "https://github.com/andresgandur/bp-releases/releases/download/erp-v1.3.11/terminal-setup-1.3.11.exe",
+      "sizeBytes": 2658824,
+      "sha256": "d043438d10d67faf8a9d45e920171dade7ddb300e95811b7ee31203cd0d8cf55"
     }
   }
 }
